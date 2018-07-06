@@ -165,7 +165,6 @@ xboot:
     - /upload/info
     - /upload/file
     - /email/**
-    - /sms/**
     - /push/**
     - /oauth/logout
     - /notice/**
@@ -180,6 +179,7 @@ xboot:
     - /job/**
     - /free/upload/**
     - /upload/**
+    - /sms/**
     - /favicon.ico
     - /oauth/login
     - /admin/**
@@ -196,6 +196,12 @@ xboot:
     access-keyId: LTAIUg3wkXF7q4Bf
     access-key-secret: 6jDimXrKDg73moXvDoFlZCbnv5jldt
     bucket: chedai
+  sms:
+    ali:
+      accessKeyId: LTAIiB3zlee0dk95
+      accessKeySecret: iXBHaOGQFXKbjXdIpNMEQuZU9BBPHB
+      regionId: cn-hangzhou
+      signName: 博学
 # Swagger界面内容配置
 swagger:
   title: XBoot API接口文档

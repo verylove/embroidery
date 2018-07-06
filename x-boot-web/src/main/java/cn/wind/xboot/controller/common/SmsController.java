@@ -2,7 +2,11 @@ package cn.wind.xboot.controller.common;
 
 import cn.wind.common.domain.Statistics;
 import cn.wind.common.res.ApiRes;
+import cn.wind.common.res.ApiStatus;
 import cn.wind.common.utils.Assert;
+import cn.wind.common.utils.MathUtil;
+import cn.wind.db.ar.entity.ArUser;
+import cn.wind.db.ar.service.IArUserService;
 import cn.wind.db.pf.entity.PfSms;
 import cn.wind.db.pf.service.IPfSmsLogService;
 import cn.wind.db.pf.service.IPfSmsService;
@@ -16,11 +20,13 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import com.google.common.collect.Maps;
 import com.google.gson.JsonObject;
+import com.xxl.job.admin.core.util.LocalCacheUtil;
 import io.swagger.annotations.*;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.dozer.DozerBeanMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.http.MediaType;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
@@ -28,6 +34,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 
 /**
@@ -47,6 +55,10 @@ public class SmsController {
     protected DozerBeanMapper beanMapper;
     @Autowired
     private SmsService smsService;
+    @Autowired
+    private StringRedisTemplate redisTemplate;
+    @Autowired
+    private IArUserService userService;
     @ApiOperation(value = "推送", notes ="短信推送",produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     @PostMapping("send")
     @SuppressWarnings("unchecked")
@@ -63,25 +75,46 @@ public class SmsController {
             Assert.checkArgument(a.matches(pattern), a + " 无效手机号");
         });
         Map<String, Integer> map = Maps.newHashMap();
-        Statistics statistics=Statistics.builder().total(list.size()).build();
+        Statistics statistics=Statistics.builder().total(list.size()).avi(new AtomicInteger(list.size())).build();
         JsonObject jsonObject=new JsonObject();
+        String vcode = MathUtil.getSix();
+        jsonObject.addProperty("code",MathUtil.getSix());
+        ArUser user = userService.findOneByPhone(mobiles);
         switch (smsTypeEnum) {
             case SIGN_IN:
                 //登陸
+                if(user==null){
+                    return apiResponse.failure(ApiStatus.USER_NOT_EXIST);
+                }
                 break;
             case SIGN_UP:
                 //注冊
+                if(user!=null){
+                    return apiResponse.failure(ApiStatus.USER_ALREADY_EXIST);
+                }
                 break;
             case FORGET:
+                //忘记
+                if(user==null){
+                    return apiResponse.failure(ApiStatus.USER_NOT_EXIST);
+                }
                 break;
             case NULL:
             default:
                 break;
         }
+        //1分钟内不可重发发送短信
+        if(LocalCacheUtil.get("CIXIU_PHONE:"+mobiles)!=null){
+            return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
+        }
         list.forEach(v -> {
             ApiRes res=smsService.sendSms(SmsSendReq.builder().phoneNumbers(v).templateCode(pfSms.getTemplateCode()).templateParam(jsonObject.toString()).build());
             if(res.valid()){
                 statistics.getAvi().incrementAndGet();
+                //保存发送记录到缓存中3分钟
+                redisTemplate.opsForValue().set("CIXIU_PHONE:"+v,vcode,3, TimeUnit.MINUTES);
+                LocalCacheUtil.set("CIXIU_PHONE:"+v,vcode,60*1000);
+                log.info("验证码为"+vcode);
             }else {
                 log.warn("send sms error:"+res.getMessage());
             }

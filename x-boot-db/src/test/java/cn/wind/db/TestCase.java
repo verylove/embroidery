@@ -85,4 +85,44 @@ public class TestCase {
         MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
         generator.generateByTables(generatorDto);
     }
+
+    @Test
+    public void test5() {
+        MyBatisPlusGenerator.GeneratorDto generatorDto= MyBatisPlusGenerator.GeneratorDto.builder()
+                .author("xukk")
+                .url("jdbc:mysql://localhost:3306/embroidery_dev?characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false")
+                .username("root")
+                .password("czl19950702")
+                .type("com.mysql.jdbc.Driver")
+                .basePath("/Users/changzhaoliang/Desktop/代码/embroidery__backstage/x-boot-db")
+                .outputDir("/src/main/java")
+                .base("sr")
+                .packageName("cn.wind.db")
+                .entityLombokModel(true)
+                .prefixes(new String[]{"cx_"})
+                .tableNames(new String[]{"cx_sr_area"})
+                .build();
+        MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
+        generator.generateByTables(generatorDto);
+    }
+
+    @Test
+    public void test6() {
+        MyBatisPlusGenerator.GeneratorDto generatorDto= MyBatisPlusGenerator.GeneratorDto.builder()
+                .author("xukk")
+                .url("jdbc:mysql://localhost:3306/embroidery_dev?characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false")
+                .username("root")
+                .password("czl19950702")
+                .type("com.mysql.jdbc.Driver")
+                .basePath("/Users/changzhaoliang/Desktop/代码/embroidery__backstage/x-boot-db")
+                .outputDir("/src/main/java")
+                .base("ar")
+                .packageName("cn.wind.db")
+                .entityLombokModel(true)
+                .prefixes(new String[]{"cx_"})
+                .tableNames(new String[]{"cx_ar_user"})
+                .build();
+        MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
+        generator.generateByTables(generatorDto);
+    }
 }

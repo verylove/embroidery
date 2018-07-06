@@ -54,7 +54,18 @@ public enum ApiStatus implements ApiInfo {
      * 400系列
      */
     PLATFORM_TYPE_ERROR(900400, "平台类型有误"),
-    USER_IDENTIFIACTION_ERROR(900401, "用户标识有误");
+    USER_IDENTIFIACTION_ERROR(900401, "用户标识有误"),
+    /**
+     * 500系列
+     */
+    USER_NOT_EXIST(900500,"该用户不存在"),
+    USER_ALREADY_EXIST(900501,"该用户已存在"),
+    SMS_WAIT_SEND(900502,"短信发送频繁,请稍后..."),
+    PHONE_FORMAT_ERROR(900503,"手机号码格式不对"),
+    VERIFICATION_CODE_TIMEOUT(900504,"验证码已失效"),
+    VERIFICATION_CODE_FAIL(900505,"验证码不正确"),
+    PASSWORD_FORMAT_ERROR(900506,"密码格式错误（6到12位，数字加字母）"),
+    REGISTER_FAIL(900507,"注册失败");
 
     private int code;
 

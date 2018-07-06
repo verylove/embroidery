@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ar.dao.ArUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArUser">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="account" property="account" />
+        <result column="phone" property="phone" />
+        <result column="password" property="password" />
+        <result column="sex" property="sex" />
+        <result column="profile" property="profile" />
+        <result column="identity" property="identity" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="county" property="county" />
+        <result column="per_address" property="perAddress" />
+        <result column="work_num" property="workNum" />
+        <result column="work_place" property="workPlace" />
+        <result column="sign_id" property="signId" />
+        <result column="name_id" property="nameId" />
+        <result column="store_id" property="storeId" />
+        <result column="sign_status" property="signStatus" />
+        <result column="name_status" property="nameStatus" />
+        <result column="store_status" property="storeStatus" />
+        <result column="wx_open_id" property="wxOpenId" />
+        <result column="qq_open_id" property="qqOpenId" />
+        <result column="per_level" property="perLevel" />
+        <result column="active_num" property="activeNum" />
+        <result column="charm_num" property="charmNum" />
+        <result column="wealth_num" property="wealthNum" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        account, phone, password, sex, profile, identity, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num
+    </sql>
+
+</mapper>
