@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.fengding.embroidery</groupId>
+	<artifactId>embroidery</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>embroidery__backstage</name>
+	<description>Demo project for Spring Boot</description>
+
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.0.3.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.version>1.8</java.version>
+		<spring-framework-bom.version>5.0.7.RELEASE</spring-framework-bom.version>
+		<platform-bom.version>Cairo-SR1</platform-bom.version>
+		<spring-boot-dependencies.version>2.0.2.RELEASE</spring-boot-dependencies.version>
+	</properties>
+
+	<modules>
+		<module>x-boot-db</module>
+		<module>x-boot-web</module>
+		<module>x-boot-job</module>
+		<module>x-boot-auth</module>
+		<module>x-boot-common</module>
+		<module>x-boot-jdbc</module>
+	</modules>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<dependencyManagement>
+		<dependencies>
+			<!--<dependency>-->
+			<!--&lt;!&ndash; Import dependency management from Spring Boot &ndash;&gt;-->
+			<!--<groupId>org.springframework.boot</groupId>-->
+			<!--<artifactId>spring-boot-dependencies</artifactId>-->
+			<!--<version>${spring-boot-dependencies.version}</version>-->
+			<!--<type>pom</type>-->
+			<!--<scope>import</scope>-->
+			<!--</dependency>-->
+			<!-- https://mvnrepository.com/artifact/org.springframework/spring-framework-bom -->
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-framework-bom</artifactId>
+				<version>${spring-framework-bom.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>io.spring.platform</groupId>
+				<artifactId>platform-bom</artifactId>
+				<version>${platform-bom.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.47</version>
+			</dependency>
+			<!-- 数据库 ending-->
+			<!--<dependency>-->
+			<!--<groupId>de.codecentric</groupId>-->
+			<!--<artifactId>spring-boot-admin-starter-client</artifactId>-->
+			<!--<version>1.5.7</version>-->
+			<!--</dependency>-->
+			<!--<dependency>-->
+			<!--<groupId>de.codecentric</groupId>-->
+			<!--<artifactId>spring-boot-admin-server</artifactId>-->
+			<!--<version>1.5.7</version>-->
+			<!--</dependency>-->
+			<!--<dependency>-->
+			<!--<groupId>de.codecentric</groupId>-->
+			<!--<artifactId>spring-boot-admin-server-ui</artifactId>-->
+			<!--<version>1.5.7</version>-->
+			<!--</dependency>-->
+
+
+			<!-- Swagger API文档 -->
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>2.7.0</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>2.7.0</version>
+			</dependency>
+
+			<!-- Hutool工具包 -->
+			<dependency>
+				<groupId>cn.hutool</groupId>
+				<artifactId>hutool-all</artifactId>
+				<version>4.0.5</version>
+			</dependency>
+
+			<!-- jetty -->
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-server</artifactId>
+				<version>9.2.24.v20180105</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-util</artifactId>
+				<version>9.2.24.v20180105</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-http</artifactId>
+				<version>9.2.24.v20180105</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-io</artifactId>
+				<version>9.2.24.v20180105</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+					<configuration>
+						<fork>true</fork>
+						<addResources>true</addResources>
+					</configuration>
+				</plugin>
+			</plugins>
+
+		</pluginManagement>
+		<resources>
+			<resource>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**/*.properties</include>
+				</includes>
+			</resource>
+			<resource>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+	</build>
+	<licenses>
+		<license>
+			<name>Apache 2</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>xukk</name>
+			<email>xukk@magicsoft.me</email>
+			<organization>winding</organization>
+			<organizationUrl>http://www.magicsoft.me/</organizationUrl>
+			<url>http://www.magicsoft.me/</url>
+		</developer>
+	</developers>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>spring-milestone</id>
+			<url>https://repo.spring.io/libs-release</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<repositories>
+
+		<repository>
+			<id>center</id>
+			<name>center</name>
+			<url>http://repo1.maven.org/maven2</url>
+		</repository>
+		<repository>
+			<id>xukk_third</id>
+			<name>3rd party</name>
+			<url>http://47.75.48.53:8081/repository/3rd_party</url>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring Milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+
+		<repository>
+			<id>xukk_snapshots</id>
+			<name>maven-snapshots</name>
+			<url>http://47.75.48.53:8081/repository/maven-snapshots</url>
+		</repository>
+		<repository>
+			<id>plugins-release</id>
+			<name>plugins-release</name>
+			<url>http://repo.spring.io/plugins-release/</url>
+		</repository>
+	</repositories>
+
+	<profiles>
+		<profile>
+			<!-- 本地开发环境 -->
+			<id>development</id>
+			<properties>
+				<profiles.active>dev</profiles.active>
+				<!--<deploy.url>http://host:port/manager/text</deploy.url>-->
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<!--发布 deploy-->
+			<distributionManagement>
+				<repository>
+					<id>xukk_snapshots</id>
+					<url>http://47.75.48.53:8081/repository/maven-snapshots</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+		<profile>
+			<!-- 测试环境 -->
+			<id>test</id>
+			<properties>
+				<profiles.active>test</profiles.active>
+				<!--<deploy.url>http://host:port/manager/text</deploy.url>-->
+			</properties>
+		</profile>
+		<profile>
+			<!-- 生产环境 -->
+			<id>production</id>
+			<properties>
+				<profiles.active>prod</profiles.active>
+				<!--<deploy.url>http://host:port/manager/text</deploy.url>-->
+			</properties>
+			<!--发布 deploy-->
+			<distributionManagement>
+				<repository>
+					<id>xukk_snapshots</id>
+					<url>http://47.75.48.53:8081/repository/maven-releases</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+	</profiles>
+
+
+</project>

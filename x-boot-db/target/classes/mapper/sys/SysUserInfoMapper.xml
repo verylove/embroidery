@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.sys.dao.SysUserInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.sys.entity.SysUserInfo">
+        <id column="id" property="id" />
+        <result column="create_time" property="createTime" />
+        <result column="create_by" property="createBy" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="modify_by" property="modifyBy" />
+        <result column="user_id" property="userId" />
+        <result column="p_id" property="pId" />
+        <result column="user_no" property="userNo" />
+        <result column="nick_name" property="nickName" />
+        <result column="real_name" property="realName" />
+        <result column="idcard" property="idcard" />
+        <result column="mobile" property="mobile" />
+        <result column="fixed_phone" property="fixedPhone" />
+        <result column="gender" property="gender" />
+        <result column="avatar" property="avatar" />
+        <result column="birthday" property="birthday" />
+        <result column="email" property="email" />
+        <result column="version" property="version" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="district" property="district" />
+        <result column="address" property="address" />
+    </resultMap>
+    <resultMap id="UserInfoResultMap" type="cn.wind.db.sys.entity.SysUserInfo">
+        <id column="userInfo_id" property="id" />
+        <result column="userInfo_create_time" property="createTime" />
+        <result column="userInfo_create_by" property="createBy" />
+        <result column="userInfo_modify_time" property="modifyTime" />
+        <result column="userInfo_modify_by" property="modifyBy" />
+        <result column="userInfo_user_id" property="userId" />
+        <result column="userInfo_p_id" property="pId" />
+        <result column="userInfo_user_no" property="userNo" />
+        <result column="userInfo_nick_name" property="nickName" />
+        <result column="userInfo_real_name" property="realName" />
+        <result column="userInfo_idcard" property="idcard" />
+        <result column="userInfo_mobile" property="mobile" />
+        <result column="userInfo_fixed_phone" property="fixedPhone" />
+        <result column="userInfo_gender" property="gender" />
+        <result column="userInfo_avatar" property="avatar" />
+        <result column="userInfo_birthday" property="birthday" />
+        <result column="userInfo_email" property="email" />
+        <result column="userInfo_version" property="version" />
+        <result column="userInfo_province" property="province" />
+        <result column="userInfo_city" property="city" />
+        <result column="userInfo_district" property="district" />
+        <result column="userInfo_address" property="address" />
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        create_time,
+        create_by,
+        modify_time,
+        modify_by,
+        id, user_id, p_id, user_no, nick_name, real_name, idcard, mobile, fixed_phone, gender, avatar, birthday, email, version,province,city,district,address
+    </sql>
+
+</mapper>

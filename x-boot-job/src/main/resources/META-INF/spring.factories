@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.xxl.job.admin.config.QuartzConfig,\
+com.xxl.job.admin.core.conf.XxlJobAdminConfig,\
+com.xxl.job.admin.JobConfiguration,\
+com.xxl.job.admin.config.XxlJobConfig
+

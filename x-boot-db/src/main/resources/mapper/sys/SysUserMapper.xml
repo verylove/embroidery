@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.sys.dao.SysUserMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.sys.entity.SysUser">
+        <id column="id" property="id" />
+        <result column="create_time" property="createTime" />
+        <result column="create_by" property="createBy" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="modify_by" property="modifyBy" />
+        <result column="uuid" property="uuid" />
+        <result column="username" property="username" />
+        <result column="password" property="password" />
+        <result column="account_non_expired" property="accountNonExpired" />
+        <result column="credentials_non_expired" property="credentialsNonExpired" />
+        <result column="account_non_locked" property="accountNonLocked" />
+        <result column="enabled" property="enabled" />
+        <result column="status" property="status" />
+        <result column="lock_time" property="lockTime" />
+        <result column="type" property="type"/>
+        <association property="userInfo" javaType="cn.wind.db.sys.entity.SysUserInfo" resultMap="cn.wind.db.sys.dao.SysUserInfoMapper.UserInfoResultMap"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        create_time,
+        create_by,
+        modify_time,
+        modify_by,
+        id, uuid, username, password, account_non_expired, credentials_non_expired, account_non_locked, enabled, status, lock_time, type
+    </sql>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_UserInfo_Column_List">
+        userInfo.create_time userInfo_create_time,
+        userInfo.create_by userInfo_create_by,
+        userInfo.modify_time userInfo_modify_time,
+        userInfo.modify_by userInfo_modify_by,
+        userInfo.id userInfo_id,
+        userInfo.user_id userInfo_user_id,
+        userInfo.p_id userInfo_p_id,
+        userInfo.user_no userInfo_user_no,
+        userInfo.nick_name  userInfo_nick_name,
+        userInfo.real_name userInfo_real_name,
+        userInfo.idcard userInfo_idcard,
+        userInfo.mobile userInfo_mobile,
+        userInfo.fixed_phone userInfo_fixed_phone,
+        userInfo.gender userInfo_gender,
+        userInfo.avatar  userInfo_avatar,
+        userInfo.birthday userInfo_birthday,
+        userInfo.email userInfo_email,
+        userInfo.version  userInfo_version,
+        userInfo.province  userInfo_province,
+        userInfo.city  userInfo_city,
+        userInfo.district  userInfo_district,
+        userInfo.address  userInfo_address
+    </sql>
+    <select id="findUserInfoById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+          select u.*,<include refid="Base_UserInfo_Column_List"/>
+           from t_sys_user u left join t_sys_user_info userInfo  on  u.id=userInfo.user_id where u.id=#{userId}
+    </select>
+    <select id="findByCondition" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>  FROM t_sys_user u left join t_sys_user_info userInfo  on  u.id=userInfo.user_id
+        <where>
+            <if test="username != null">
+                u.username like concat(concat('%',#{username}),'%')
+            </if>
+            <if test="mobile != null">
+                and userInfo.mobile like concat(concat('%',#{mobile}),'%')
+            </if>
+            <if test="email !=null">
+                and userInfo.email like concat(concat('%',#{email}),'%')
+            </if>
+            <if test="gender !=null and gender !=-1 ">
+                and userInfo.gender = #{gender}
+            </if>
+            <if test="enabled !=null">
+                AND u.enabled = #{enabled}
+            </if>
+            <if test="startDate!=null">
+                AND u.create_time <![CDATA[ >= ]]> #{startDate}
+            </if>
+            <if test="endDate!=null">
+                AND u.create_time <![CDATA[ <= ]]> #{endDate}
+            </if>
+            <if test="type !=null and type !=-1 ">
+                AND u.type= #{type}
+            </if>
+        </where>
+
+    </select>
+
+</mapper>

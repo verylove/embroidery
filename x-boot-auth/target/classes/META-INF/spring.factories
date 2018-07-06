@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.wind.auth.config.AuthorizationServerConfiguration,\
+cn.wind.auth.config.ResourceServerConfiguration,\
+cn.wind.auth.config.AuthConfiguration

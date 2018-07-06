@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="embroidery__backstage" />
+        <module name="x-boot-auth" />
+        <module name="x-boot-common" />
+        <module name="x-boot-db" />
+        <module name="x-boot-jdbc" />
+        <module name="x-boot-job" />
+        <module name="x-boot-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="embroidery" target="1.8" />
+      <module name="embroidery__backstage" target="1.8" />
+      <module name="x-boot-auth" target="1.8" />
+      <module name="x-boot-common" target="1.8" />
+      <module name="x-boot-db" target="1.8" />
+      <module name="x-boot-jdbc" target="1.8" />
+      <module name="x-boot-job" target="1.8" />
+      <module name="x-boot-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

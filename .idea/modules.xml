@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/embroidery.iml" filepath="$PROJECT_DIR$/embroidery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/embroidery__backstage.iml" filepath="$PROJECT_DIR$/embroidery__backstage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/x-boot-auth/x-boot-auth.iml" filepath="$PROJECT_DIR$/x-boot-auth/x-boot-auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/x-boot-common/x-boot-common.iml" filepath="$PROJECT_DIR$/x-boot-common/x-boot-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/x-boot-db/x-boot-db.iml" filepath="$PROJECT_DIR$/x-boot-db/x-boot-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/x-boot-jdbc/x-boot-jdbc.iml" filepath="$PROJECT_DIR$/x-boot-jdbc/x-boot-jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/x-boot-job/x-boot-job.iml" filepath="$PROJECT_DIR$/x-boot-job/x-boot-job.iml" />
+      <module fileurl="file://$PROJECT_DIR$/x-boot-web/x-boot-web.iml" filepath="$PROJECT_DIR$/x-boot-web/x-boot-web.iml" />
+    </modules>
+  </component>
+</project>
