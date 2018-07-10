@@ -70,6 +70,7 @@
     <orderEntry type="library" name="Maven: com.github.jsqlparser:jsqlparser:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.baomidou:mybatis-plus-generate:2.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.velocity:velocity-engine-core:2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-typehandlers-jsr310:1.0.1" level="project" />
     <orderEntry type="module" module-name="x-boot-job" />
     <orderEntry type="library" name="Maven: com.xuxueli:xxl-job-core:1.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty:jetty-server:9.2.24.v20180105" level="project" />
@@ -119,6 +120,7 @@
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:5.0.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.modelmapper:modelmapper:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: net.sf.dozer:dozer:5.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: cn.wind.xboot:klock-spring-boot-starter:1.0.0-SNAPSHOT" level="project" />

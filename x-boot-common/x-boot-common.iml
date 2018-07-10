@@ -71,6 +71,7 @@
     <orderEntry type="library" name="Maven: commons-codec:commons-codec:1.11" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-autoconfigure:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot:2.0.3.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.modelmapper:modelmapper:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: net.sf.dozer:dozer:5.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: org.projectlombok:lombok:1.16.22" level="project" />

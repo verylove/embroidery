@@ -39,6 +39,10 @@ public class ArUser extends AuditEntity {
      */
     private String password;
     /**
+     * 头像
+     */
+    private String icon;
+    /**
      * 性别 1-男；0-女
      */
     private Integer sex=1;

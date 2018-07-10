@@ -1,9 +1,11 @@
 package cn.wind.xboot.config;
 
 import cn.wind.xboot.controller.intercepotor.JobPermissionInterceptor;
+import cn.wind.xboot.controller.intercepotor.tokenInterceptor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -32,6 +34,12 @@ public class WebAppConfiguration implements WebMvcConfigurer {
 
     @Autowired
     private JobPermissionInterceptor jobPermissionInterceptor;
+
+    @Bean
+    public tokenInterceptor tokenInterceptor(){
+        return new tokenInterceptor();
+    }
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("swagger-ui.html")
@@ -67,5 +75,6 @@ public class WebAppConfiguration implements WebMvcConfigurer {
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(jobPermissionInterceptor).addPathPatterns("/job/**","/admin/**").excludePathPatterns("/job/api");
+        registry.addInterceptor(tokenInterceptor()).addPathPatterns("/api/app/**");
     }
 }

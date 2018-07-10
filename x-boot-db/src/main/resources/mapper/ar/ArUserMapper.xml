@@ -12,6 +12,7 @@
         <result column="account" property="account" />
         <result column="phone" property="phone" />
         <result column="password" property="password" />
+        <result column="icon" property="icon" />
         <result column="sex" property="sex" />
         <result column="profile" property="profile" />
         <result column="identity" property="identity" />
@@ -42,7 +43,7 @@
         modify_time,
         create_by,
         modify_by,
-        account, phone, password, sex, profile, identity, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num
+        account, phone, password, sex, icon, profile, `identity`, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num
     </sql>
 
 </mapper>

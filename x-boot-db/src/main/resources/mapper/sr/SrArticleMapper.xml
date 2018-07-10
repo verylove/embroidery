@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.sr.dao.SrArticleMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.sr.entity.SrArticle">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="name" property="name" />
+        <result column="describtion" property="describtion" />
+        <result column="remark" property="remark" />
+        <result column="cover_img" property="coverImg" />
+        <result column="url" property="url" />
+        <result column="type" property="type" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        name, describtion, remark, cover_img, url, type
+    </sql>
+
+</mapper>

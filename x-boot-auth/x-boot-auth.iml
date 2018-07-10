@@ -85,6 +85,7 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-jdbc:5.0.7.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.velocity:velocity-engine-core:2.0" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.46" level="project" />
+    <orderEntry type="library" name="Maven: org.mybatis:mybatis-typehandlers-jsr310:1.0.1" level="project" />
     <orderEntry type="module" module-name="x-boot-common" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.9.2" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.47" level="project" />
@@ -101,6 +102,7 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-security:2.0.3.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpclient:4.5.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.httpcomponents:httpcore:4.4.9" level="project" />
+    <orderEntry type="library" name="Maven: org.modelmapper:modelmapper:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: net.sf.dozer:dozer:5.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.slf4j:jcl-over-slf4j:1.7.25" level="project" />
     <orderEntry type="library" name="Maven: io.springfox:springfox-swagger-ui:2.7.0" level="project" />

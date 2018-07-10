@@ -15,4 +15,7 @@ public interface IArUserService extends IService<ArUser> {
 
     ArUser findOneByPhone(String phone);
 
+    ArUser findOneByWxOpenId(String openId);
+
+    ArUser findOneByQqOpenId(String openId);
 }

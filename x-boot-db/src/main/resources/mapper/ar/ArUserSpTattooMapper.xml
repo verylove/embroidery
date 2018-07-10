@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ar.dao.ArUserSpTattooMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArUserSpTattoo">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="city" property="city" />
+        <result column="name" property="name" />
+        <result column="begin_time" property="beginTime" />
+        <result column="end_time" property="endTime" />
+        <result column="original_price" property="originalPrice" />
+        <result column="preferential_price" property="preferentialPrice" />
+        <result column="description" property="description" />
+        <result column="remark" property="remark" />
+        <result column="micro_letter" property="microLetter" />
+        <result column="phone" property="phone" />
+        <result column="user_id" property="userId" />
+        <result column="status" property="status" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="great_num" property="greatNum" />
+        <result column="message_num" property="messageNum" />
+        <association property="user" javaType="cn.wind.db.ar.entity.ArUser" resultMap="cn.wind.db.ar.dao.ArUserMapper.BaseResultMap"/>
+        <result property="distance"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        city, `name`, begin_time, end_time, original_price, preferential_price, description, remark, micro_letter, phone, user_id, status, longitude, latitude, great_num, message_num
+    </sql>
+
+    <sql id="Base_UserInfo_Column_List">
+        aruser.create_time aruser_create_time,
+        aruser.create_by aruser_create_by,
+        aruser.modify_time aruser_modify_time,
+        aruser.modify_by aruser_modify_by,
+        aruser.id aruser_id,
+        aruser.account aruser_account,
+        aruser.phone aruser_phone,
+        aruser.password aruser_password,
+        aruser.icon aruser_icon,
+        aruser.sex aruser_sex,
+        aruser.profile aruser_profile,
+        aruser.identity aruser_identity,
+        aruser.province aruser_province,
+        aruser.city aruser_city,
+        aruser.county  aruser_county,
+        aruser.per_address aruser_per_address,
+        aruser.work_num aruser_work_num,
+        aruser.work_place aruser_work_place,
+        aruser.sign_id aruser_sign_id,
+        aruser.name_id aruser_name_id,
+        aruser.store_id aruser_store_id,
+        aruser.sign_status aruser_sign_status,
+        aruser.name_status aruser_name_status,
+        aruser.store_status aruser_store_status,
+        aruser.wx_open_id aruser_wx_open_id,
+        aruser.qq_open_id aruser_qq_open_id,
+        aruser.per_level aruser_per_level,
+        aruser.active_num aruser_active_num,
+        aruser.charm_num aruser_charm_num,
+        aruser.wealth_num aruser_wealth_num
+    </sql>
+    
+    <select id="findByCoordinates" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>, (POWER(MOD(ABS(u.longitude - #{longitude}),360),2) + POWER(ABS(latitude - #{latitude}),2)) AS distance
+        FROM cx_ar_user_sp_tattoo u left join t_ar_user aruser  on  u.user_id=aruser.id
+        where u.status = 1
+        order by distance asc,u.create_time desc
+    </select>
+
+    <select id="findAll" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_sp_tattoo u left join t_ar_user aruser  on  u.user_id=aruser.id
+        where u.status = 1
+        order by u.create_time desc
+    </select>
+
+</mapper>

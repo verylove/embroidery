@@ -78,13 +78,14 @@ public class SmsController {
         Statistics statistics=Statistics.builder().total(list.size()).avi(new AtomicInteger(list.size())).build();
         JsonObject jsonObject=new JsonObject();
         String vcode = MathUtil.getSix();
-        jsonObject.addProperty("code",MathUtil.getSix());
+        jsonObject.addProperty("code",vcode);
         ArUser user = userService.findOneByPhone(mobiles);
         switch (smsTypeEnum) {
             case SIGN_IN:
-                //登陸
-                if(user==null){
-                    return apiResponse.failure(ApiStatus.USER_NOT_EXIST);
+                //绑定验证
+                //1分钟内不可重发发送短信
+                if(LocalCacheUtil.get("CIXIU_PHONE_BIND:"+mobiles)!=null){
+                    return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
                 }
                 break;
             case SIGN_UP:
@@ -92,28 +93,52 @@ public class SmsController {
                 if(user!=null){
                     return apiResponse.failure(ApiStatus.USER_ALREADY_EXIST);
                 }
+                //1分钟内不可重发发送短信
+                if(LocalCacheUtil.get("CIXIU_PHONE_REGISTER:"+mobiles)!=null){
+                    return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
+                }
                 break;
             case FORGET:
                 //忘记
                 if(user==null){
                     return apiResponse.failure(ApiStatus.USER_NOT_EXIST);
                 }
+                //1分钟内不可重发发送短信
+                if(LocalCacheUtil.get("CIXIU_PHONE_FORGET:"+mobiles)!=null){
+                    return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
+                }
                 break;
             case NULL:
             default:
                 break;
         }
-        //1分钟内不可重发发送短信
-        if(LocalCacheUtil.get("CIXIU_PHONE:"+mobiles)!=null){
-            return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
-        }
         list.forEach(v -> {
             ApiRes res=smsService.sendSms(SmsSendReq.builder().phoneNumbers(v).templateCode(pfSms.getTemplateCode()).templateParam(jsonObject.toString()).build());
             if(res.valid()){
                 statistics.getAvi().incrementAndGet();
-                //保存发送记录到缓存中3分钟
-                redisTemplate.opsForValue().set("CIXIU_PHONE:"+v,vcode,3, TimeUnit.MINUTES);
-                LocalCacheUtil.set("CIXIU_PHONE:"+v,vcode,60*1000);
+                switch (smsTypeEnum) {
+                    case SIGN_IN:
+                        //绑定
+                        //保存发送记录到缓存中3分钟
+                        redisTemplate.opsForValue().set("CIXIU_PHONE_BIND:"+v,vcode,3, TimeUnit.MINUTES);
+                        LocalCacheUtil.set("CIXIU_PHONE_BIND:"+v,vcode,60*1000);
+                        break;
+                    case SIGN_UP:
+                        //注冊
+                        //保存发送记录到缓存中3分钟
+                        redisTemplate.opsForValue().set("CIXIU_PHONE_REGISTER:"+v,vcode,3, TimeUnit.MINUTES);
+                        LocalCacheUtil.set("CIXIU_PHONE_REGISTER:"+v,vcode,60*1000);
+                        break;
+                    case FORGET:
+                        //忘记
+                        //保存发送记录到缓存中3分钟
+                        redisTemplate.opsForValue().set("CIXIU_PHONE_FORGET:"+v,vcode,3, TimeUnit.MINUTES);
+                        LocalCacheUtil.set("CIXIU_PHONE_FORGET:"+v,vcode,60*1000);
+                        break;
+                    case NULL:
+                    default:
+                        break;
+                }
                 log.info("验证码为"+vcode);
             }else {
                 log.warn("send sms error:"+res.getMessage());

@@ -157,7 +157,6 @@ xboot:
     basename: mapping/GlobalMapping.xml
  # 需要授权url
   authenticatedUrl:
-    - /api/app/**
     - /user/**
     - /permission/**
     - /role/**
@@ -173,7 +172,7 @@ xboot:
     - /swagger-ui.html
     - /swagger-resources/**
     - /swagger/**
-    - /api/open/**
+    - /api/**
     - /**/v2/api-docs
     - /webjars/**
     - /job/**

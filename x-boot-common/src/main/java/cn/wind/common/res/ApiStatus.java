@@ -65,7 +65,16 @@ public enum ApiStatus implements ApiInfo {
     VERIFICATION_CODE_TIMEOUT(900504,"验证码已失效"),
     VERIFICATION_CODE_FAIL(900505,"验证码不正确"),
     PASSWORD_FORMAT_ERROR(900506,"密码格式错误（6到12位，数字加字母）"),
-    REGISTER_FAIL(900507,"注册失败");
+    REGISTER_FAIL(900507,"注册失败"),
+    THIRD_BIND_FAIL(900508,"第三方绑定手机号失败"),
+    BIND_NOT_EXIST(900509,"第三方尚未绑定手机号"),
+    PASSWORD_ERROR(900510,"密码错误"),
+    DATA_GET_FAIL(900511,"获取数据异常"),
+    /**
+     * 600
+     */
+    TOKEN_INVALID(900600,"token无效"),
+    TOKEN_TIMEOUT(900601,"token过期或校验失败");
 
     private int code;
 

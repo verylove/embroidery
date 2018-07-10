@@ -21,4 +21,14 @@ public class ArUserServiceImpl extends ServiceImpl<ArUserMapper, ArUser> impleme
     public ArUser findOneByPhone(String phone) {
         return this.baseMapper.findOneByPhone(phone);
     }
+
+    @Override
+    public ArUser findOneByWxOpenId(String openId) {
+        return this.baseMapper.finOneByWxOpenId(openId);
+    }
+
+    @Override
+    public ArUser findOneByQqOpenId(String openId) {
+        return this.baseMapper.findOneByQqOpenId(openId);
+    }
 }

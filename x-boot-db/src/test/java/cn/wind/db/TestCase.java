@@ -89,7 +89,7 @@ public class TestCase {
     @Test
     public void test5() {
         MyBatisPlusGenerator.GeneratorDto generatorDto= MyBatisPlusGenerator.GeneratorDto.builder()
-                .author("xukk")
+                .author("changzhaoliang")
                 .url("jdbc:mysql://localhost:3306/embroidery_dev?characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false")
                 .username("root")
                 .password("czl19950702")
@@ -100,7 +100,7 @@ public class TestCase {
                 .packageName("cn.wind.db")
                 .entityLombokModel(true)
                 .prefixes(new String[]{"cx_"})
-                .tableNames(new String[]{"cx_sr_area"})
+                .tableNames(new String[]{"cx_sr_article"})
                 .build();
         MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
         generator.generateByTables(generatorDto);
@@ -109,7 +109,7 @@ public class TestCase {
     @Test
     public void test6() {
         MyBatisPlusGenerator.GeneratorDto generatorDto= MyBatisPlusGenerator.GeneratorDto.builder()
-                .author("xukk")
+                .author("changzhaoliang")
                 .url("jdbc:mysql://localhost:3306/embroidery_dev?characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false")
                 .username("root")
                 .password("czl19950702")
@@ -120,7 +120,7 @@ public class TestCase {
                 .packageName("cn.wind.db")
                 .entityLombokModel(true)
                 .prefixes(new String[]{"cx_"})
-                .tableNames(new String[]{"cx_ar_user"})
+                .tableNames(new String[]{"cx_ar_user_sp_tattoo"})
                 .build();
         MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
         generator.generateByTables(generatorDto);
