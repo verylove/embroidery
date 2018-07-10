@@ -2,83 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a217ff-546c-4f84-9a72-f90d51c9d86e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-07-06.0.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-07-09.0.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_typehandlers_jsr310_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/token/AesToken.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/token/AesUtility.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/DateUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/GeoHash.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/ObjectMapperUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSignNumMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSignRecordMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpPicMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpTattooMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSignNum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSignRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSpPic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSpTattoo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSignNumService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSignRecordService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpPicService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpTattooService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSignNumServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSignRecordServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpPicServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpTattooServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrArticleMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrBannerImgMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/entity/SrArticle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/entity/SrBannerImg.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrArticleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrBannerImgService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrArticleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrBannerImgServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSignNumMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSignRecordMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpPicMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpTattooMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrArticleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrBannerImgMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/AppBaseController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMatarialController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/intercepotor/tokenInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/appUser/CXArUserSignManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSpTattooVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/sr/SrArticleVo.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiLoginController.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiStatus.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiStatus.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/test-classes/cn/wind/db/TestCase.class" afterPath="$PROJECT_DIR$/x-boot-db/target/test-classes/cn/wind/db/TestCase.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/WebAppConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/WebAppConfiguration.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/test-classes/cn/wind/web/service/Test.class" afterPath="$PROJECT_DIR$/x-boot-web/target/test-classes/cn/wind/web/service/Test.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_wind_xboot_kmybatis_spring_boot_starter_1_0_0_SNAPSHOT.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_wind_xboot_kmybatis_spring_boot_starter_1_0_0_SNAPSHOT.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/x-boot-web/spring.log" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/x-boot-auth.iml" afterPath="$PROJECT_DIR$/x-boot-auth/x-boot-auth.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/pom.xml" afterPath="$PROJECT_DIR$/x-boot-common/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiStatus.java" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/x-boot-common.iml" afterPath="$PROJECT_DIR$/x-boot-common/x-boot-common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/pom.xml" afterPath="$PROJECT_DIR$/x-boot-db/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java" afterPath="$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/x-boot-db.iml" afterPath="$PROJECT_DIR$/x-boot-db/x-boot-db.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/config/WebAppConfiguration.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/config/WebAppConfiguration.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/appUser/CXArUserManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/appUser/CXArUserManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/test/java/cn/wind/web/service/Test.java" afterPath="$PROJECT_DIR$/x-boot-web/src/test/java/cn/wind/web/service/Test.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/x-boot-web.iml" afterPath="$PROJECT_DIR$/x-boot-web/x-boot-web.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1085,7 +1015,7 @@
       <workItem from="1531124885871" duration="11189000" />
       <workItem from="1531184288031" duration="10057000" />
       <workItem from="1531194967116" duration="123000" />
-      <workItem from="1531195121715" duration="15536000" />
+      <workItem from="1531195121715" duration="15600000" />
     </task>
     <task id="LOCAL-00001" summary="first commit 20180705">
       <created>1530784564513</created>
@@ -1108,7 +1038,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530881707155</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 20180710">
+      <created>1531221099670</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1531221099670</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1144,7 +1081,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97968000" />
+    <option name="totallyTimeSpent" value="98032000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1235,7 +1172,8 @@
     <MESSAGE value="first commit 20180705" />
     <MESSAGE value="commit 20180706" />
     <MESSAGE value="commit 20180706(2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20180706(2)" />
+    <MESSAGE value="commit 20180710" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20180710" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
