@@ -1015,7 +1015,7 @@
       <workItem from="1531124885871" duration="11189000" />
       <workItem from="1531184288031" duration="10057000" />
       <workItem from="1531194967116" duration="123000" />
-      <workItem from="1531195121715" duration="15600000" />
+      <workItem from="1531195121715" duration="15648000" />
     </task>
     <task id="LOCAL-00001" summary="first commit 20180705">
       <created>1530784564513</created>
@@ -1045,7 +1045,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531221099670</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="commit 20180710(2)">
+      <created>1531221146227</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1531221146228</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1081,7 +1088,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98032000" />
+    <option name="totallyTimeSpent" value="98080000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1173,7 +1180,8 @@
     <MESSAGE value="commit 20180706" />
     <MESSAGE value="commit 20180706(2)" />
     <MESSAGE value="commit 20180710" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20180710" />
+    <MESSAGE value="commit 20180710(2)" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20180710(2)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1196,14 +1204,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrBannerImgMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" column="65" lean-forward="false" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrBannerImgService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1620,6 +1620,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="24" column="54" lean-forward="true" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2475">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
