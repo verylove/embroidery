@@ -35,7 +35,7 @@ public class PageVo<T> implements Serializable {
 
     public Page<T> initPage() {
         Page<T> page = new Page(this.getPageNumber(), this.getPageSize());
-        if (this.sort.size() > 0) {
+        if (this.sort != null && this.sort.size() > 0) {
             List<String> sortNew=Lists.newArrayList();
             this.sort.forEach(v-> Arrays.stream(v.split(",")).forEach(t-> sortNew.add(t)));
              //Arrays.stream(v.split(",")).filter(t->t.equalsIgnoreCase("ASC")||t.equalsIgnoreCase("DESC")).findAny().ifPresent(k->atomicInteger.incrementAndGet()));

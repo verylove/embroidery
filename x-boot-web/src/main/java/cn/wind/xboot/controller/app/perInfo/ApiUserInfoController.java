@@ -8,7 +8,7 @@ import cn.wind.db.ar.entity.ArUserSignRecord;
 import cn.wind.db.ar.service.IArUserService;
 import cn.wind.db.ar.service.IArUserSignRecordService;
 import cn.wind.xboot.controller.app.AppBaseController;
-import cn.wind.xboot.service.appUser.CXArUserSignManage;
+import cn.wind.xboot.service.app.CXArUserSignManage;
 import cn.wind.xboot.vo.app.ar.ArUserVo;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

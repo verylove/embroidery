@@ -1,5 +1,6 @@
 package cn.wind.db.sr.entity;
 
+import cn.wind.mybatis.common.IdEntity;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.annotations.Version;
 import cn.wind.mybatis.common.AuditEntity;
@@ -22,7 +23,7 @@ import lombok.experimental.Accessors;
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
 @TableName("cx_sr_area")
-public class SrArea extends AuditEntity {
+public class SrArea extends IdEntity {
 
     private static final long serialVersionUID = 1L;
 

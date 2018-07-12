@@ -58,14 +58,14 @@ public class ArUserSpTattooVo {
 
     private Long distance;//活动地与自己的距离
 
-    private Long user_id;
+    private Long userId;
     private String aduit;//认证标签
-    private Integer perLevel;
+    private String businessCard;//名片
+    private Integer perLevel;//等级
     private String icon;//头像
     private String account;
     private Integer isCollection;//1-关注 0-不关注
     private Integer isGreat;//1-点赞 0-未点赞
 
     private List<ArUserSpPic> pics;
-
 }

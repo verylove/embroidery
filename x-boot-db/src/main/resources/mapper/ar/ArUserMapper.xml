@@ -34,6 +34,43 @@
         <result column="active_num" property="activeNum" />
         <result column="charm_num" property="charmNum" />
         <result column="wealth_num" property="wealthNum" />
+        <result column="balance" property="balance" />
+        <result column="great_status" property="greatStatus" />
+    </resultMap>
+
+    <resultMap id="UserResultMap" type="cn.wind.db.ar.entity.ArUser">
+        <result column="aruser_id" property="id" />
+        <result column="aruser_create_time" property="createTime" />
+        <result column="aruser_modify_time" property="modifyTime" />
+        <result column="aruser_create_by" property="createBy" />
+        <result column="aruser_modify_by" property="modifyBy" />
+        <result column="aruser_account" property="account" />
+        <result column="aruser_phone" property="phone" />
+        <result column="aruser_password" property="password" />
+        <result column="aruser_icon" property="icon" />
+        <result column="aruser_sex" property="sex" />
+        <result column="aruser_profile" property="profile" />
+        <result column="aruser_identity" property="identity" />
+        <result column="aruser_province" property="province" />
+        <result column="aruser_city" property="city" />
+        <result column="aruser_county" property="county" />
+        <result column="aruser_per_address" property="perAddress" />
+        <result column="aruser_work_num" property="workNum" />
+        <result column="aruser_work_place" property="workPlace" />
+        <result column="aruser_sign_id" property="signId" />
+        <result column="aruser_name_id" property="nameId" />
+        <result column="aruser_store_id" property="storeId" />
+        <result column="aruser_sign_status" property="signStatus" />
+        <result column="aruser_name_status" property="nameStatus" />
+        <result column="aruser_store_status" property="storeStatus" />
+        <result column="aruser_wx_open_id" property="wxOpenId" />
+        <result column="aruser_qq_open_id" property="qqOpenId" />
+        <result column="aruser_per_level" property="perLevel" />
+        <result column="aruser_active_num" property="activeNum" />
+        <result column="aruser_charm_num" property="charmNum" />
+        <result column="aruser_wealth_num" property="wealthNum" />
+        <result column="aruser_balance" property="balance" />
+        <result column="aruser_great_status" property="greatStatus" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
@@ -43,7 +80,16 @@
         modify_time,
         create_by,
         modify_by,
-        account, phone, password, sex, icon, profile, `identity`, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num
+        account, phone, password, sex, icon, profile, `identity`, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num, balance, great_status
     </sql>
+
+    <select id="findAllByIdIn" resultMap="BaseResultMap" parameterType="java.util.List">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ar_user
+        WHERE id IN
+        <foreach collection="list" item="item" separator="," open="(" close=")">
+            #{item}
+        </foreach>
+    </select>
 
 </mapper>

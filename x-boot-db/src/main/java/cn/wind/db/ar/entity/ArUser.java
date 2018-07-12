@@ -10,6 +10,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import java.math.BigDecimal;
+
 /**
  * <p>
  * App用户表
@@ -126,6 +128,14 @@ public class ArUser extends AuditEntity {
      * 财富值
      */
     private Long wealthNum=0L;
+    /**
+     * 余额
+     */
+    private BigDecimal balance= new BigDecimal("0.00");
+    /**
+     * 是否点过赞 1-点过 0-未点过
+     */
+    private Integer greatStatus=0;
 
 
 }

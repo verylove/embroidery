@@ -6,6 +6,8 @@ import cn.wind.db.ar.service.IArUserService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * <p>
  * App用户表 服务实现类
@@ -30,5 +32,10 @@ public class ArUserServiceImpl extends ServiceImpl<ArUserMapper, ArUser> impleme
     @Override
     public ArUser findOneByQqOpenId(String openId) {
         return this.baseMapper.findOneByQqOpenId(openId);
+    }
+
+    @Override
+    public List<ArUser> findAllByIdIn(List<Long> userIds) {
+        return this.baseMapper.findAllByIdIn(userIds);
     }
 }

@@ -29,4 +29,9 @@ public class ArUserSpTattooServiceImpl extends ServiceImpl<ArUserSpTattooMapper,
     public Page<ArUserSpTattoo> findAll(Page page) {
         return page.setRecords(this.baseMapper.findAll(page));
     }
+
+    @Override
+    public ArUserSpTattoo findOneById(Long spTattooId) {
+        return this.baseMapper.findOneById(spTattooId);
+    }
 }

@@ -50,11 +50,11 @@ public class ArUserSpTattoo extends AuditEntity {
     /**
      * 原价
      */
-    private BigDecimal originalPrice;
+    private BigDecimal originalPrice=new BigDecimal("0.00");
     /**
      * 优惠价
      */
-    private BigDecimal preferentialPrice;
+    private BigDecimal preferentialPrice=new BigDecimal("0.00");
     /**
      * 说明
      */
@@ -78,7 +78,7 @@ public class ArUserSpTattoo extends AuditEntity {
     /**
      * 类型 1-有效 0-失效
      */
-    private Integer status;
+    private Integer status=1;
     /**
      * 经度
      */
@@ -90,11 +90,11 @@ public class ArUserSpTattoo extends AuditEntity {
     /**
      * 点赞数
      */
-    private Long greatNum;
+    private Long greatNum=0L;
     /**
      * 留言数
      */
-    private Long messageNum;
+    private Long messageNum=0L;
 
     @TableField(exist=false)
     private ArUser user;

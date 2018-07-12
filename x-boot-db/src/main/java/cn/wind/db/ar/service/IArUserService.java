@@ -3,6 +3,8 @@ package cn.wind.db.ar.service;
 import cn.wind.db.ar.entity.ArUser;
 import com.baomidou.mybatisplus.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * App用户表 服务类
@@ -18,4 +20,6 @@ public interface IArUserService extends IService<ArUser> {
     ArUser findOneByWxOpenId(String openId);
 
     ArUser findOneByQqOpenId(String openId);
+
+    List<ArUser> findAllByIdIn(List<Long> userIds);
 }

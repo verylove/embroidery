@@ -1,4 +1,4 @@
-package cn.wind.xboot.service.appUser;
+package cn.wind.xboot.service.app;
 
 import cn.wind.common.utils.DateUtil;
 import cn.wind.db.ar.entity.ArUser;

@@ -25,8 +25,8 @@
         <result column="latitude" property="latitude" />
         <result column="great_num" property="greatNum" />
         <result column="message_num" property="messageNum" />
-        <association property="user" javaType="cn.wind.db.ar.entity.ArUser" resultMap="cn.wind.db.ar.dao.ArUserMapper.BaseResultMap"/>
-        <result property="distance"/>
+        <result column="distance" property="distance"/>
+        <association property="user" javaType="cn.wind.db.ar.entity.ArUser" resultMap="cn.wind.db.ar.dao.ArUserMapper.UserResultMap"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->
@@ -69,21 +69,29 @@
         aruser.per_level aruser_per_level,
         aruser.active_num aruser_active_num,
         aruser.charm_num aruser_charm_num,
-        aruser.wealth_num aruser_wealth_num
+        aruser.wealth_num aruser_wealth_num,
+        aruser.balance aruser_balance,
+        aruser.great_status aruser_great_status
     </sql>
     
     <select id="findByCoordinates" resultMap="BaseResultMap">
         SELECT u.*,<include refid="Base_UserInfo_Column_List"/>, (POWER(MOD(ABS(u.longitude - #{longitude}),360),2) + POWER(ABS(latitude - #{latitude}),2)) AS distance
-        FROM cx_ar_user_sp_tattoo u left join t_ar_user aruser  on  u.user_id=aruser.id
+        FROM cx_ar_user_sp_tattoo u left join cx_ar_user aruser  on  u.user_id=aruser.id
         where u.status = 1
         order by distance asc,u.create_time desc
     </select>
 
     <select id="findAll" resultMap="BaseResultMap">
         SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
-        FROM cx_ar_user_sp_tattoo u left join t_ar_user aruser  on  u.user_id=aruser.id
+        FROM cx_ar_user_sp_tattoo u left join cx_ar_user aruser  on  u.user_id=aruser.id
         where u.status = 1
         order by u.create_time desc
+    </select>
+
+    <select id="findOneById" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_sp_tattoo u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        WHERE u.status = 1 and u.id = #{spTattooId}
     </select>
 
 </mapper>

@@ -9,7 +9,6 @@ import lombok.Data;
  * @Date: 2018/7/9 17:03
  * @Description:
  */
-@ApiModel(value="user对象",description="用户对象user")
 @Data
 public class ArUserVo {
     @ApiModelProperty(name = "id",value = "主键",dataType = "Long")

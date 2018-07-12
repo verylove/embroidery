@@ -19,4 +19,6 @@ public interface IArUserSpTattooService extends IService<ArUserSpTattoo> {
     Page<ArUserSpTattoo> findByCoordinates(Page page, Map<String, Object> map);
 
     Page<ArUserSpTattoo> findAll(Page page);
+
+    ArUserSpTattoo findOneById(Long spTattooId);
 }

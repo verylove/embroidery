@@ -6,7 +6,7 @@ import cn.wind.common.token.AesUtility;
 import cn.wind.db.ar.entity.ArUser;
 import cn.wind.db.ar.service.IArUserService;
 import cn.wind.xboot.controller.app.AppBaseController;
-import cn.wind.xboot.service.appUser.CXArUserManage;
+import cn.wind.xboot.service.app.CXArUserManage;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -41,10 +41,11 @@ public class ApiLoginController extends AppBaseController{
     @ApiImplicitParams({
             @ApiImplicitParam(name = "phone", value = "注册的用户手机号", required = true, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "code", value = "验证码", required = true, dataType = "String", paramType = "query"),
-            @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String", paramType = "query")
+            @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String", paramType = "query"),
+            @ApiImplicitParam(name = "type", value = "1-纹身师 0-爱好者", required = true, dataType = "Integer", paramType = "query")
     })
     @PostMapping("/open/register")
-    public ApiRes register(String phone,String code,String password){
+    public ApiRes register(String phone,String code,String password,Integer type){
         Map<String,Object> map = new HashMap<>();
         try{
             //1.判断手机格式
@@ -71,7 +72,7 @@ public class ApiLoginController extends AppBaseController{
                 return ApiRes.Custom().failure(ApiStatus.USER_ALREADY_EXIST);
             }
             //5.注册用户
-            user = userManage.addUser(phone,password);
+            user = userManage.addUserByIdentity(phone,password,type);
             if(user==null){
                 return ApiRes.Custom().failure(ApiStatus.REGISTER_FAIL);
             }

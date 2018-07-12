@@ -12,7 +12,6 @@ import lombok.Data;
 @Data
 @ApiModel(value="文章资讯",description="文章对象article")
 public class SrArticleVo {
-    @ApiModelProperty(name = "id",value = "主键")
     private Long id;
     @ApiModelProperty(name = "name",value = "文章名")
     private String name;

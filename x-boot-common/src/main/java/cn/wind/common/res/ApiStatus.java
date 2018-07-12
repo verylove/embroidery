@@ -70,6 +70,11 @@ public enum ApiStatus implements ApiInfo {
     BIND_NOT_EXIST(900509,"第三方尚未绑定手机号"),
     PASSWORD_ERROR(900510,"密码错误"),
     DATA_GET_FAIL(900511,"获取数据异常"),
+    DATA_POST_FAIL(900512,"操作数据异常"),
+    GREAT_FIRST(900513,"第一次点赞"),
+    GREAT_NOT_FIRST(900514,"不是第一次点赞"),
+    BALANCE_NOT_ENOUGH(900515,"账户金额不够"),
+    SP_EVALUATE_NOT_EXIST(900516,"该评论不存在"),
     /**
      * 600
      */
