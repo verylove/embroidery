@@ -47,7 +47,7 @@ public class CXArSpTattooManage {
     private IArUserSpEvaluatesGreatRecordService spEvaluatesGreatRecordService;
 
     /**
-     * 特价纹身发布
+     * 特价纹身发布（纹身师）
      * @param dto
      * @param userId
      * @throws Exception

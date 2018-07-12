@@ -79,7 +79,12 @@ public enum ApiStatus implements ApiInfo {
      * 600
      */
     TOKEN_INVALID(900600,"token无效"),
-    TOKEN_TIMEOUT(900601,"token过期或校验失败");
+    TOKEN_TIMEOUT(900601,"token过期或校验失败"),
+    /**
+     * 700
+     */
+    NAME_NO_ADUIT(900700,"用户未实名认证"),
+    NAME_ALREADY_ADUIT(900701,"用户已实名认证");
 
     private int code;
 

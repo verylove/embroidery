@@ -126,7 +126,10 @@ public class ApiSpecialTattooController extends AppBaseController{
     @PostMapping(value = "/publishSpTattoo")
     public ApiRes publishSpTattoo(arUserSpTattooDto dto){
         try{
-            // TODO 验证是否具有纹身师权限
+            //1.用户是否实名认证
+            if(!userManage.IsNameAduit(getUserId())){
+                return ApiRes.Custom().failure(ApiStatus.NAME_NO_ADUIT);
+            }
 
             spTattooManage.publish(dto,getUserId());
             return ApiRes.Custom().success();

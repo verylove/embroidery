@@ -94,4 +94,17 @@ public class CXArUserManage {
         }
         return true;
     }
+
+    /**
+     * 是否实名认证
+     * @param userId
+     * @return true实名认证；false未认证
+     */
+    public boolean IsNameAduit(Long userId){
+        ArUser user = userService.selectById(userId);
+        if(user.getNameStatus()==3){
+            return true;
+        }
+        return false;
+    }
 }
