@@ -2,6 +2,7 @@ package cn.wind.xboot.service.app;
 
 import cn.wind.db.ar.entity.ArUser;
 import cn.wind.db.ar.service.IArUserService;
+import cn.wind.xboot.enums.contants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -26,7 +27,7 @@ public class CXArUserManage {
         user.setAccount(phone);
         user.setPhone(phone);
         user.setIcon(
-                "https://apollobucket.oss-cn-beijing.aliyuncs.com/head_img.png");
+                contants.defaultHeadImg);
         user.setPassword(password);
         user.setIdentity(type);
         userService.insert(user);
@@ -37,9 +38,9 @@ public class CXArUserManage {
         ArUser user = new ArUser();
         user.setAccount(phone);
         user.setPhone(phone);
-        user.setPassword("a111111");
+        user.setPassword(contants.defaultPassword);
         user.setIcon(
-                "https://apollobucket.oss-cn-beijing.aliyuncs.com/head_img.png");
+                contants.defaultHeadImg);
         if(type==1){
             user.setWxOpenId(openId);
         }else {

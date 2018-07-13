@@ -2,7 +2,7 @@ package cn.wind.db.ar.dao;
 
 import cn.wind.db.ar.entity.ArUserZxTattoo;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
-import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 
 import java.util.List;
 import java.util.Map;
@@ -17,7 +17,7 @@ import java.util.Map;
  */
 public interface ArUserZxTattooMapper extends BaseMapper<ArUserZxTattoo> {
 
-    List findAllByConditions(Page page, Map<String, Object> map);
+    List<ArUserZxTattoo> findAllByConditions(Pagination page, Map<String, Object> map);
 
     ArUserZxTattoo findOneByConditions(Map<String, Object> map);
 }

@@ -6,6 +6,9 @@ import cn.wind.db.sr.service.ISrAreaService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * <p>
  * 中国区域数据表 服务实现类
@@ -17,4 +20,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class SrAreaServiceImpl extends ServiceImpl<SrAreaMapper, SrArea> implements ISrAreaService {
 
+    @Override
+    public List<SrArea> findAllByConditions(Map<String, Object> map) {
+        return this.baseMapper.findAllByConditions(map);
+    }
 }

@@ -21,4 +21,18 @@
         abbr_name, alias, center, city_code, code, level, name, status
     </sql>
 
+    <select id="findAllByConditions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_sr_area
+        <where>
+            status = 1
+            <if test="level != null">
+                and level = #{level}
+            </if>
+            <if test="code != null">
+                and code like concat(#{code},'%')
+            </if>
+        </where>
+    </select>
+
 </mapper>

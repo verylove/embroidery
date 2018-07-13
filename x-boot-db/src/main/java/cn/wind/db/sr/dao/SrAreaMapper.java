@@ -3,6 +3,9 @@ package cn.wind.db.sr.dao;
 import cn.wind.db.sr.entity.SrArea;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * <p>
  * 中国区域数据表 Mapper 接口
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  */
 public interface SrAreaMapper extends BaseMapper<SrArea> {
 
+    List<SrArea> findAllByConditions(Map<String, Object> map);
 }

@@ -75,6 +75,7 @@ public enum ApiStatus implements ApiInfo {
     GREAT_NOT_FIRST(900514,"不是第一次点赞"),
     BALANCE_NOT_ENOUGH(900515,"账户金额不够"),
     SP_EVALUATE_NOT_EXIST(900516,"该评论不存在"),
+    AREA_NOT_EXIST(900517,"该区域不存在"),
     /**
      * 600
      */
