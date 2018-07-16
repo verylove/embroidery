@@ -6,6 +6,8 @@ import cn.wind.db.ar.service.IArUserSkPicService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * <p>
  * 图库找图图片数据表 服务实现类
@@ -17,4 +19,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class ArUserSkPicServiceImpl extends ServiceImpl<ArUserSkPicMapper, ArUserSkPic> implements IArUserSkPicService {
 
+    @Override
+    public List<ArUserSkPic> findAllByGalleryId(Long id) {
+        return this.baseMapper.findAllByGalleryId(id);
+    }
 }

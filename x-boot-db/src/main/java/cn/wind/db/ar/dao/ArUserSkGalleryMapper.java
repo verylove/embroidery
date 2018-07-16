@@ -18,4 +18,6 @@ import java.util.Map;
 public interface ArUserSkGalleryMapper extends BaseMapper<ArUserSkGallery> {
 
     List<ArUserSkGallery> findAllByConditions(Pagination page, Map<Object, Object> map);
+
+    ArUserSkGallery findOneByConditions(Map<String, Object> map);
 }

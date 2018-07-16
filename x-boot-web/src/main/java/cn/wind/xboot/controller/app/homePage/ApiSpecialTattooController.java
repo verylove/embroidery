@@ -180,7 +180,11 @@ public class ApiSpecialTattooController extends AppBaseController{
                 vo.setIsGreat(0);
             }
             //5.是否关注
-            // TODO 是否关注
+            if(userManage.IsFollowInUserId(getUserId(),too.getUserId())){
+                vo.setIsCollection(1);
+            }else {
+                vo.setIsCollection(0);
+            }
 
 
             return ApiRes.Custom().addData(vo);

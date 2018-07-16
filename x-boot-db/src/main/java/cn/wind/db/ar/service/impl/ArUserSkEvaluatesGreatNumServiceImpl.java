@@ -17,4 +17,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class ArUserSkEvaluatesGreatNumServiceImpl extends ServiceImpl<ArUserSkEvaluatesGreatNumMapper, ArUserSkEvaluatesGreatNum> implements IArUserSkEvaluatesGreatNumService {
 
+    @Override
+    public ArUserSkEvaluatesGreatNum findOneByEvaluteIdAndUserId(Long skEvaluateId, Long userId) {
+        return this.baseMapper.findOneByEvaluteIdAndUserId(skEvaluateId, userId);
+    }
 }

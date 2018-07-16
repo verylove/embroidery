@@ -17,4 +17,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class ArUserSkGreatNumServiceImpl extends ServiceImpl<ArUserSkGreatNumMapper, ArUserSkGreatNum> implements IArUserSkGreatNumService {
 
+    @Override
+    public ArUserSkGreatNum findOneByGalleryIdAndUserId(Long skGalleryId, Long userId) {
+        return this.baseMapper.findOneByGalleryIdAndUserId(skGalleryId,userId);
+    }
 }

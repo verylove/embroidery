@@ -71,8 +71,25 @@
         FROM cx_ar_user_sk_gallery u left join cx_ar_user aruser  on  u.user_id=aruser.id
         <where>
             u.status = 1
+            <if test="content != null">
+                and MATCH(u.`content`) AGAINST(#{content})
+            </if>
+            <if test="labelId != null">
+                and u.label = #{labelId}
+            </if>
         </where>
         order by u.great_num desc,u.create_time desc
+    </select>
+
+    <select id="findOneByConditions" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_sk_gallery u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            <if test="id != null">
+                and u.id = #{id}
+            </if>
+        </where>
     </select>
 
 </mapper>

@@ -17,4 +17,6 @@ import java.util.Map;
 public interface IArUserSkGalleryService extends IService<ArUserSkGallery> {
 
     Page<ArUserSkGallery> findAllByConditions(Page page, Map<Object, Object> map);
+
+    ArUserSkGallery findOneByConditions(Map<String, Object> map);
 }

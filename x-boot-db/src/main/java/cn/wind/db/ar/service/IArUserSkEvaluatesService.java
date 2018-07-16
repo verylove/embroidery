@@ -1,7 +1,10 @@
 package cn.wind.db.ar.service;
 
 import cn.wind.db.ar.entity.ArUserSkEvaluates;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
+
+import java.util.Map;
 
 /**
  * <p>
@@ -13,4 +16,7 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IArUserSkEvaluatesService extends IService<ArUserSkEvaluates> {
 
+    Page<ArUserSkEvaluates> findAllByConditions(Page page, Map<String, Object> map);
+
+    ArUserSkEvaluates findOneInSecondEvaluate(Map<String, Object> map);
 }

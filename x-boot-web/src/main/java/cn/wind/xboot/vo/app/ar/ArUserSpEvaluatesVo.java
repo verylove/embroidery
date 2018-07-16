@@ -56,6 +56,7 @@ public class ArUserSpEvaluatesVo {
 
     private String icon;//用户头像
     private String account;//用户名
+    //评论该评论的人（随便选一人）
     private Long evaluterId;
     private String evaluterAccount;
 }

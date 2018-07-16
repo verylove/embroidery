@@ -13,4 +13,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IArUserSkEvaluatesGreatNumService extends IService<ArUserSkEvaluatesGreatNum> {
 
+    ArUserSkEvaluatesGreatNum findOneByEvaluteIdAndUserId(Long skEvaluateId, Long userId);
 }

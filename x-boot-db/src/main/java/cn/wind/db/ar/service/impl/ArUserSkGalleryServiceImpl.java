@@ -24,4 +24,9 @@ public class ArUserSkGalleryServiceImpl extends ServiceImpl<ArUserSkGalleryMappe
     public Page<ArUserSkGallery> findAllByConditions(Page page, Map<Object, Object> map) {
         return page.setRecords(this.baseMapper.findAllByConditions(page,map));
     }
+
+    @Override
+    public ArUserSkGallery findOneByConditions(Map<String, Object> map) {
+        return this.baseMapper.findOneByConditions(map);
+    }
 }

@@ -1,6 +1,8 @@
 package cn.wind.xboot.service.app;
 
 import cn.wind.db.ar.entity.ArUser;
+import cn.wind.db.ar.entity.ArUserFollows;
+import cn.wind.db.ar.service.IArUserFollowsService;
 import cn.wind.db.ar.service.IArUserService;
 import cn.wind.xboot.enums.contants;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +22,8 @@ public class CXArUserManage {
 
     @Autowired
     private IArUserService userService;
+    @Autowired
+    private IArUserFollowsService followsService;
 
     public ArUser addUserByIdentity(String phone, String password, Integer type) {
 
@@ -107,5 +111,19 @@ public class CXArUserManage {
             return true;
         }
         return false;
+    }
+
+    /**
+     * 是否关注
+     * @param userId 关注主动者的ID
+     * @param followId 被关注的人ID
+     * @return true-关注 false-未关注
+     */
+    public boolean IsFollowInUserId(Long userId,Long followId){
+        ArUserFollows follows = followsService.findOneByUserIdAndFollowId(userId,followId);
+        if(follows==null){
+            return false;
+        }
+        return true;
     }
 }

@@ -1,32 +1,18 @@
-package cn.wind.db.ar.entity;
-
-import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.annotations.TableName;
-import com.baomidou.mybatisplus.annotations.Version;
-import cn.wind.mybatis.common.AuditEntity;
-
-import com.baomidou.mybatisplus.annotations.Version;
+package cn.wind.xboot.vo.app.ar;
 
 import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.experimental.Accessors;
+
+import java.util.Date;
 
 /**
- * <p>
- * 图库找图用户评价数据表
- * </p>
- *
- * @author changzhaoliang
- * @since 2018-07-13
+ * @Auther: changzhaoliang
+ * @Date: 2018/7/16 14:36
+ * @Description:
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
-@Accessors(chain = true)
-@TableName("cx_ar_user_sk_evaluates")
-public class ArUserSkEvaluates extends AuditEntity {
+public class ArUserSkEvaluatesVo {
 
-    private static final long serialVersionUID = 1L;
-
+    private Long id;
     /**
      * `cx_ar_user_sk_gallery`ID
      */
@@ -64,8 +50,13 @@ public class ArUserSkEvaluates extends AuditEntity {
      */
     private Long greatNum;
 
-    @TableField(exist = false)
-    private ArUser user;
+    private Date createTime;
 
+    private Date modifyTime;
 
+    private String icon;//用户头像
+    private String account;//用户名
+    //评论该评论的人（随便选一人）
+    private Long evaluaterId;
+    private String evaluaterAccount;
 }

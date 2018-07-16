@@ -2,6 +2,11 @@ package cn.wind.db.ar.dao;
 
 import cn.wind.db.ar.entity.ArUserSkEvaluates;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -13,4 +18,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  */
 public interface ArUserSkEvaluatesMapper extends BaseMapper<ArUserSkEvaluates> {
 
+    List<ArUserSkEvaluates> findAllByConditions(Pagination page, Map<String, Object> map);
+
+    ArUserSkEvaluates findOneInSecondEvaluate(Map<String, Object> map);
 }
