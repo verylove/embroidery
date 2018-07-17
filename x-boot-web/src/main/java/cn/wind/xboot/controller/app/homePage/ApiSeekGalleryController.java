@@ -213,6 +213,7 @@ public class ApiSeekGalleryController extends AppBaseController{
             }else {
                 vo.setIsCollection(0);
             }
+            //6.观看人数加一
             skGallery.setWatchNum(skGallery.getWatchNum()+1);
             skGalleryService.updateById(skGallery);
             return ApiRes.Custom().addData(vo);

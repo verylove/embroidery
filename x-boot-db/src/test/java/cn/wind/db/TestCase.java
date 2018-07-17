@@ -120,7 +120,7 @@ public class TestCase {
                 .packageName("cn.wind.db")
                 .entityLombokModel(true)
                 .prefixes(new String[]{"cx_"})
-                .tableNames(new String[]{"cx_ar_user_tb_evaluates"})
+                .tableNames(new String[]{"cx_ar_user_ot_evaluates"})
                 .build();
         MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
         generator.generateByTables(generatorDto);
