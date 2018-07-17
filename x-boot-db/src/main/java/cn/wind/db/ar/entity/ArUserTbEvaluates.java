@@ -13,42 +13,42 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 图库找图用户评价数据表
+ * 用户贴吧话题评论数据表
  * </p>
  *
  * @author changzhaoliang
- * @since 2018-07-13
+ * @since 2018-07-16
  */
 @Data
 @EqualsAndHashCode(callSuper = true)
 @Accessors(chain = true)
-@TableName("cx_ar_user_sk_evaluates")
-public class ArUserSkEvaluates extends AuditEntity {
+@TableName("cx_ar_user_tb_evaluates")
+public class ArUserTbEvaluates extends AuditEntity {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * `cx_ar_user_sk_gallery`ID
+     * `cx_ar_user_tb_topic`ID
      */
-    private Long seekGalleryId;
+    private Long tbTopicId;
     /**
-     * `cx_ar_user`ID 点赞人ID
+     * `cx_ar_user`ID评论者ID
      */
     private Long userId;
     /**
-     * `cx_ar_user`ID 图库找图作者ID
+     * `cx_ar_user`ID特价纹身作者ID
      */
     private Long authorId;
     /**
-     * 类型 1-评论图库找图 2-评论别人的评论
+     * 类型 1-评论话题贴吧 2-评论别人的评论
      */
     private Integer type;
     /**
-     * 评论等级 1-评论图库找图 2-其他
+     * 评论等级 1-评论话题贴吧 其他评论别人评论
      */
     private Integer level;
     /**
-     * type为1填0，其他填所回复的评论ID
+     * type为1填0；type为2时为评论ID
      */
     private Long replyId;
     /**
@@ -56,7 +56,7 @@ public class ArUserSkEvaluates extends AuditEntity {
      */
     private String content;
     /**
-     * 该评论的回复条数 默认0
+     * 回复条数 ，即此层的回复条数
      */
     private Integer replyNum=0;
     /**

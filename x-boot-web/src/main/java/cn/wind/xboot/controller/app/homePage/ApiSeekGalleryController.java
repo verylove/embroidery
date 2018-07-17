@@ -168,7 +168,7 @@ public class ApiSeekGalleryController extends AppBaseController{
 
     @ApiOperation(value = "图库找图详情")
     @ApiImplicitParam(name = "skGalleryId",value = "图库找图ID",required = true,paramType = "query")
-    @GetMapping(value = "/DetailInSkGallery")
+    @PostMapping(value = "/DetailInSkGallery")
     public ApiRes DetailInSkGallery(Long skGalleryId){
         try{
             Map<String,Object> map = Maps.newHashMap();
@@ -213,7 +213,8 @@ public class ApiSeekGalleryController extends AppBaseController{
             }else {
                 vo.setIsCollection(0);
             }
-
+            skGallery.setWatchNum(skGallery.getWatchNum()+1);
+            skGalleryService.updateById(skGallery);
             return ApiRes.Custom().addData(vo);
         }catch (Exception e){
             e.printStackTrace();
@@ -283,8 +284,8 @@ public class ApiSeekGalleryController extends AppBaseController{
                 map3.put("level",2);
                 map3.put("skGalleryId",skGalleryId);
                 ArUserSkEvaluates childEvaluates = skEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluaterId(childEvaluates.getUserId());
-                vo.setEvaluaterAccount(childEvaluates.getUser().getAccount());
+                vo.setEvaluterId(childEvaluates.getUserId());
+                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
             }
             voPage.setRecords(ArUserSkEvaluatesVos);
             return ApiRes.Custom().addData(voPage);
@@ -299,7 +300,9 @@ public class ApiSeekGalleryController extends AppBaseController{
     @GetMapping(value = "/pageInEvaluateForSkGallery")
     public ApiRes pageInEvaluateForSkGallery(Long skEvaluateId,@ModelAttribute PageVo pageVo){
         try{
-            ArUserSkEvaluates skEvaluatesMain = skEvaluatesService.selectById(skEvaluateId);
+            Map<String,Object> map4= Maps.newHashMap();
+            map4.put("skEvaluateId",skEvaluateId);
+            ArUserSkEvaluates skEvaluatesMain = skEvaluatesService.findOneInSecondEvaluate(map4);
             if(skEvaluatesMain==null){
                 return ApiRes.Custom().failure(ApiStatus.SP_EVALUATE_NOT_EXIST);
             }
@@ -328,8 +331,8 @@ public class ApiSeekGalleryController extends AppBaseController{
                 map3.put("type",2);
                 map3.put("level",skEvaluatesMain.getLevel()+2);
                 ArUserSkEvaluates childEvaluates = skEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluaterId(childEvaluates.getUserId());
-                vo.setEvaluaterAccount(childEvaluates.getUser().getAccount());
+                vo.setEvaluterId(childEvaluates.getUserId());
+                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
             }
             voPage.setRecords(ArUserSkEvaluatesVos);
 

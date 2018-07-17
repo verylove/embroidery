@@ -63,6 +63,10 @@ public class ArUserSpEvaluates extends AuditEntity {
      * 点赞数
      */
     private Long greatNum=0L;
+    /**
+     * 1-有效 0-失效
+     */
+    private Integer status=1;
 
     @TableField(exist=false)
     private ArUser user;

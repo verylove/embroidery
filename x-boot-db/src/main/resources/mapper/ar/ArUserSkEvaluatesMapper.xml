@@ -18,6 +18,7 @@
         <result column="content" property="content" />
         <result column="reply_num" property="replyNum" />
         <result column="great_num" property="greatNum" />
+        <result column="status" property="status" />
         <association property="user" javaType="cn.wind.db.ar.entity.ArUser" resultMap="cn.wind.db.ar.dao.ArUserMapper.UserResultMap"/>
     </resultMap>
 
@@ -63,15 +64,16 @@
         modify_time,
         create_by,
         modify_by,
-        seek_gallery_id, user_id, author_id, type, level, reply_id, content, reply_num, great_num
+        seek_gallery_id, user_id, author_id, `type`, `level`, reply_id, content, reply_num, great_num, status
     </sql>
 
     <select id="findAllByConditions" resultMap="BaseResultMap">
         SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
         FROM cx_ar_user_sk_evaluates u left join cx_ar_user aruser  on  u.user_id=aruser.id
         <where>
+            u.status = 1
             <if test="skGalleryId != null">
-                u.seek_gallery_id = #{skGalleryId}
+                and u.seek_gallery_id = #{skGalleryId}
             </if>
             <if test="type != null">
                 and u.type = #{type}
@@ -90,8 +92,9 @@
         SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
         FROM cx_ar_user_sk_evaluates u left join cx_ar_user aruser  on  u.user_id=aruser.id
         <where>
+            u.status = 1
             <if test="skGalleryId != null">
-                u.seek_gallery_id = #{skGalleryId}
+                and u.seek_gallery_id = #{skGalleryId}
             </if>
             <if test="type != null">
                 and u.type = #{type}
@@ -101,6 +104,9 @@
             </if>
             <if test="replyId != null">
                 and u.reply_id = #{replyId}
+            </if>
+            <if test="skEvaluateId != null">
+                and u.id = #{skEvaluateId}
             </if>
         </where>
         limit 1 order by u.great_num desc

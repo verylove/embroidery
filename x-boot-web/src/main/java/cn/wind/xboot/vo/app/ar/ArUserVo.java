@@ -11,7 +11,6 @@ import lombok.Data;
  */
 @Data
 public class ArUserVo {
-    @ApiModelProperty(name = "id",value = "主键",dataType = "Long")
     private Long id;
     private String account;
     private String phone;

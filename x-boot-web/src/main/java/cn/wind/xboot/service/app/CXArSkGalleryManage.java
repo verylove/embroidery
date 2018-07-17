@@ -195,7 +195,9 @@ public class CXArSkGalleryManage {
      */
     @Transactional
     public void greatInEvaluateForSkGallery(Long skEvaluateId, Long userId)throws Exception {
-        ArUserSkEvaluates skEvaluates = skEvaluatesService.selectById(skEvaluateId);
+        Map<String,Object> map4= Maps.newHashMap();
+        map4.put("skEvaluateId",skEvaluateId);
+        ArUserSkEvaluates skEvaluates = skEvaluatesService.findOneInSecondEvaluate(map4);
         if(skEvaluates==null){
             throw new RuntimeException();
         }
@@ -253,7 +255,9 @@ public class CXArSkGalleryManage {
      */
     @Transactional
     public void evaluateInEvaluateForSkGallery(Long skEvaluateId, Long userId, String content)throws Exception {
-        ArUserSkEvaluates skEvaluates = skEvaluatesService.selectById(skEvaluateId);
+        Map<String,Object> map4= Maps.newHashMap();
+        map4.put("skEvaluateId",skEvaluateId);
+        ArUserSkEvaluates skEvaluates = skEvaluatesService.findOneInSecondEvaluate(map4);
         if(skEvaluates==null){
             throw new RuntimeException();
         }

@@ -272,7 +272,9 @@ public class ApiSpecialTattooController extends AppBaseController{
     @GetMapping(value = "/pageInEvaluateForSpTattoo")
     public ApiRes pageInEvaluateForSpTattoo(Long spEvaluateId,@ModelAttribute PageVo pageVo){
         try{
-            ArUserSpEvaluates spEvaluatesMain = spEvaluatesService.selectById(spEvaluateId);
+            Map<String,Object> map4= Maps.newHashMap();
+            map4.put("spEvaluateId",spEvaluateId);
+            ArUserSpEvaluates spEvaluatesMain = spEvaluatesService.findOneInSecondEvaluate(map4);
             if(spEvaluatesMain==null){
                 return ApiRes.Custom().failure(ApiStatus.SP_EVALUATE_NOT_EXIST);
             }

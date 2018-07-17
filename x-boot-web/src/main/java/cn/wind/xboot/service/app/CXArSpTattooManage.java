@@ -6,6 +6,7 @@ import cn.wind.db.sr.entity.SrArea;
 import cn.wind.db.sr.service.ISrAreaService;
 import cn.wind.xboot.dto.app.ar.arUserSpTattooDto;
 import com.google.common.base.Strings;
+import com.google.common.collect.Maps;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Auther: changzhaoliang
@@ -188,7 +190,9 @@ public class CXArSpTattooManage {
      */
     @Transactional
     public void greatInEvaluateForSpTattoo(Long spEvaluateId, Long userId)throws Exception {
-        ArUserSpEvaluates spEvaluates = spEvaluatesService.selectById(spEvaluateId);
+        Map<String,Object> map4= Maps.newHashMap();
+        map4.put("spEvaluateId",spEvaluateId);
+        ArUserSpEvaluates spEvaluates = spEvaluatesService.findOneInSecondEvaluate(map4);
         if(spEvaluates==null){
             throw new RuntimeException();
         }
@@ -247,7 +251,9 @@ public class CXArSpTattooManage {
      */
     @Transactional
     public void evaluateInEvaluateForSpTattoo(Long spEvaluateId, Long userId, String content)throws Exception {
-        ArUserSpEvaluates spEvaluates = spEvaluatesService.selectById(spEvaluateId);
+        Map<String,Object> map4= Maps.newHashMap();
+        map4.put("spEvaluateId",spEvaluateId);
+        ArUserSpEvaluates spEvaluates = spEvaluatesService.findOneInSecondEvaluate(map4);
         if(spEvaluates==null){
             throw new RuntimeException();
         }

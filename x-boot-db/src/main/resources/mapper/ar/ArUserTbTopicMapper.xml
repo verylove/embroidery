@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.wind.db.ar.dao.ArUserSpEvaluatesMapper">
+<mapper namespace="cn.wind.db.ar.dao.ArUserTbTopicMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArUserSpEvaluates">
+    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArUserTbTopic">
     <result column="id" property="id" />
     <result column="create_time" property="createTime" />
     <result column="modify_time" property="modifyTime" />
     <result column="create_by" property="createBy" />
     <result column="modify_by" property="modifyBy" />
-        <result column="special_tattoo_id" property="specialTattooId" />
         <result column="user_id" property="userId" />
-        <result column="author_id" property="authorId" />
-        <result column="type" property="type" />
-        <result column="level" property="level" />
-        <result column="reply_id" property="replyId" />
+        <result column="title" property="title" />
         <result column="content" property="content" />
-        <result column="reply_num" property="replyNum" />
+        <result column="city" property="city" />
+        <result column="cover_img" property="coverImg" />
+        <result column="message_num" property="messageNum" />
         <result column="great_num" property="greatNum" />
+        <result column="type" property="type" />
         <result column="status" property="status" />
         <association property="user" javaType="cn.wind.db.ar.entity.ArUser" resultMap="cn.wind.db.ar.dao.ArUserMapper.UserResultMap"/>
     </resultMap>
@@ -64,52 +63,34 @@
         modify_time,
         create_by,
         modify_by,
-        special_tattoo_id, user_id, author_id, `type`, `level`, reply_id, content, reply_num, great_num, status
+        user_id, title, content, city, cover_img, message_num, great_num, type, status
     </sql>
 
     <select id="findAllByConditions" resultMap="BaseResultMap">
         SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
-        FROM cx_ar_user_sp_evaluates u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        FROM cx_ar_user_tb_topic u left join cx_ar_user aruser  on  u.user_id=aruser.id
         <where>
             u.status = 1
-            <if test="spTattooId != null">
-                and u.special_tattoo_id = #{spTattooId}
-            </if>
             <if test="type != null">
-                and u.type = #{type}
-            </if>
-            <if test="level != null">
-                and u.level = #{level}
-            </if>
-            <if test="replyId != null">
-                and u.reply_id = #{replyId}
+               and u.type = #{type}
             </if>
         </where>
-        order by u.great_num desc
+        order by u.great_num desc,u.create_time desc
     </select>
 
-    <select id="findOneInSecondEvaluate" resultMap="BaseResultMap">
+    <select id="findOneByConditons" resultMap="BaseResultMap">
         SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
-        FROM cx_ar_user_sp_evaluates u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        FROM cx_ar_user_tb_topic u left join cx_ar_user aruser  on  u.user_id=aruser.id
         <where>
             u.status = 1
-            <if test="spTattooId != null">
-                and u.special_tattoo_id = #{spTattooId}
+            <if test="tbTopicId != null">
+                and u.id = #{tbTopicId}
             </if>
             <if test="type != null">
                 and u.type = #{type}
             </if>
-            <if test="level != null">
-                and u.level = #{level}
-            </if>
-            <if test="replyId != null">
-                and u.reply_id = #{replyId}
-            </if>
-            <if test="spEvaluateId != null">
-                and u.id = #{spEvaluateId}
-            </if>
         </where>
-        limit 1 order by u.great_num desc
+        limit 1
     </select>
 
 </mapper>
