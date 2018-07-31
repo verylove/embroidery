@@ -12,6 +12,8 @@ public enum  SmsTypeEnum {
     SIGN_UP,
     SIGN_IN,
     FORGET,
+    MODIFY_PASS,
+    BANK_CARD,
     NULL;
 
     public static SmsTypeEnum valueOfOrNull(String name) {

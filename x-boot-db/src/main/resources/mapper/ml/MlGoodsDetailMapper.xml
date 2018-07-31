@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ml.dao.MlGoodsDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ml.entity.MlGoodsDetail">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="goods_id" property="goodsId" />
+        <result column="specifications_id" property="specificationsId" />
+        <result column="models_id" property="modelsId" />
+        <result column="num" property="num" />
+        <result column="price" property="price" />
+        <result column="version" property="version" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        goods_id, specifications_id, models_id, num, price, version
+    </sql>
+
+    <select id="findAllByConditions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_goods_detail
+        <where>
+            <if test="goodsId != null">
+                goods_id = #{goodsId}
+            </if>
+            <if test="specificationsId != null">
+                and specifications_id = #{specificationsId}
+            </if>
+            <if test="modelsId != null">
+                and models_id = #{modelsId}
+            </if>
+        </where>
+    </select>
+
+    <select id="findOneByConditions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_goods_detail
+        <where>
+            <if test="goodsId != null">
+                goods_id = #{goodsId}
+            </if>
+            <if test="specificationsId != null">
+                and specifications_id = #{specificationsId}
+            </if>
+            <if test="modelsId != null">
+                and models_id = #{modelsId}
+            </if>
+        </where>
+        limit 1
+    </select>
+
+    <update id="updateByConditions" parameterType="java.util.Map">
+        update cx_ml_goods_detail
+        <set >
+            <if test="num != null" >
+                num = num - #{num},
+            </if>
+            <if test="price != null" >
+                price = #{price},
+            </if>
+            <if test="modifyTime != null">
+                modify_time = #{modifyTime},
+            </if>
+            <if test="version != null">
+                version = #{version} + 1,
+            </if>
+        </set>
+        <where>
+            <if test="goodDetailId != null">
+                id = #{goodDetailId}
+            </if>
+            <if test="version != null">
+                and version = #{version}
+            </if>
+            <if test="num != null">
+                and num >= #{num}
+            </if>
+        </where>
+    </update>
+</mapper>

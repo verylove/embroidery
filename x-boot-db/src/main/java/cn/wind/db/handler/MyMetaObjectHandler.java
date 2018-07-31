@@ -23,7 +23,7 @@ public class MyMetaObjectHandler extends MetaObjectHandler {
     @Override
     public void insertFill(MetaObject metaObject) {
         //获取当前登录用户
-        String userId = String.valueOf(UserUtil.getCurrentUserId());
+        String userId = String.valueOf(0);
         Date date = new Date();
         if (hasFiled(metaObject, "modifyBy")) {
             Object modifyBy = getFieldValByName("modifyBy", metaObject);

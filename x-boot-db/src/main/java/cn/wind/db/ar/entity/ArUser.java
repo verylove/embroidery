@@ -136,6 +136,26 @@ public class ArUser extends AuditEntity {
      * 是否点过赞 1-点过 0-未点过
      */
     private Integer greatStatus=0;
+    /**
+     * 人气
+     */
+    private Long sentimentNum=0L;
+    /**
+     * 被赞数
+     */
+    private Long praiseNum=0L;
+    /**
+     * 关注数
+     */
+    private Long focusNum=0L;
+    /**
+     * 粉丝数
+     */
+    private Long followNum=0L;
+    /**
+     * 支付密码
+     */
+    private String payPass;
 
 
 }

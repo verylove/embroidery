@@ -27,7 +27,7 @@ public class ArUserSignRecordServiceImpl extends ServiceImpl<ArUserSignRecordMap
     }
 
     @Override
-    public ArUserSignRecord findAllByDateAndUserId(Long userId, Date dateBefore) {
+    public ArUserSignRecord findAllByDateAndUserId(Long userId, LocalDate dateBefore) {
         return this.baseMapper.findAllByDateAndUserId(userId,dateBefore);
     }
 }

@@ -127,4 +127,19 @@ public class ApiCommonController extends AppBaseController{
             return ApiRes.Custom().failure(ApiStatus.DATA_GET_FAIL);
         }
     }
+
+    @ApiOperation(value = "用户关注")
+    @ApiImplicitParam(name = "followId",value = "关注对象",required = true,paramType = "query")
+    @PostMapping("/followOneUser")
+    public ApiRes followOneUser(Long followId){
+        try{
+            userManage.followOneUser(followId,getUserId());
+            return ApiRes.Custom().success();
+        }catch (Exception e){
+            e.printStackTrace();
+            return ApiRes.Custom().failure(ApiStatus.DATA_POST_FAIL);
+        }
+    }
+
+
 }

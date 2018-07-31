@@ -18,7 +18,7 @@
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id,
-        abbr_name, alias, center, city_code, code, level, name, status
+        abbr_name, alias, center, city_code, code, `level`, `name`, status
     </sql>
 
     <select id="findAllByConditions" resultMap="BaseResultMap">

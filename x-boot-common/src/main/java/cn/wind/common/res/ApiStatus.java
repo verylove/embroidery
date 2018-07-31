@@ -76,6 +76,8 @@ public enum ApiStatus implements ApiInfo {
     BALANCE_NOT_ENOUGH(900515,"账户金额不够"),
     SP_EVALUATE_NOT_EXIST(900516,"该评论不存在"),
     AREA_NOT_EXIST(900517,"该区域不存在"),
+    STROE_NOT_EXIST(900518,"该店铺不存在"),
+    PASSWORD_NOT_CONSISTENT(900519,"新密码不一致"),
     /**
      * 600
      */
@@ -85,7 +87,30 @@ public enum ApiStatus implements ApiInfo {
      * 700
      */
     NAME_NO_ADUIT(900700,"用户未实名认证"),
-    NAME_ALREADY_ADUIT(900701,"用户已实名认证");
+    NAME_ALREADY_ADUIT(900701,"用户已实名认证"),
+    SIGN_ALREADY_ADUIT(900702,"用户已签约保障"),
+    SIGN_ING_ADUIT(900703,"签约保障申请中"),
+    STORE_ALREADY_ADUIT(900704,"用户已店铺认证"),
+    STORE_ING_ADUIT(900705,"店铺认证申请中"),
+    NAME_ING_ADUIT(900706,"实名认证申请中"),
+    /**
+     * 800
+     */
+    GOODS_ALREADY_SHELVES(900800,"该商品已下架"),
+    GOODS_NUM_NOTHING(900801,"该商品库存不够"),
+    ORDER_NOT_EXIST(900802,"订单不存在"),
+    ORDER_ALREADY_FINISH(900803,"订单已完成"),
+    MONEY_IS_ZERO(900804,"金额小于等于〇"),
+    ACCOUNT_BALANCE_NOT_ENOUGH(900805,"账户余额不足"),
+    TOPUP_ERROR(900806,"充值失败"),
+    PAY_PASS_NOT_EXIST(900807,"支付密码未设置"),
+    PAY_PASS_ERROR(900808,"支付密码错误"),
+    PAY_PASS_SET_ERROR(900809,"支付密码设置失败"),
+    PAY_PASS_NOT_CONSISTENT(900810,"支付密码不一致"),
+    WITHDRAW_LOW_PRICE(900811,"最低提现1000刺币"),
+    LOGISTICS_NOTHING(900812,"尚无物流信息"),
+    LOGISTICS_NO_DELIVERY(900813,"商品尚未发货"),
+    LOGISTICS_SIGN_RECEIVING(900814,"商品已签收");
 
     private int code;
 

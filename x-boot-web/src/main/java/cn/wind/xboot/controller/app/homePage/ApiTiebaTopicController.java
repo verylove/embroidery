@@ -3,14 +3,8 @@ package cn.wind.xboot.controller.app.homePage;
 import cn.wind.common.res.ApiRes;
 import cn.wind.common.res.ApiStatus;
 import cn.wind.common.utils.ObjectMapperUtils;
-import cn.wind.db.ar.entity.ArUser;
-import cn.wind.db.ar.entity.ArUserTbEvaluates;
-import cn.wind.db.ar.entity.ArUserTbPic;
-import cn.wind.db.ar.entity.ArUserTbTopic;
-import cn.wind.db.ar.service.IArUserService;
-import cn.wind.db.ar.service.IArUserTbEvaluatesService;
-import cn.wind.db.ar.service.IArUserTbPicService;
-import cn.wind.db.ar.service.IArUserTbTopicService;
+import cn.wind.db.ar.entity.*;
+import cn.wind.db.ar.service.*;
 import cn.wind.xboot.controller.app.AppBaseController;
 import cn.wind.xboot.dto.app.ar.arUserTbTopicDto;
 import cn.wind.xboot.enums.AduitType;
@@ -58,6 +52,8 @@ public class ApiTiebaTopicController extends AppBaseController{
     private IArUserTbEvaluatesService tbEvaluatesService;
     @Autowired
     private IArUserService userService;
+    @Autowired
+    private IArStoreAduitService storeAduitService;
 
     @ApiOperation(value = "贴吧话题 分页")
     @ApiImplicitParam(name = "type",value = "1-贴吧2-话题",dataType = "Integer",required = true,paramType = "query")
@@ -108,7 +104,8 @@ public class ApiTiebaTopicController extends AppBaseController{
             //2.名片
             if(user.getStoreStatus()==3){
                 // TODO 获取店铺名
-//                   vo.setBusinessCard();
+                ArStoreAduit s = storeAduitService.selectById(user.getStoreId());
+                vo.setBusinessCard(s.getStoreName());
             }else if(user.getIdentity()==1){
                 vo.setBusinessCard(IdentityType.TATTOO.getType());
             }else {

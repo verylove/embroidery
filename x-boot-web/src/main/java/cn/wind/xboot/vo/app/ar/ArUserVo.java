@@ -4,6 +4,8 @@ import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 /**
  * @Auther: changzhaoliang
  * @Date: 2018/7/9 17:03
@@ -28,4 +30,18 @@ public class ArUserVo {
     private Integer nameStatus;
     private Integer storeStatus;
     private Integer perLevel;
+    private Long activeNum;
+    private Long charmNum;
+    private Long wealthNum;
+    private BigDecimal balance;
+    private Long sentimentNum;
+    private Long praiseNum;
+    private Long focusNum;
+    private Long followNum;
+
+    private String aduit;//认证标签
+    private String businessCard;//名片
+    private Integer isCollection;//1-关注 0-不关注
+    private Integer isGreat;//1-点赞 0-未点赞
+
 }

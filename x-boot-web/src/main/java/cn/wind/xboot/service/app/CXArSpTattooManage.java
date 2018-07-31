@@ -47,6 +47,8 @@ public class CXArSpTattooManage {
     private IArUserSpEvaluatesGreatNumService spEvaluatesGreatNumService;
     @Autowired
     private IArUserSpEvaluatesGreatRecordService spEvaluatesGreatRecordService;
+    @Autowired
+    private CXCommonManage cxCommonManage;
 
     /**
      * 特价纹身发布（纹身师）
@@ -152,6 +154,8 @@ public class CXArSpTattooManage {
         user.setGreatStatus(1);
         userService.updateById(user);
 
+        cxCommonManage.greatAction(userId,tattoo.getUserId(),1);
+
     }
 
     /**
@@ -239,6 +243,8 @@ public class CXArSpTattooManage {
         user.setBalance(user.getBalance().subtract(cost));
         user.setGreatStatus(1);
         userService.updateById(user);
+
+        cxCommonManage.greatAction(userId,spEvaluates.getUserId(),1);
 
     }
 

@@ -57,6 +57,8 @@ public class ApiOutStandTattooController extends AppBaseController{
     private IArUserService userService;
     @Autowired
     private IArUserOtEvaluatesService otEvaluatesService;
+    @Autowired
+    private IArStoreAduitService storeAduitService;
 
 
     @ApiOperation(value = "纹纹达人 分页")
@@ -112,7 +114,8 @@ public class ApiOutStandTattooController extends AppBaseController{
             //2.名片
             if(user.getStoreStatus()==3){
                 // TODO 获取店铺名
-//                    vo.setBusinessCard();
+                ArStoreAduit s = storeAduitService.selectById(user.getStoreId());
+                vo.setBusinessCard(s.getStoreName());
             }else if(user.getIdentity()==1){
                 vo.setBusinessCard(IdentityType.TATTOO.getType());
             }else {

@@ -1,5 +1,6 @@
 package cn.wind.db.ar.entity;
 
+import java.time.LocalDate;
 import java.util.Date;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.annotations.Version;
@@ -34,7 +35,7 @@ public class ArUserSignRecord extends AuditEntity {
     /**
      * 签到日前
      */
-    private Date signDate;
+    private LocalDate signDate;
 
 
 }

@@ -60,6 +60,12 @@
             <!--&lt;!&ndash; optional=true,依赖不会传递，该项目依赖devtools；之后依赖myboot项目的项目如果想要使用devtools，需要重新引入 &ndash;&gt;-->
             <!--<optional>true</optional>-->
         <!--</dependency>-->
+        <!-- 支持 @ConfigurationProperties 注解 -->
+        <!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-configuration-processor -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+        </dependency>
          <!--https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core-->
         <dependency>
             <groupId>com.aliyun</groupId>
@@ -75,6 +81,12 @@
             <groupId>com.jmd</groupId>
             <artifactId>push</artifactId>
             <version>0.0.1</version>
+        </dependency>
+        <!-- 极光-->
+        <dependency>
+            <groupId>cn.jpush.api</groupId>
+            <artifactId>jpush-client</artifactId>
+            <version>3.3.7</version>
         </dependency>
 
         <dependency>
@@ -152,6 +164,14 @@
             <version>2.8.2</version>
         </dependency>
         <!-- 阿里云OS -->
+
+        <!-- alipay-->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <!-- alipay-->
 
 
     </dependencies>

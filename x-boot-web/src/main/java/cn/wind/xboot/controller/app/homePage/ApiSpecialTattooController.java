@@ -57,6 +57,8 @@ public class ApiSpecialTattooController extends AppBaseController{
     private IArUserService userService;
     @Autowired
     private IArUserSpEvaluatesService spEvaluatesService;
+    @Autowired
+    private IArStoreAduitService storeAduitService;
 
     @ApiOperation(value = "特价纹身分页")
     @ApiImplicitParams({
@@ -69,52 +71,18 @@ public class ApiSpecialTattooController extends AppBaseController{
         try{
             Page<ArUserSpTattoo> page;
             if(longitude==null||latitude==null){//全国
-                page = spTattooService.findAll(pageVo.initPage());
+                page = spTattooService.findAll(pageVo.initPage(),Maps.newHashMap());
             }else {//附近
                 Map<String,Object> map= Maps.newHashMap();
+
                 map.put("longitude",longitude);
                 map.put("latitude",latitude);
                 page = spTattooService.findByCoordinates(pageVo.initPage(),map);
             }
             Page<ArUserSpTattooVo> pageResult = new Page<>(page.getCurrent(), page.getSize());
 
-            Map<Long,ArUserSpTattoo> map = page.getRecords().stream().collect(Collectors.toMap(ArUserSpTattoo::getId, Function.identity()));
 
-            List<ArUserSpTattooVo> ArUserSpTattooVos = ObjectMapperUtils.mapAll(page.getRecords(), ArUserSpTattooVo.class);
-            for(ArUserSpTattooVo vo:ArUserSpTattooVos){
-                List<ArUserSpPic> pics = spPicService.findAllByTattoId(vo.getId());
-                ArUser t = map.get(vo.getId()).getUser();
-                vo.setPerLevel(t.getPerLevel());
-                vo.setAccount(t.getAccount());
-                vo.setIcon(t.getIcon());
-                //1.认证
-                if(t.getStoreStatus()==3){
-                    vo.setAduit(AduitType.STOREADUIT.getaType());
-                }else if(t.getSignStatus()==3){
-                    vo.setAduit(AduitType.SIGNADUIT.getaType());
-                }else if(t.getNameStatus()==3){
-                    vo.setAduit(AduitType.NAMEADUIT.getaType());
-                }
-                //2.名片
-                if(t.getStoreStatus()==3){
-                    // TODO 获取店铺名
-//                    vo.setBusinessCard();
-                }else if(t.getIdentity()==1){
-                    vo.setBusinessCard(IdentityType.TATTOO.getType());
-                }else {
-                    vo.setBusinessCard(IdentityType.LOVERS.getType());
-                }
-                //3.图片
-                vo.setPics(pics);
-
-                //4.是否点过赞
-                if(spTattooManage.IsGreatForSpTattoo(vo.getId(),getUserId())){
-                    vo.setIsGreat(1);
-                }else {
-                    vo.setIsGreat(0);
-                }
-            }
-            pageResult.setRecords(ArUserSpTattooVos);
+            pageResult.setRecords(getVo(page.getRecords()));
             return ApiRes.Custom().addData(pageResult);
         }catch (Exception e){
             e.printStackTrace();
@@ -163,7 +131,8 @@ public class ApiSpecialTattooController extends AppBaseController{
             //2.名片
             if(t.getStoreStatus()==3){
                 // TODO 获取店铺名
-//                    vo.setBusinessCard();
+                ArStoreAduit s = storeAduitService.selectById(t.getStoreId());
+                vo.setBusinessCard(s.getStoreName());
             }else if(t.getIdentity()==1){
                 vo.setBusinessCard(IdentityType.TATTOO.getType());
             }else {
@@ -389,6 +358,66 @@ public class ApiSpecialTattooController extends AppBaseController{
             e.printStackTrace();
             return ApiRes.Custom().failure(ApiStatus.DATA_POST_FAIL);
         }
+    }
+
+    @ApiOperation(value = "特价纹身个人 分页 ")
+    @ApiImplicitParam(name="userId",value = "用户ID",dataType = "Long",required = true,paramType = "query")
+    @GetMapping("/pageForPerTattoo")
+    public ApiRes pageForPerTattoo(Long userId,@ModelAttribute PageVo pageVo){
+        try{
+            Map<String,Object> map1 = Maps.newHashMap();
+            map1.put("userId",userId);
+            Page<ArUserSpTattoo> page = spTattooService.findAll(pageVo.initPage(),map1);
+            Page<ArUserSpTattooVo> pageResult = new Page<>(page.getCurrent(), page.getSize());
+
+
+            pageResult.setRecords(getVo(page.getRecords()));
+            return ApiRes.Custom().addData(pageResult);
+        }catch (Exception e){
+            e.printStackTrace();
+            return ApiRes.Custom().failure(ApiStatus.DATA_GET_FAIL);
+        }
+    }
+
+    public List<ArUserSpTattooVo> getVo(List<ArUserSpTattoo> spTattoos){
+        Map<Long,ArUserSpTattoo> map = spTattoos.stream().collect(Collectors.toMap(ArUserSpTattoo::getId, Function.identity()));
+
+        List<ArUserSpTattooVo> ArUserSpTattooVos = ObjectMapperUtils.mapAll(spTattoos, ArUserSpTattooVo.class);
+        for(ArUserSpTattooVo vo:ArUserSpTattooVos){
+            List<ArUserSpPic> pics = spPicService.findAllByTattoId(vo.getId());
+            ArUser t = map.get(vo.getId()).getUser();
+            vo.setPerLevel(t.getPerLevel());
+            vo.setAccount(t.getAccount());
+            vo.setIcon(t.getIcon());
+            //1.认证
+            if(t.getStoreStatus()==3){
+                vo.setAduit(AduitType.STOREADUIT.getaType());
+            }else if(t.getSignStatus()==3){
+                vo.setAduit(AduitType.SIGNADUIT.getaType());
+            }else if(t.getNameStatus()==3){
+                vo.setAduit(AduitType.NAMEADUIT.getaType());
+            }
+            //2.名片
+            if(t.getStoreStatus()==3){
+                // TODO 获取店铺名
+                ArStoreAduit s = storeAduitService.selectById(t.getStoreId());
+                vo.setBusinessCard(s.getStoreName());
+            }else if(t.getIdentity()==1){
+                vo.setBusinessCard(IdentityType.TATTOO.getType());
+            }else {
+                vo.setBusinessCard(IdentityType.LOVERS.getType());
+            }
+            //3.图片
+            vo.setPics(pics);
+
+            //4.是否点过赞
+            if(spTattooManage.IsGreatForSpTattoo(vo.getId(),getUserId())){
+                vo.setIsGreat(1);
+            }else {
+                vo.setIsGreat(0);
+            }
+        }
+        return ArUserSpTattooVos;
     }
 
 

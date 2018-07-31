@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ar.dao.ArUserDailyRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArUserDailyRecord">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="user_id" property="userId" />
+        <result column="daily_active_num" property="dailyActiveNum" />
+        <result column="daily_charm_num" property="dailyCharmNum" />
+        <result column="daily_wealth_num" property="dailyWealthNum" />
+        <result column="daily_great_num" property="dailyGreatNum" />
+        <result column="daily_praise_num" property="dailyPraiseNum" />
+        <result column="daily_sentiment" property="dailySentiment" />
+        <result column="daily_focus" property="dailyFocus" />
+        <result column="daily_follow" property="dailyFollow" />
+        <result column="daily_new_works" property="dailyNewWorks" />
+        <result column="daily_works_great" property="dailyWorksGreat" />
+        <result column="daily_works_share" property="dailyWorksShare" />
+        <result column="daily_circle_great" property="dailyCircleGreat" />
+        <result column="now_date" property="nowDate" />
+        <result column="score_new_works" property="scoreNewWorks" />
+        <result column="score_work_great" property="scoreWorkGreat" />
+        <result column="score_work_share" property="scoreWorkShare" />
+        <result column="score_cricle_great" property="scoreCricleGreat" />
+        <result column="score_follow" property="scoreFollow" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        user_id, daily_active_num, daily_charm_num, daily_wealth_num, daily_great_num, daily_praise_num, daily_sentiment, daily_focus, daily_follow, daily_new_works, daily_works_great, daily_works_share, daily_circle_great, now_date, score_new_works, score_work_great, score_work_share, score_cricle_great, score_follow
+    </sql>
+
+</mapper>

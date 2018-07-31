@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ml.dao.MlUserGoodsLogisticsMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ml.entity.MlUserGoodsLogistics">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="user_id" property="userId" />
+        <result column="order_no" property="orderNo" />
+        <result column="status" property="status" />
+        <result column="logistics_company" property="logisticsCompany" />
+        <result column="logistics_order" property="logisticsOrder" />
+        <result column="logistics_remark" property="logisticsRemark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        user_id, order_no, status, logistics_company, logistics_order, logistics_remark
+    </sql>
+
+    <select id="findOneByConditions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_user_goods_logistics
+        <where>
+            <if test="userId != null">
+                user_id = #{user_id}
+            </if>
+            <if test="orderNo != null">
+                and order_no = #{orderNo}
+            </if>
+            <if test="statusList != null">
+                and status in
+                <foreach collection="statusList" item="item" open="(" separator="," close=")">
+                  #{item}
+                </foreach>
+            </if>
+        </where>
+        limit 1
+    </select>
+</mapper>

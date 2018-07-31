@@ -6,6 +6,9 @@ info:
     groupId: "com.fengding.embroidery"
     artifact: "x-boot-web"
     version: "1.0.0-SNAPSHOT"
+
+jsRoot: https://localhost:${server.port}
+
 server:
   ip: 127.0.0.1
   port: 8899
@@ -17,7 +20,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     driverClassName: com.mysql.jdbc.Driver
     druid:
-      url: jdbc:mysql://localhost:3306/embroidery_dev?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      url: jdbc:mysql://localhost:3306/embroidery_dev?useUnicode=true&characterEncoding=utf-8&useSSL=false&useAffectedRows=true
       username: root
       password: czl19950702
       initialSize: 5
@@ -216,4 +219,14 @@ logging:
   level:
     root: warn
   path: log/${spring.application.name}/
+
+pay:
+  wx:
+    appId: wx17a29b191928d579
+    mchid: 1500160912
+    signKey: 3adf3effabb993bc09e92f04af67f14c
+  ali:
+    appId: 2018042702598773
+    privateKey: MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCti82632jEkV1nmlEj6uYwat43Wv4t7do6Y5IHsXydwOxhqtZ+sogACa+IjeASVqaV9Y6JAe/q4+7rvdtEbGEpzT274f3iAb5LolFj7+bi6FSktPu+Ez3im+kxH56HU7d1EVuQ3EkSa/fp7J4cldl9kvJzsccfqGaYXYhCsRDRTYAwTOreIqkJzxr0TRtmmuKJT+Xp7Y4gsnjOCqal7BKLQ7+VlRIVJXRJiUdVtyUwUlueO7r4rz1Aft97r4D1zZVzZmVGmzhg2UJ0GDwyA8/VTUoSy2MRZXIKIvBsukLHLYQWnCBNVQdNE/LJKE8U5W5zU20rwHE392cSiB9llfiBAgMBAAECggEAQbmUrJU3pFo5Oadj22p2yxduGSDI6rQN1dcn0uoQ+924qDR/D3SltP32EI1KsydF570bwh+NsTOppHY+uGcjVSV5n9IyyIlIfHR4xpRwqLa8d7RjMtUutse9RPFopG+8JwXv26jRs7xYI6uNJd5KhBhG4jIN65tnX4TsufU9HUbQSjDywSCLMdnG/lkqscT2gkYW0iHVRUsywChAKNsq5Au4aUKEpnBmUFufq4BMczjJJZz64uYgSVNVNhMc8qeR2Si0q/0szBo3g0YIQnBCt6qRIB/RIzJfZTsSI8xEq/J85nu21k5yUei8DSUaTlAtwBe7TcAnWRfejEZijbZL0QKBgQDnvvI8mE1QQmIw7PIt4jv/WHk2zQSoEp1nx44tLRAs3FRHJ7XIydHhClwsWFctbRYfaDGYlbBflQoi1Iuuu42qfNoIAmgHY9TiMCaDDtJk0RcRt7qdtO0ISKA3mWHQLjDQEWzZdGFFVWRaJh0capOiZ6OvXTtzTc7Oj7ewzrWb7wKBgQC/tYoTSjbAWcuhtC3n1aaMT7FVygSBerUPloZfd//gPtq2onxqKo664xIKX0c2zvCGU0TWhCfiQUOn9/WKdpp4zBwVwsHuwfJ5dUWP9UTBc2Lksy5MSC1MbR1RkiJv9HZxqzzrUYiGLrD6j85Zc/VW33GSwqSf6xMFomhPr9QCjwKBgDstQDAG+B8ZhHdX2hOrZIS0s+cxfRHqBvW8OGsCydGaxY6R7lKCbqyXd6f/OuunonGMqrV669nMdhUkzzJkRC2XyhknfCb+8Bp+DyeCPmluFwT4NJgW3jwyR29LJHYDhYVsHa59kGUjBAgdGWvrLx3Wdy7NkOPFp5yJiG+GqUtTAoGAf421afJGDaNxZozwwkEYSGE515/Lca8IS2/WxiyclkKb2UqxRx47y0MMHNSaGHCF/onm0mgp9VOBRYAo4lDZpKgBw8TKriZjQ8bwWsFRVvmEAjDqDB017pTnHgACY8UfDbBmnxeno8frPztxi3ko8v1GnuRdDn4lMOmHSAXwJScCgYEA1+6/c2EY8nZhOtf2bheZn0UjD2HzPSym40Njol39UrbD8y4Zbuk3lvGjJzKF3iCV0CBtETV8Rx4OZz1Bn8YIkTAfTvNhKIxNYn4IwQ7dkQnoxuU2lMww0DJZbRha5G0SHg3AILhmjm4PEDV19sv+WWGkIh56zT+jcOz1mQWRBEk=
+    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAncWZ0loHCwdHHOSeJRKHQqj/Z2KM7/DeU4sYP94d5OJeg7Mg0vO1J95paIGgpKjSwclBpj+HX2n9HSUqZ/8763Y9XYza3HIRGbCEKUM+vNnaDpkRDWR6mGPdSEiLrQ1ZGfRvo19N2og47EBXamdgy4MjUalsM6vC5cfKahekXIds6LnWbJ2jW/jFQ/6I16LX2ILzgInwKThXpErOe2GEng3UzS8GPjZAwvmuH9MfIUUisVGWsvoFsHDUOBjcD9nJtGAJqIIwJ4Kvj43riUABFUYymWurtLHSxjpG8f5fAUVwcK4gAavFylZP6lqIGv+7ZPnBihDjDEuV1vZQHvXRtQIDAQAB
 

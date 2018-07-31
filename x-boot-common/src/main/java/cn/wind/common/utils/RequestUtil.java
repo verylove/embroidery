@@ -4,6 +4,8 @@ import org.apache.commons.lang3.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @author xukk
@@ -39,5 +41,18 @@ public class RequestUtil {
         if(StringUtils.equalsIgnoreCase(encrypt,"false")){
             return false;
         }else return true;
+    }
+
+    public static Map<String, String> getParams(HttpServletRequest request) {
+        Enumeration<?> pNames = request.getParameterNames();
+        HashMap params = new HashMap();
+
+        while(pNames.hasMoreElements()) {
+            String pName = (String)pNames.nextElement();
+            String pValue = request.getParameter(pName);
+            params.put(pName, pValue);
+        }
+
+        return params;
     }
 }

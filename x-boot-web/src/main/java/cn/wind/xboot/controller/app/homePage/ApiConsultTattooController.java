@@ -3,8 +3,10 @@ package cn.wind.xboot.controller.app.homePage;
 import cn.wind.common.res.ApiRes;
 import cn.wind.common.res.ApiStatus;
 import cn.wind.common.utils.ObjectMapperUtils;
+import cn.wind.db.ar.entity.ArStoreAduit;
 import cn.wind.db.ar.entity.ArUserZxPic;
 import cn.wind.db.ar.entity.ArUserZxTattoo;
+import cn.wind.db.ar.service.IArStoreAduitService;
 import cn.wind.db.ar.service.IArUserZxPicService;
 import cn.wind.db.ar.service.IArUserZxTattooService;
 import cn.wind.xboot.controller.app.AppBaseController;
@@ -49,6 +51,8 @@ public class ApiConsultTattooController extends AppBaseController{
     private IArUserZxPicService zxPicService;
     @Autowired
     private CXArUserManage userManage;
+    @Autowired
+    private IArStoreAduitService storeAduitService;
 
     @ApiOperation(value = "纹身咨询发布")
     @PostMapping(value = "/publishZxTattoo")
@@ -78,46 +82,7 @@ public class ApiConsultTattooController extends AppBaseController{
             Page<ArUserZxTattooVo> voPage = new Page<>(page.getCurrent(),page.getSize());
             page.setTotal(page.getTotal());
 
-            Map<Long,ArUserZxTattoo> map = page.getRecords().stream().collect(Collectors.toMap(ArUserZxTattoo::getId, Function.identity()));
-
-            List<ArUserZxTattooVo> zxTattooVoList = ObjectMapperUtils.mapAll(page.getRecords(), ArUserZxTattooVo.class);
-            for(ArUserZxTattooVo vo:zxTattooVoList){
-                ArUserZxTattoo tattoo = map.get(vo.getId());
-                if(Strings.isNullOrEmpty(tattoo.getMicroLetter())){
-                    vo.setIsMicroLetter(0);
-                }else {
-                    vo.setIsMicroLetter(1);
-                }
-                if(Strings.isNullOrEmpty(tattoo.getPhone())){
-                    vo.setIsPhone(0);
-                }else {
-                    vo.setIsPhone(1);
-                }
-                vo.setPerLevel(tattoo.getUser().getPerLevel());
-                vo.setAccount(tattoo.getUser().getAccount());
-                vo.setIcon(tattoo.getUser().getIcon());
-                //1.认证
-                if(tattoo.getUser().getStoreStatus()==3){
-                    vo.setAduit(AduitType.STOREADUIT.getaType());
-                }else if(tattoo.getUser().getSignStatus()==3){
-                    vo.setAduit(AduitType.SIGNADUIT.getaType());
-                }else if(tattoo.getUser().getNameStatus()==3){
-                    vo.setAduit(AduitType.NAMEADUIT.getaType());
-                }
-                //2.名片
-                if(tattoo.getUser().getStoreStatus()==3){
-                    // TODO 获取店铺名
-//                    vo.setBusinessCard();
-                }else if(tattoo.getUser().getIdentity()==1){
-                    vo.setBusinessCard(IdentityType.TATTOO.getType());
-                }else {
-                    vo.setBusinessCard(IdentityType.LOVERS.getType());
-                }
-
-                List<ArUserZxPic> pics = zxPicService.findAllByTattooId(vo.getId());
-                vo.setPics(pics);
-            }
-            voPage.setRecords(zxTattooVoList);
+            voPage.setRecords(getVo(page.getRecords()));
             return ApiRes.Custom().addData(voPage);
         }catch (Exception e){
             e.printStackTrace();
@@ -150,5 +115,69 @@ public class ApiConsultTattooController extends AppBaseController{
             e.printStackTrace();
             return ApiRes.Custom().failure(ApiStatus.DATA_GET_FAIL);
         }
+    }
+
+    @ApiOperation(value = "纹身咨询 分页")
+    @ApiImplicitParam(name = "userId",value = "用户ID",dataType = "Long",required = true,paramType = "query")
+    @GetMapping(value = "/pageForPerZxTattoo")
+    public ApiRes pageForPerZxTattoo(Long userId,@ModelAttribute PageVo pageVo){
+        try{
+            Map<String,Object> map = Maps.newHashMap();
+            map.put("userId",userId);
+            Page<ArUserZxTattoo> page = zxTattooService.findAllByConditions(pageVo.initPage(), map);
+
+            Page<ArUserZxTattooVo> voPage = new Page<>(page.getCurrent(),page.getSize());
+            page.setTotal(page.getTotal());
+
+            voPage.setRecords(getVo(page.getRecords()));
+            return ApiRes.Custom().addData(voPage);
+        }catch (Exception e){
+            e.printStackTrace();
+            return ApiRes.Custom().failure(ApiStatus.DATA_GET_FAIL);
+        }
+    }
+
+    public List<ArUserZxTattooVo> getVo(List<ArUserZxTattoo> zxTattoos){
+        Map<Long,ArUserZxTattoo> map = zxTattoos.stream().collect(Collectors.toMap(ArUserZxTattoo::getId, Function.identity()));
+
+        List<ArUserZxTattooVo> zxTattooVoList = ObjectMapperUtils.mapAll(zxTattoos, ArUserZxTattooVo.class);
+        for(ArUserZxTattooVo vo:zxTattooVoList){
+            ArUserZxTattoo tattoo = map.get(vo.getId());
+            if(Strings.isNullOrEmpty(tattoo.getMicroLetter())){
+                vo.setIsMicroLetter(0);
+            }else {
+                vo.setIsMicroLetter(1);
+            }
+            if(Strings.isNullOrEmpty(tattoo.getPhone())){
+                vo.setIsPhone(0);
+            }else {
+                vo.setIsPhone(1);
+            }
+            vo.setPerLevel(tattoo.getUser().getPerLevel());
+            vo.setAccount(tattoo.getUser().getAccount());
+            vo.setIcon(tattoo.getUser().getIcon());
+            //1.认证
+            if(tattoo.getUser().getStoreStatus()==3){
+                vo.setAduit(AduitType.STOREADUIT.getaType());
+            }else if(tattoo.getUser().getSignStatus()==3){
+                vo.setAduit(AduitType.SIGNADUIT.getaType());
+            }else if(tattoo.getUser().getNameStatus()==3){
+                vo.setAduit(AduitType.NAMEADUIT.getaType());
+            }
+            //2.名片
+            if(tattoo.getUser().getStoreStatus()==3){
+                // TODO 获取店铺名
+                ArStoreAduit s = storeAduitService.selectById(tattoo.getUser().getStoreId());
+                vo.setBusinessCard(s.getStoreName());
+            }else if(tattoo.getUser().getIdentity()==1){
+                vo.setBusinessCard(IdentityType.TATTOO.getType());
+            }else {
+                vo.setBusinessCard(IdentityType.LOVERS.getType());
+            }
+
+            List<ArUserZxPic> pics = zxPicService.findAllByTattooId(vo.getId());
+            vo.setPics(pics);
+        }
+        return zxTattooVoList;
     }
 }

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ml.dao.MlUserAddressMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ml.entity.MlUserAddress">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="user_id" property="userId" />
+        <result column="name" property="name" />
+        <result column="province" property="province" />
+        <result column="city" property="city" />
+        <result column="county" property="county" />
+        <result column="adress_detail" property="adressDetail" />
+        <result column="phone" property="phone" />
+        <result column="type" property="type" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        user_id, `name`, province, city, county, adress_detail, phone, `type`, status
+    </sql>
+
+    <select id="findOneByConditions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_user_address
+        <where>
+            <if test="userId != null">
+                user_id = #{userId}
+            </if>
+            <if test="type != null">
+                and `type` = #{type}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+        </where>
+        limit 1
+    </select>
+
+    <update id="updateByConditions" parameterType="java.util.Map">
+        update cx_ml_user_address
+        <set >
+            <if test="name != null" >
+                `name` = #{name},
+            </if>
+            <if test="province != null" >
+                province = #{province},
+            </if>
+            <if test="city != null">
+                city = #{city},
+            </if>
+            <if test="county != null">
+                county = #{county},
+            </if>
+            <if test="adressDetail != null">
+                adress_detail = #{adressDetail},
+            </if>
+            <if test="phone != null">
+                phone = #{phone},
+            </if>
+            <if test="type != null">
+                `type` = #{type},
+            </if>
+        </set>
+        <where>
+            <if test="userAddressId != null">
+                id = #{userAddressId}
+            </if>
+        </where>
+    </update>
+
+    <select id="findAllByConditions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_user_address
+        <where>
+            <if test="userId != null">
+                user_id = #{userId}
+            </if>
+            <if test="type != null">
+                and `type` = #{type}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+        </where>
+        <if test="orderBy!= null">
+            order by #{orderBy}
+        </if>
+    </select>
+
+</mapper>

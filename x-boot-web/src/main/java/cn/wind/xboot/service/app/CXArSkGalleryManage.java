@@ -43,6 +43,8 @@ public class CXArSkGalleryManage {
     private IArUserSkEvaluatesGreatRecordService skEvaluatesGreatRecordService;
     @Autowired
     private IArUserSkEvaluatesGreatNumService skEvaluatesGreatNumService;
+    @Autowired
+    private CXCommonManage cxCommonManage;
 
 
     /**
@@ -150,6 +152,8 @@ public class CXArSkGalleryManage {
         user.setBalance(user.getBalance().subtract(cost));
         user.setGreatStatus(1);
         userService.updateById(user);
+
+        cxCommonManage.greatAction(userId,skGallery.getUserId(),1);
     }
 
     /**
@@ -244,6 +248,8 @@ public class CXArSkGalleryManage {
         user.setBalance(user.getBalance().subtract(cost));
         user.setGreatStatus(1);
         userService.updateById(user);
+
+        cxCommonManage.greatAction(userId,skEvaluates.getUserId(),1);
     }
 
     /**

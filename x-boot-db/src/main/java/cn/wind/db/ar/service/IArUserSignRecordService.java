@@ -19,5 +19,5 @@ public interface IArUserSignRecordService extends IService<ArUserSignRecord> {
 
     List<ArUserSignRecord> findAllBetweenDaysAndUserId(Long userId, LocalDate firstDayByNow, LocalDate lastDayByNow);
 
-    ArUserSignRecord findAllByDateAndUserId(Long userId, Date dateBefore);
+    ArUserSignRecord findAllByDateAndUserId(Long userId, LocalDate dateBefore);
 }

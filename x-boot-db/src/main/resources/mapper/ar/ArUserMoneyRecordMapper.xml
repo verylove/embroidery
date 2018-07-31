@@ -16,6 +16,12 @@
         <result column="order_no" property="orderNo" />
         <result column="status" property="status" />
         <result column="way" property="way" />
+        <result column="bank_id" property="bankId" />
+        <result column="postage" property="postage" />
+        <result column="receipt_name" property="receiptName" />
+        <result column="receipt_phone" property="receiptPhone" />
+        <result column="receipt_address" property="receiptAddress" />
+
     </resultMap>
 
     <!-- 通用查询结果列 -->
@@ -25,7 +31,21 @@
         modify_time,
         create_by,
         modify_by,
-        user_id, amount, type, module, order_no, status, way
+        user_id, amount, `type`, `module`, order_no, status, way, bank_id, postage, receipt_name, receipt_phone, receipt_address
     </sql>
+
+    <select id="findOnebyContions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ar_user_money_record
+        <where>
+            <if test="userId != null">
+                user_id = #{userId}
+            </if>
+            <if test="orderNo != null">
+                and order_no = #{orderNo}
+            </if>
+        </where>
+        limit 1
+    </select>
 
 </mapper>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ar.dao.ArUserBankMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArUserBank">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="user_id" property="userId" />
+        <result column="bank_card" property="bankCard" />
+        <result column="identity_card" property="identityCard" />
+        <result column="bank_name" property="bankName" />
+        <result column="branch_name" property="branchName" />
+        <result column="type" property="type" />
+        <result column="status" property="status" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        user_id, bank_card, identity_card, bank_name, branch_name, `type`, status
+    </sql>
+
+    <select id="findAllByConditions" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ar_user_bank
+        <where>
+            <if test="userId != null">
+                user_id = #{userId}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="type != null">
+                and `type` = #{type}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
+    <select id="findOneByConditons" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ar_user_bank
+        <where>
+            <if test="userId != null">
+                user_id = #{userId}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+            <if test="type != null">
+                and `type` = #{type}
+            </if>
+        </where>
+        limit 1
+    </select>
+</mapper>

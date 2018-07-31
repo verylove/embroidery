@@ -40,7 +40,8 @@ public class ArUserMoneyRecord extends AuditEntity {
      */
     private Integer type;
     /**
-     * 消费模块 1-钱包 2-特价纹身 3-特价纹身评论
+     * 消费模块 1-钱包；2-特价纹身 3-特价纹身评论 4-图库找图 5-图库找图评论 6-贴吧话题 7-贴吧话题评论
+     * 8-纹纹达人 9-纹纹达人评论 10-动态 11-动态评论 12-作品 13-作品评论
      */
     private Integer module;
     /**
@@ -55,6 +56,26 @@ public class ArUserMoneyRecord extends AuditEntity {
      * 1-支付宝 2-微信 3-银行卡 4-刺币
      */
     private Integer way;
+    /**
+     * 银行卡ID
+     */
+    private Long bankId;
+    /**
+     * 邮费 商城消费用
+     */
+    private BigDecimal postage=new BigDecimal("0.00");
+    /**
+     * 收件人名 商城消费用
+     */
+    private String receiptName;
+    /**
+     * 收件人电话 商城消费用
+     */
+    private String receiptPhone;
+    /**
+     * 收件人地址 商城消费用
+     */
+    private String receiptAddress;
 
 
 }

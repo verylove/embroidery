@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -43,6 +44,8 @@ public class CXArOtTattooManage {
     private IArUserMoneyRecordService moneyRecordService;
     @Autowired
     private IArUserService userService;
+    @Autowired
+    private CXCommonManage cxCommonManage;
 
     /**
      *  纹纹达人发布
@@ -145,6 +148,8 @@ public class CXArOtTattooManage {
         user.setBalance(user.getBalance().subtract(cost));
         user.setGreatStatus(1);
         userService.updateById(user);
+
+        cxCommonManage.greatAction(userId,otTattoo.getUserId(),1);
     }
 
 
@@ -240,6 +245,8 @@ public class CXArOtTattooManage {
         user.setBalance(user.getBalance().subtract(cost));
         user.setGreatStatus(1);
         userService.updateById(user);
+
+        cxCommonManage.greatAction(userId,otEvaluates.getUserId(),1);
     }
 
     /**

@@ -60,6 +60,8 @@ public class ApiSeekGalleryController extends AppBaseController{
     private IArUserService userService;
     @Autowired
     private IArUserSkEvaluatesService skEvaluatesService;
+    @Autowired
+    private IArStoreAduitService storeAduitService;
 
     @ApiOperation(value = "图库找图发布")
     @PostMapping(value = "/publishSkGallery")
@@ -191,7 +193,8 @@ public class ApiSeekGalleryController extends AppBaseController{
             //2.名片
             if(user.getStoreStatus()==3){
                 // TODO 获取店铺名
-//                    vo.setBusinessCard();
+                ArStoreAduit s = storeAduitService.selectById(user.getStoreId());
+                vo.setBusinessCard(s.getStoreName());
             }else if(user.getIdentity()==1){
                 vo.setBusinessCard(IdentityType.TATTOO.getType());
             }else {

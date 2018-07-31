@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ar.dao.ArUserDyWorksMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArUserDyWorks">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="user_id" property="userId" />
+        <result column="name" property="name" />
+        <result column="reference_price" property="referencePrice" />
+        <result column="time_consume" property="timeConsume" />
+        <result column="content" property="content" />
+        <result column="type" property="type" />
+        <result column="city" property="city" />
+        <result column="great_num" property="greatNum" />
+        <result column="message_num" property="messageNum" />
+        <result column="status" property="status" />
+        <result column="longitude" property="longitude" />
+        <result column="latitude" property="latitude" />
+        <result column="distance" property="distance"/>
+        <association property="user" javaType="cn.wind.db.ar.entity.ArUser" resultMap="cn.wind.db.ar.dao.ArUserMapper.UserResultMap"/>
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        user_id, `name`, reference_price, time_consume, content, `type`, city, great_num, message_num, status, longitude, latitude
+    </sql>
+
+    <sql id="Base_UserInfo_Column_List">
+        aruser.create_time aruser_create_time,
+        aruser.create_by aruser_create_by,
+        aruser.modify_time aruser_modify_time,
+        aruser.modify_by aruser_modify_by,
+        aruser.id aruser_id,
+        aruser.account aruser_account,
+        aruser.phone aruser_phone,
+        aruser.password aruser_password,
+        aruser.icon aruser_icon,
+        aruser.sex aruser_sex,
+        aruser.profile aruser_profile,
+        aruser.identity aruser_identity,
+        aruser.province aruser_province,
+        aruser.city aruser_city,
+        aruser.county  aruser_county,
+        aruser.per_address aruser_per_address,
+        aruser.work_num aruser_work_num,
+        aruser.work_place aruser_work_place,
+        aruser.sign_id aruser_sign_id,
+        aruser.name_id aruser_name_id,
+        aruser.store_id aruser_store_id,
+        aruser.sign_status aruser_sign_status,
+        aruser.name_status aruser_name_status,
+        aruser.store_status aruser_store_status,
+        aruser.wx_open_id aruser_wx_open_id,
+        aruser.qq_open_id aruser_qq_open_id,
+        aruser.per_level aruser_per_level,
+        aruser.active_num aruser_active_num,
+        aruser.charm_num aruser_charm_num,
+        aruser.wealth_num aruser_wealth_num,
+        aruser.balance aruser_balance,
+        aruser.great_status aruser_great_status,
+        aruser.sentiment_num aruser_sentiment_num,
+        aruser.praise_num aruser_praise_num,
+        aruser.focus_num aruser_focus_num,
+        aruser.follow_num aruser_follow_num,
+        aruser.pay_pass aruser_pay_pass
+    </sql>
+
+    <select id="findAllStoreByConditions" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>, (POWER(MOD(ABS(u.longitude - #{longitude}),360),2) + POWER(ABS(latitude - #{latitude}),2)) AS distance
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        where u.id in (SELECT max(a.id)
+        FROM
+        cx_ar_user_dy_works a, cx_ar_user b
+        where
+        a.user_id = b.id
+        AND b.store_status = 3
+        AND a.status = 1
+        AND a.type = 4
+        GROUP BY u.user_id)
+        order by distance asc,u.create_time desc
+    </select>
+
+    <select id="findAllArtistByConditions" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>, (POWER(MOD(ABS(u.longitude - #{longitude}),360),2) + POWER(ABS(latitude - #{latitude}),2)) AS distance
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        where u.id in (SELECT max(a.id)
+        FROM
+        cx_ar_user_dy_works a, cx_ar_user b
+        where
+        a.user_id = b.id
+        AND b.store_status = 3
+        AND a.status = 1
+        AND a.type in (1,3)
+        AND a.city = #{city}
+        GROUP BY u.user_id)
+        order by distance asc,u.create_time desc
+    </select>
+
+    <select id="findAllDyFocusByConditions" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            and u.type in (2,3)
+            <if test="list != null">
+                and u.user_id IN
+                <foreach collection="list" item="item" open="(" close=")" separator=",">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+        order by u.create_time desc
+    </select>
+
+    <select id="findAllCircleWorkOrderByTime" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            and u.type in (2,3)
+        </where>
+        ORDER BY u.create_time desc
+    </select>
+
+    <select id="findAllCircleWorkOrderByGreatNum" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            and u.type in (2,3)
+        </where>
+        ORDER BY u.great_num desc
+    </select>
+
+    <select id="findOneByConditions" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            <if test="dyWorksId != null">
+                and u.id = #{dyWorksId}
+            </if>
+        </where>
+    </select>
+    <select id="findAllStoreWorksForManager" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            and u.type = 4
+            <if test="userId != null">
+                and u.userId = #{userId}
+            </if>
+        </where>
+        ORDER BY u.great_num desc
+    </select>
+    <select id="findAllStoreWorksForPerson" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            and u.type in (1,3)
+            <if test="userId != null">
+                and u.userId = #{userId}
+            </if>
+        </where>
+        ORDER BY u.great_num desc
+    </select>
+    <select id="findAllPerDynamic" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_dy_works u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+            and u.type = 2
+            <if test="userId != null">
+                and u.userId = #{userId}
+            </if>
+        </where>
+        ORDER BY u.great_num desc
+    </select>
+</mapper>

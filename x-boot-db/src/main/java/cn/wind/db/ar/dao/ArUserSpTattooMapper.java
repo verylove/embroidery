@@ -20,7 +20,7 @@ public interface ArUserSpTattooMapper extends BaseMapper<ArUserSpTattoo> {
 
     List<ArUserSpTattoo> findByCoordinates(Pagination page, Map<String, Object> map);
 
-    List<ArUserSpTattoo> findAll(Pagination page);
+    List<ArUserSpTattoo> findAll(Pagination page, Map<String, Object> map);
 
     ArUserSpTattoo findOneById(@Param(value = "spTattooId") Long spTattooId);
 }

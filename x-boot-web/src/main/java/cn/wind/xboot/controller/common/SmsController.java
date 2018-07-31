@@ -108,6 +108,26 @@ public class SmsController {
                     return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
                 }
                 break;
+            case MODIFY_PASS:
+                //修改密码
+                if(user==null){
+                    return apiResponse.failure(ApiStatus.USER_NOT_EXIST);
+                }
+                //1分钟内不可重发发送短信
+                if(LocalCacheUtil.get("CIXIU_PHONE_MODIFY:"+mobiles)!=null){
+                    return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
+                }
+                break;
+            case BANK_CARD:
+                //添加银行卡
+                if(user==null){
+                    return apiResponse.failure(ApiStatus.USER_NOT_EXIST);
+                }
+                //1分钟内不可重发发送短信
+                if(LocalCacheUtil.get("CIXIU_PHONE_BANK:"+mobiles)!=null){
+                    return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
+                }
+                break;
             case NULL:
             default:
                 break;
@@ -134,6 +154,18 @@ public class SmsController {
                         //保存发送记录到缓存中3分钟
                         redisTemplate.opsForValue().set("CIXIU_PHONE_FORGET:"+v,vcode,3, TimeUnit.MINUTES);
                         LocalCacheUtil.set("CIXIU_PHONE_FORGET:"+v,vcode,60*1000);
+                        break;
+                    case MODIFY_PASS:
+                        //修改密码
+                        //保存发送记录到缓存中3分钟
+                        redisTemplate.opsForValue().set("CIXIU_PHONE_MODIFY:"+v,vcode,3, TimeUnit.MINUTES);
+                        LocalCacheUtil.set("CIXIU_PHONE_MODIFY:"+v,vcode,60*1000);
+                        break;
+                    case BANK_CARD:
+                        //验证银行卡
+                        //保存发送记录到缓存中3分钟
+                        redisTemplate.opsForValue().set("CIXIU_PHONE_BANK:"+v,vcode,3, TimeUnit.MINUTES);
+                        LocalCacheUtil.set("CIXIU_PHONE_BANK:"+v,vcode,60*1000);
                         break;
                     case NULL:
                     default:

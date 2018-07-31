@@ -36,6 +36,11 @@
         <result column="wealth_num" property="wealthNum" />
         <result column="balance" property="balance" />
         <result column="great_status" property="greatStatus" />
+        <result column="sentiment_num" property="sentimentNum" />
+        <result column="praise_num" property="praiseNum" />
+        <result column="focus_num" property="focusNum" />
+        <result column="follow_num" property="followNum" />
+        <result column="pay_pass" property="payPass" />
     </resultMap>
 
     <resultMap id="UserResultMap" type="cn.wind.db.ar.entity.ArUser">
@@ -71,6 +76,11 @@
         <result column="aruser_wealth_num" property="wealthNum" />
         <result column="aruser_balance" property="balance" />
         <result column="aruser_great_status" property="greatStatus" />
+        <result column="aruser_sentiment_num" property="sentimentNum" />
+        <result column="aruser_praise_num" property="praiseNum" />
+        <result column="aruser_focus_num" property="focusNum" />
+        <result column="aruser_follow_num" property="followNum" />
+        <result column="aruser_pay_pass" property="payPass" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
@@ -80,7 +90,7 @@
         modify_time,
         create_by,
         modify_by,
-        account, phone, password, sex, icon, profile, `identity`, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num, balance, great_status
+        account, phone, password, sex, icon, profile, `identity`, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num, balance, great_status, sentiment_num, praise_num, focus_num, follow_num,pay_pass
     </sql>
 
     <select id="findAllByIdIn" resultMap="BaseResultMap" parameterType="java.util.List">

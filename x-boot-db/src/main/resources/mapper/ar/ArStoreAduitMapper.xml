@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.ar.dao.ArStoreAduitMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.ar.entity.ArStoreAduit">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="store_name" property="storeName" />
+        <result column="store_address" property="storeAddress" />
+        <result column="user_id" property="userId" />
+        <result column="description" property="description" />
+        <result column="remark" property="remark" />
+        <result column="content" property="content" />
+        <result column="status" property="status" />
+        <result column="bus_license" property="busLicense" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        store_name, store_address, user_id, description, remark, content, status, bus_license
+    </sql>
+
+    <select id="findOneByConditions" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM cx_ar_store_aduit
+        <where>
+            <if test="storeId != null">
+                id = #{storeId}
+            </if>
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+        </where>
+        limit 1
+    </select>
+
+</mapper>

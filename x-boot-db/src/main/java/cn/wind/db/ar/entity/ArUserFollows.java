@@ -34,6 +34,10 @@ public class ArUserFollows extends AuditEntity {
      * 被关注的一方
      */
     private Long followId;
+    /**
+     * 1-有效 0-失效
+     */
+    private Integer status;
 
 
 }

@@ -25,5 +25,5 @@ public interface ArUserSignRecordMapper extends BaseMapper<ArUserSignRecord> {
     List<ArUserSignRecord> findAllBetweenDaysAndUserId(@Param("userId")Long userId, @Param("firstDayByNow") LocalDate firstDayByNow, @Param("lastDayByNow")LocalDate lastDayByNow);
 
     @Select("select "+RESULT_COLUMN+" from cx_ar_user_sign_record where user_id = #{userId} and sign_date = #{dateBefore} limit 1" )
-    ArUserSignRecord findAllByDateAndUserId(@Param(value = "userId") Long userId, @Param(value = "dateBefore") Date dateBefore);
+    ArUserSignRecord findAllByDateAndUserId(@Param(value = "userId") Long userId, @Param(value = "dateBefore") LocalDate dateBefore);
 }

@@ -43,6 +43,8 @@ public class CXArTbTopicManage {
     private IArUserTbEvaluatesGreatNumService tbEvaluatesGreatNumService;
     @Autowired
     private IArUserTbEvaluatesGreatRecordService tbEvaluatesGreatRecordService;
+    @Autowired
+    private CXCommonManage cxCommonManage;
     
     /**
      * 发布帖子话题
@@ -144,6 +146,8 @@ public class CXArTbTopicManage {
         user.setBalance(user.getBalance().subtract(cost));
         user.setGreatStatus(1);
         userService.updateById(user);
+
+        cxCommonManage.greatAction(userId,tbTopic.getUserId(),1);
     }
 
     /**
@@ -271,5 +275,7 @@ public class CXArTbTopicManage {
         user.setBalance(user.getBalance().subtract(cost));
         user.setGreatStatus(1);
         userService.updateById(user);
+
+        cxCommonManage.greatAction(userId,tbEvaluates.getUserId(),1);
     }
 }

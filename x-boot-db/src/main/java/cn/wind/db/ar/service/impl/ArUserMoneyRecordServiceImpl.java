@@ -6,6 +6,8 @@ import cn.wind.db.ar.service.IArUserMoneyRecordService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
+import java.util.Map;
+
 /**
  * <p>
  * 用户金额变动记录数据表 服务实现类
@@ -17,4 +19,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class ArUserMoneyRecordServiceImpl extends ServiceImpl<ArUserMoneyRecordMapper, ArUserMoneyRecord> implements IArUserMoneyRecordService {
 
+    @Override
+    public ArUserMoneyRecord findOnebyContions(Map<String, Object> map) {
+        return this.baseMapper.findOnebyContions(map);
+    }
 }
