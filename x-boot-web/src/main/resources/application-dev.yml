@@ -200,10 +200,10 @@ xboot:
     bucket: chedai
   sms:
     ali:
-      accessKeyId: LTAIiB3zlee0dk95
-      accessKeySecret: iXBHaOGQFXKbjXdIpNMEQuZU9BBPHB
+      accessKeyId: LTAIbQlC2y2XQCJK
+      accessKeySecret: BvJLIZljfAqV7cvPj3YzTAKwe72g4z
       regionId: cn-hangzhou
-      signName: 博学
+      signName: learned项目测试使
 # Swagger界面内容配置
 swagger:
   title: XBoot API接口文档

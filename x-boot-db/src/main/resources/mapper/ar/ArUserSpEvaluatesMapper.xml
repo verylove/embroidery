@@ -114,7 +114,7 @@
                 and u.id = #{spEvaluateId}
             </if>
         </where>
-        limit 1 order by u.great_num desc
+        order by u.great_num desc limit 1
     </select>
 
 </mapper>

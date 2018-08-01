@@ -2,514 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a217ff-546c-4f84-9a72-f90d51c9d86e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-07-11.0.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-07-19.0.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-07-24.0.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-07-27.0.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_jpush_api_jiguang_common_1_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_jpush_api_jpush_client_3_3_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alipay_sdk_alipay_sdk_java_3_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_24_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArAppointOrderMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArSignAuditMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArStoreAduitMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArStorePicMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArTattooAduitMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserBankMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDailyRecordMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyEvaluatesGreatNumMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyEvaluatesGreatRecordMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyEvaluatesMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyGreatNumMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyGreatRecordMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyPicMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyWorksMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserGreatsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserLevelRecordMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSentimentRecordMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArAppointOrder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArSignAudit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArStoreAduit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArStorePic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArTattooAduit.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserBank.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDailyRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDyEvaluates.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDyEvaluatesGreatNum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDyEvaluatesGreatRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDyGreatNum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDyGreatRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDyPic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserDyWorks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserGreats.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserLevelRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSentimentRecord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArAppointOrderService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArSignAuditService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArStoreAduitService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArStorePicService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArTattooAduitService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserBankService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDailyRecordService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyEvaluatesGreatNumService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyEvaluatesGreatRecordService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyEvaluatesService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyGreatNumService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyGreatRecordService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyPicService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyWorksService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserGreatsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserLevelRecordService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSentimentRecordService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArAppointOrderServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArSignAuditServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArStoreAduitServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArStorePicServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArTattooAduitServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserBankServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDailyRecordServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyEvaluatesGreatNumServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyEvaluatesGreatRecordServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyEvaluatesServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyGreatNumServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyGreatRecordServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyPicServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyWorksServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserGreatsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserLevelRecordServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSentimentRecordServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlGoodsCategoryMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlGoodsDetailMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlGoodsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlGoodsModelsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlGoodsPicsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlGoodsSpecificationsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlUserAddressMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlUserGoodsLogisticsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlUserGoodsSelectMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlGoods.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlGoodsCategory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlGoodsDetail.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlGoodsModels.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlGoodsPics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlGoodsSpecifications.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlUserAddress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlUserGoodsLogistics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlUserGoodsSelect.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlGoodsCategoryService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlGoodsDetailService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlGoodsModelsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlGoodsPicsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlGoodsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlGoodsSpecificationsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlUserAddressService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlUserGoodsLogisticsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlUserGoodsSelectService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlGoodsCategoryServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlGoodsDetailServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlGoodsModelsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlGoodsPicsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlGoodsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlGoodsSpecificationsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlUserAddressServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlUserGoodsLogisticsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlUserGoodsSelectServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/dao/RcSecondPicMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/dao/RcSecondTransactionsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/dao/RcTattooRecruitmentMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/entity/RcSecondPic.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/entity/RcSecondTransactions.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/entity/RcTattooRecruitment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/service/IRcSecondPicService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/service/IRcSecondTransactionsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/service/IRcTattooRecruitmentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/service/impl/RcSecondPicServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/service/impl/RcSecondTransactionsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/rc/service/impl/RcTattooRecruitmentServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrLevelsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/entity/SrLevels.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrLevelsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrLevelsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArAppointOrderMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArSignAuditMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArStoreAduitMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArStorePicMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArTattooAduitMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserBankMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDailyRecordMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesGreatNumMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesGreatRecordMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyGreatNumMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyGreatRecordMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyPicMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserGreatsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserLevelRecordMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSentimentRecordMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlGoodsCategoryMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlGoodsDetailMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlGoodsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlGoodsModelsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlGoodsPicsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlGoodsSpecificationsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlUserAddressMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlUserGoodsLogisticsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlUserGoodsSelectMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcSecondPicMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcSecondTransactionsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcTattooRecruitmentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrLevelsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/config/PayConfiguration.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMasterShowController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiRecruitmentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSecondTransactController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsDetailController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsOrderController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsShowController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiUserAddressController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/pay/ApiPayController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAppointController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAuditController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiBankController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiMoneyController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiStoreInfoController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arAppointOrderDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arNameAduitDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arStoreAduitDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserDyWorkDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ml/mlGoodsSelectDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ml/mlUserAddressDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/rc/rcRecruitMentDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/rc/rcSecondTransactDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/mall/IStockCallback.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/mall/RedisLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/mall/StockService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/AliPayManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/PushManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/WxPayManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/WxUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAppointManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArBankManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArDyWorkManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserMoneyManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXCommonManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlGoodsManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlUserAddressManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXRcRecruitManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXRcSecondTransactManage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/AliPayVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/PushVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/WxPayVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArAppointOrderVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDailySentimentVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDyEvaluatesVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDyGreatNumVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDyWorksVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserLevelVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserStoreVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlGoodsOrderVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlGoodsShopCartVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlGoodsToSelectVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlGoodsVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlUserAddressVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/rc/RcSecondTransactVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/rc/RcTattooRecruitVo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/AuthorUrlConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/AuthorUrlConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/AuthorizationServerConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/AuthorizationServerConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/ResourceServerConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/ResourceServerConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/token/MyRedisTokenStore.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/config/token/MyRedisTokenStore.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/domain/UserInfo.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/domain/UserInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/redis/TopicMessageListener.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/redis/TopicMessageListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/attemptes/UserDetailsDao.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/attemptes/UserDetailsDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/attemptes/UserDetailsDaoImpl.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/attemptes/UserDetailsDaoImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomAccessDeniedHandler.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomAccessDeniedHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomAuthExceptionEntryPoint.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomAuthExceptionEntryPoint.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomOauthException.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomOauthException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomOauthExceptionSerializer.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomOauthExceptionSerializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomWebResponseExceptionTranslator.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/exception/CustomWebResponseExceptionTranslator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/CustomDaoAuthenticationProvider.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/CustomDaoAuthenticationProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/MyAccessDecisionManager.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/MyAccessDecisionManager.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/MyFilterSecurityInterceptor.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/MyFilterSecurityInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/MySecurityMetadataSource.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/MySecurityMetadataSource.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/RestAccessDeniedHandler.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/security/handler/RestAccessDeniedHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/service/AccountNonLockedService.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/service/AccountNonLockedService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/service/impl/AccountNonLockedServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/service/impl/AccountNonLockedServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/service/impl/UserDetailsServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-auth/target/classes/cn/wind/auth/service/impl/UserDetailsServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/convert/DateConverter.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/convert/DateConverter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/datetime/ClassIdentical.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/datetime/ClassIdentical.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/datetime/LocalDateUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/datetime/LocalDateUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$1.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$2.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$3.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$4.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/BaseQueueHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/MyHandlerException.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/MyHandlerException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/ValueWrapper.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/ValueWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/sms/SmsParam.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/sms/SmsParam.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/sms/SmsParamEventHandler.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/sms/SmsParamEventHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/sms/SmsParamEventQueueHelper.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/disruptor/sms/SmsParamEventQueueHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/domain/Attempts.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/domain/Attempts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/domain/Statistics$StatisticsBuilder.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/domain/Statistics$StatisticsBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/domain/Statistics.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/domain/Statistics.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/enums/ComConfigEnum.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/enums/ComConfigEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/enums/ServerEnum.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/enums/ServerEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/enums/SmsKeyCodeEnum.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/enums/SmsKeyCodeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/exception/ExceptionAdvice.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/exception/ExceptionAdvice.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiException.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiException.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiRes$ApiResBuilder.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiRes$ApiResBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiRes.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiRes.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/tencentCloud/WebRTCSigApi.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiStatus.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ErrorResponse$ErrorResponseBuilder.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ErrorResponse$ErrorResponseBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ErrorResponse.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ErrorResponse.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/FileUploadUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/FileUploadUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/progress/UploadCommonsMultipartResolver.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/progress/UploadCommonsMultipartResolver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/progress/UploadListener.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/progress/UploadListener.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/progress/UploadStatus.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/fileupload/progress/UploadStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/json/GsonEnumTypeAdapter.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/json/GsonEnumTypeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/json/GsonIntEnum.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/json/GsonIntEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/json/GsonStringEnum.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/json/GsonStringEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/JsoupUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/JsoupUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/XssFilter.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/XssFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/XssHttpServletRequestWrapper.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/XssHttpServletRequestWrapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/XssStringJsonSerializer.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/support/xss/XssStringJsonSerializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/AESUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/AESUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/Assert.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/Assert.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/BeanUtils.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/BeanUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/BlankUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/BlankUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/ExpressionUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/ExpressionUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$1.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$2.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$FileResutlt.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$FileResutlt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/IpInfoUtil$City.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/IpInfoUtil$City.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/IpInfoUtil$IpLocate.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/IpInfoUtil$IpLocate.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/IpInfoUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/IpInfoUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/JsonUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/JsonUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/MessageUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/MessageUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/PasswordUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/PasswordUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/RSAUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/RSAUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/RequestUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/RequestUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/ResponseUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/ResponseUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/SpringUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/SpringUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/ThreadPoolUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/ThreadPoolUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/Underline2CamelUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/Underline2CamelUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/UrlEncodedUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/UrlEncodedUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/validator/PageValidator.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/validator/PageValidator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/dao/CliClientMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/dao/CliClientMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/entity/CliClient.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/entity/CliClient.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/entity/CliClientAttempts.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/entity/CliClientAttempts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/service/ICliClientService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/service/ICliClientService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/service/impl/CliClientServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/cli/service/impl/CliClientServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/handler/MyMetaObjectHandler.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/handler/MyMetaObjectHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/dao/PfNoticeMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/dao/PfNoticeMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/entity/PfNotice.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/entity/PfNotice.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/entity/PfSms.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/entity/PfSms.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/entity/PfSmsLog.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/entity/PfSmsLog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/service/IPfNoticeService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/service/IPfNoticeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/service/impl/PfNoticeServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/pf/service/impl/PfNoticeServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysPermissionMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysPermissionMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysPrivilegeMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysPrivilegeMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysRoleMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysRoleMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserGroupMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserGroupMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserInfoMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserInfoMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserRoleMapper.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/dao/SysUserRoleMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysLog.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysLog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysPermission.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysPermission.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysPrivilege.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysPrivilege.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysRole.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysRole.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUser.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUser.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserAttempts.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserAttempts.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserGroup.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserGroup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserGroupRoleShip.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserGroupRoleShip.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserGroupShip.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserGroupShip.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserInfo.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserRole.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/entity/SysUserRole.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysPermissionService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysPermissionService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysPrivilegeService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysPrivilegeService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysRoleService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysRoleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserGroupService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserGroupService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserInfoService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserInfoService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserRoleService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserRoleService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserService.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/ISysUserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysPermissionServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysPermissionServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysPrivilegeServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysPrivilegeServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysRoleServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysRoleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserGroupServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserGroupServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserInfoServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserInfoServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserRoleServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserRoleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-db/target/classes/cn/wind/db/sys/service/impl/SysUserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/test-classes/cn/wind/db/TestCase.class" afterPath="$PROJECT_DIR$/x-boot-db/target/test-classes/cn/wind/db/TestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/component/SpringJobFactory.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/component/SpringJobFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/IndexController.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/IndexController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobApiController.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobApiController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobCodeController.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobCodeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobGroupController.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobGroupController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobInfoController.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobLogController.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/JobLogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/interceptor/CookieInterceptor.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/interceptor/CookieInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/interceptor/PermissionInterceptor.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/controller/interceptor/PermissionInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/enums/ExecutorFailStrategyEnum.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/enums/ExecutorFailStrategyEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/jobbean/RemoteHttpJobBean.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/jobbean/RemoteHttpJobBean.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobGroup.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobGroup.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobInfo.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobLog.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobLog.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobLogGlue.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobLogGlue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobRegistry.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/model/XxlJobRegistry.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/ExecutorRouteStrategyEnum.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/ExecutorRouteStrategyEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/ExecutorRouter.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/ExecutorRouter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteBusyover.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteBusyover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteConsistentHash.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteConsistentHash.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteFailover.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteFailover.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteFirst.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteFirst.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLFU$1.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLFU$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLFU.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLFU.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLRU.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLRU.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLast.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteLast.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteRandom.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteRandom.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteRound.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/route/strategy/ExecutorRouteRound.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/schedule/XxlJobDynamicScheduler.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/schedule/XxlJobDynamicScheduler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/thread/JobFailMonitorHelper$1.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/thread/JobFailMonitorHelper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/thread/JobFailMonitorHelper.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/thread/JobFailMonitorHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/thread/JobRegistryMonitorHelper$1.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/thread/JobRegistryMonitorHelper$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/trigger/XxlJobTrigger.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/trigger/XxlJobTrigger.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/CookieUtil.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/CookieUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/FtlUtil.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/FtlUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/I18nUtil.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/I18nUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/LocalCacheUtil$LocalCacheData.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/LocalCacheUtil$LocalCacheData.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/LocalCacheUtil.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/LocalCacheUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/MailUtil.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/MailUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/PropertiesUtil.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/core/util/PropertiesUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobGroupDao.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobGroupDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobInfoDao.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobInfoDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobLogDao.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobLogDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobLogGlueDao.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobLogGlueDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobRegistryDao.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/dao/XxlJobRegistryDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/handler/DemoJobHandler.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/handler/DemoJobHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/handler/ShardingJobHandler.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/handler/ShardingJobHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/service/XxlJobService.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/service/XxlJobService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/service/impl/AdminBizImpl.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/service/impl/AdminBizImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/service/impl/XxlJobServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-job/target/classes/com/xxl/job/admin/service/impl/XxlJobServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$1.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$2.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$MyStartupRunner1.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$MyStartupRunner1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/AliOssConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/AliOssConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/CacheConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/CacheConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/SecurityConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/SecurityConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/WebAppConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/WebAppConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/BaseController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/BaseController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/JobController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/JobController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LogController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LoginController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/NoticeController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/NoticeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/PermissionController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/PermissionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/RoleController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/RoleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/UserController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/IpInfoController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/IpInfoController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController$1.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/UploadController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/UploadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/intercepotor/JobPermissionInterceptor.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/intercepotor/JobPermissionInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/ButtonType.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/ButtonType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/PermType.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/PermType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/MyLogHandler.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/MyLogHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/SaveLogThread.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/SaveLogThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/dto/Pair.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/dto/Pair.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/EmailService.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/EmailService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/impl/EmailServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/impl/EmailServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Provider.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Provider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig$PushConfigDto.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig$PushConfigDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushAfterOpenEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushAfterOpenEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDeviceTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDeviceTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDisplayTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDisplayTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDtoBuilder.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDtoBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Pusher.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Pusher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/factory/UProvider.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/factory/UProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/impl/UPusher.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/impl/UPusher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq$SmsQueryReqBuilder.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq$SmsQueryReqBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq$SmsSendReqBuilder.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq$SmsSendReqBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/enums/SmsTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/enums/SmsTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/SmsService.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/SmsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/impl/AliSmsSeriviceImpl.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/impl/AliSmsSeriviceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/OssClientManage.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/OssClientManage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UploadService.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UploadService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UserManage.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UserManage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/PageVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/PageVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/SearchVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/SearchVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfNoticeVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfNoticeVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfSmsVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfSmsVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysPermissionVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysPermissionVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysRoleVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysRoleVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserInfoVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserInfoVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/test-classes/cn/wind/web/service/Test.class" afterPath="$PROJECT_DIR$/x-boot-web/target/test-classes/cn/wind/web/service/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/x-boot-web/spring.log" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiStatus.java" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiStatus.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/RequestUtil.java" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/RequestUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserFollowsMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserFollowsMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMoneyRecordMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMoneyRecordMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSignRecordMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSignRecordMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpTattooMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpTattooMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserFollows.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserFollows.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserMoneyRecord.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserMoneyRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSignRecord.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSignRecord.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserFollowsService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserFollowsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserMoneyRecordService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserMoneyRecordService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSignRecordService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSignRecordService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpTattooService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpTattooService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserFollowsServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserFollowsServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserMoneyRecordServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserMoneyRecordServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSignRecordServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSignRecordServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpTattooServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpTattooServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/handler/MyMetaObjectHandler.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/handler/MyMetaObjectHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserFollowsMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserFollowsMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMoneyRecordMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMoneyRecordMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtTattooMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtTattooMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpTattooMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpTattooMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbTopicMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbTopicMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserZxTattooMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserZxTattooMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrAreaMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrAreaMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java" afterPath="$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/pom.xml" afterPath="$PROJECT_DIR$/x-boot-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/enums/contants.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/enums/contants.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSkGalleryManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSkGalleryManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSpTattooManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSpTattooManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArTbTopicManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArTbTopicManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserSignManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserSignManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/x-boot-web.iml" afterPath="$PROJECT_DIR$/x-boot-web/x-boot-web.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -527,50 +42,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CXMlGoodsManage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlGoodsManage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiGoodsDetailController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsDetailController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="273" column="31" lean-forward="false" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mlGoodsSelectDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ml/mlGoodsSelectDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mlUserAddressDto.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ml/mlUserAddressDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -583,15 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>redis</find>
-      <find>spring-boot-starter-data-redis</find>
-      <find>lettuce</find>
-      <find>createDaemonThread</find>
-      <find>lockKey</find>
-      <find>UNLOCK_LUA</find>
-      <find>redisTemplate</find>
-      <find>STOCK_LUA</find>
-      <find>goodsDetailService</find>
       <find>getAppID</find>
       <find>updateByConditions</find>
       <find>String payNo</find>
@@ -613,6 +76,15 @@
       <find>receiptId</find>
       <find>update</find>
       <find>deleteById</find>
+      <find>setSdkAppid</find>
+      <find>dwPrivilegeMap</find>
+      <find>http</find>
+      <find>sendPostRequest</find>
+      <find>CIXIU_PHONE</find>
+      <find>resetPassword</find>
+      <find>pageForTattoo</find>
+      <find>limit 1 order</find>
+      <find>childEvaluates</find>
     </findStrings>
     <replaceStrings>
       <replace>aruser</replace>
@@ -635,28 +107,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsShowController.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/mall/RedisLock.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/mall/IStockCallback.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlUserGoodsSelectService.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlUserGoodsSelectServiceImpl.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlUserGoodsSelectMapper.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlGoodsDetailService.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlGoodsDetailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlGoodsDetailMapper.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlGoodsDetail.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/AliPayManage.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/WXPayDomainSimpleImpl.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/WxPayConfigImpl.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/pom.xml" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/WxPayVo.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/WxUtils.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlGoodsDetailMapper.xml" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/WxPayManage.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrLevelsService.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserBankService.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserBankServiceImpl.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserBankMapper.java" />
@@ -686,6 +139,25 @@
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlUserAddressManage.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlGoodsManage.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsDetailController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/tencentCloud/WebRTCSigApi.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/XbootApplication.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSpEvaluatesVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java" />
       </list>
     </option>
   </component>
@@ -726,11 +198,11 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-94" />
-    <option name="y" value="-962" />
-    <option name="width" value="1446" />
-    <option name="height" value="810" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-186" />
+    <option name="y" value="-883" />
+    <option name="width" value="1440" />
+    <option name="height" value="811" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -747,13 +219,68 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
               <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -979,18 +506,6 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -1016,20 +531,9 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="homePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -1041,9 +545,9 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ar" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -1055,9 +559,9 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ml" type="462c0819:PsiDirectoryNode" />
+              <item name="perInfo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -1069,9 +573,8 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="rc" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -1083,19 +586,8 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="intercepotor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -1108,58 +600,6 @@
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="vo" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="ml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -1173,9 +613,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1488,7 +929,8 @@
       <workItem from="1532567195164" duration="18413000" />
       <workItem from="1532653734798" duration="21164000" />
       <workItem from="1532913227685" duration="37183000" />
-      <workItem from="1532998740649" duration="14517000" />
+      <workItem from="1532998740649" duration="18747000" />
+      <workItem from="1533085364455" duration="17475000" />
     </task>
     <task id="LOCAL-00001" summary="first commit 20180705">
       <created>1530784564513</created>
@@ -1574,7 +1016,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531831702411</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="commit 20180730(我的、商城)">
+      <created>1533024264086</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1533024264086</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1610,7 +1059,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="448750000" />
+    <option name="totallyTimeSpent" value="470455000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1622,36 +1071,36 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-94" y="-962" width="1446" height="810" extended-state="0" />
+    <frame x="-268" y="-1080" width="1920" height="1080" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32640332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18814969" sideWeight="0.52228826" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18715084" sideWeight="0.52228826" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3343983" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15176715" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.8013986" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.76663357" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29985756" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26091588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23636363" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3170391" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18814969" sideWeight="0.47771174" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3813307" sideWeight="0.47771174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32640332" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1709,7 +1158,8 @@
     <MESSAGE value="commit 20180716(图库找图)" />
     <MESSAGE value="commit 20180716(贴吧话题)" />
     <MESSAGE value="commit 20180717(纹纹达人)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20180717(纹纹达人)" />
+    <MESSAGE value="commit 20180730(我的、商城)" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20180730(我的、商城)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1721,365 +1171,11 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="37" />
+      <option name="time" value="43" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/resources/application-prod.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2568">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2523">
-          <caret line="22" column="127" lean-forward="false" selection-start-line="22" selection-start-column="127" selection-end-line="22" selection-end-column="127" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAppointManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3440">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSkGalleryManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-750">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArTbTopicManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrLevelsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArDyWorkManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-482">
-          <caret line="154" column="89" lean-forward="false" selection-start-line="154" selection-start-column="89" selection-end-line="154" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/pay/ApiPayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="263" column="55" lean-forward="false" selection-start-line="263" selection-start-column="55" selection-end-line="263" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiBankController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="99" column="68" lean-forward="false" selection-start-line="99" selection-start-column="68" selection-end-line="99" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArBankManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="46" column="16" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserBankMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding>
-            <marker date="1532951650368" expanded="true" signature="1294:1713" ph="SELECT FROM cx_ar_user_bank" />
-            <marker date="1532951650368" expanded="true" signature="1800:2201" ph="SELECT FROM cx_ar_user_bank" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserBankMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserBankServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserBankService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="406" column="6" lean-forward="false" selection-start-line="406" selection-start-column="6" selection-end-line="406" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="747">
-          <caret line="316" column="16" lean-forward="false" selection-start-line="316" selection-start-column="16" selection-end-line="316" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="34" column="13" lean-forward="false" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlGoodsToSelectVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiMoneyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1410">
-          <caret line="149" column="45" lean-forward="true" selection-start-line="149" selection-start-column="45" selection-end-line="149" selection-end-column="45" />
-          <folding>
-            <element signature="e#1712#1731#0" expanded="false" />
-            <element signature="e#2473#2492#0" expanded="false" />
-            <element signature="e#3296#3315#0" expanded="false" />
-            <element signature="e#4101#4120#0" expanded="false" />
-            <element signature="e#4872#4891#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlGoodsOrderVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlUserGoodsLogisticsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlUserGoodsLogisticsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlUserGoodsLogisticsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlUserGoodsLogisticsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="43" column="26" lean-forward="true" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
-          <folding>
-            <marker date="1533018310199" expanded="true" signature="1299:1381" ph="SELECT FROM cx_ml_user_goods_logistics" />
-            <marker date="1533018310199" expanded="true" signature="1299:1863" ph="SELECT FROM cx_ml_user_goods_logistics" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="100" column="19" lean-forward="false" selection-start-line="100" selection-start-column="4" selection-end-line="100" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlUserGoodsSelectMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="55" column="4" lean-forward="false" selection-start-line="55" selection-start-column="4" selection-end-line="55" selection-end-column="4" />
-          <folding>
-            <marker date="1533007400084" expanded="true" signature="1418:2061" ph="SELECT FROM cx_ml_user_goods_select" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlUserGoodsSelectMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlUserGoodsSelectServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlUserGoodsSelectService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/mall/StockService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2203">
-          <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserMoneyManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="976">
-          <caret line="186" column="20" lean-forward="false" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlUserAddressVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/entity/MlUserAddress.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-217">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMoneyRecordMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMoneyRecordMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="33" column="128" lean-forward="false" selection-start-line="33" selection-start-column="128" selection-end-line="33" selection-end-column="128" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserMoneyRecord.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="77" column="33" lean-forward="false" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ml/mlUserAddressDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/IMlUserAddressService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/service/impl/MlUserAddressServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="34" column="50" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="50" />
-          <folding>
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ml/dao/MlUserAddressMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="43" lean-forward="false" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlUserAddressMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="346">
@@ -2104,9 +1200,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2114,9 +1207,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="115" column="33" lean-forward="false" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
-          <folding>
-            <element signature="e#2509#2524#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2125,14 +1215,14 @@
         <state relative-caret-position="227">
           <caret line="62" column="87" lean-forward="true" selection-start-line="62" selection-start-column="87" selection-end-line="62" selection-end-column="87" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ml/mlGoodsSelectDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="165">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
@@ -2146,18 +1236,370 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlGoodsManage.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/tencentCloud/WebRTCSigApi.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
+        <state relative-caret-position="145">
+          <caret line="309" column="24" lean-forward="false" selection-start-line="309" selection-start-column="15" selection-end-line="309" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/HttpClientUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="163" column="78" lean-forward="false" selection-start-line="163" selection-start-column="78" selection-end-line="163" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="204" column="27" lean-forward="false" selection-start-line="204" selection-start-column="19" selection-end-line="204" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="345" column="31" lean-forward="true" selection-start-line="345" selection-start-column="31" selection-end-line="345" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="155" column="32" lean-forward="false" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1225">
+          <caret line="168" column="17" lean-forward="false" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.3.RELEASE/spring-boot-autoconfigure-2.0.3.RELEASE.jar!/org/springframework/boot/autoconfigure/jackson/Jackson2ObjectMapperBuilderCustomizer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/intercepotor/tokenInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="69" column="61" lean-forward="true" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/AppBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/XbootApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="100" column="82" lean-forward="true" selection-start-line="100" selection-start-column="82" selection-end-line="100" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="929">
+          <caret line="131" column="49" lean-forward="true" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2145">
+          <caret line="153" column="30" lean-forward="false" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsDetailController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="273" column="31" lean-forward="false" selection-start-line="273" selection-start-column="31" selection-end-line="273" selection-end-column="31" />
+        <state relative-caret-position="1282">
+          <caret line="311" column="2" lean-forward="false" selection-start-line="311" selection-start-column="2" selection-end-line="311" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlGoodsManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="112" column="42" lean-forward="false" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAppointController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="57" column="59" lean-forward="false" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arNameAduitDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="38" column="59" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAuditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserSpTattooDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiRes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
+          <folding>
+            <marker date="1533113497970" expanded="true" signature="3238:3883" ph="SELECT u.*, cx_ar_user_sk_evaluates" />
+            <marker date="1533113497970" expanded="true" signature="3975:4726" ph="SELECT u.*, cx_ar_user_sk_evaluates" />
+            <marker date="1533113497970" expanded="true" signature="3975:4734" ph="SELECT u.*, cx_ar_user_sk_evaluates" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
+          <folding>
+            <marker date="1533113497967" expanded="true" signature="3229:3869" ph="SELECT u.*, cx_ar_user_ot_evaluates" />
+            <marker date="1533113497967" expanded="true" signature="3961:4707" ph="SELECT u.*, cx_ar_user_ot_evaluates" />
+            <marker date="1533113497967" expanded="true" signature="3961:4715" ph="SELECT u.*, cx_ar_user_ot_evaluates" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="110" column="41" lean-forward="false" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
+          <folding>
+            <marker date="1533113497957" expanded="true" signature="3226:3666" ph="SELECT u.*, cx_ar_user_tb_evaluates" />
+            <marker date="1533113497957" expanded="true" signature="3758:4509" ph="SELECT u.*, cx_ar_user_tb_evaluates" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
+          <folding>
+            <marker date="1533113497961" expanded="true" signature="3226:3863" ph="SELECT u.*, cx_ar_user_dy_evaluates" />
+            <marker date="1533113497961" expanded="true" signature="3955:4706" ph="SELECT u.*, cx_ar_user_dy_evaluates" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
+          <folding>
+            <marker date="1533113497964" expanded="true" signature="3244:3889" ph="SELECT u.*, cx_ar_user_sp_evaluates" />
+            <marker date="1533113497964" expanded="true" signature="3981:4740" ph="SELECT u.*, cx_ar_user_sp_evaluates" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpEvaluatesMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpEvaluatesServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpEvaluatesService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="177" column="38" lean-forward="false" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="340" column="51" lean-forward="false" selection-start-line="340" selection-start-column="37" selection-end-line="340" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="264" column="56" lean-forward="false" selection-start-line="264" selection-start-column="42" selection-end-line="264" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="426" column="48" lean-forward="false" selection-start-line="426" selection-start-column="34" selection-end-line="426" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSpEvaluatesVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSpTattooVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4638">
+          <caret line="374" column="24" lean-forward="true" selection-start-line="374" selection-start-column="24" selection-end-line="374" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/PageVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSpTattooManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="198" column="67" lean-forward="true" selection-start-line="198" selection-start-column="67" selection-end-line="198" selection-end-column="67" />
           <folding />
         </state>
       </provider>

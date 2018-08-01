@@ -80,7 +80,7 @@ public class ApiSpecialTattooController extends AppBaseController{
                 page = spTattooService.findByCoordinates(pageVo.initPage(),map);
             }
             Page<ArUserSpTattooVo> pageResult = new Page<>(page.getCurrent(), page.getSize());
-
+            pageResult.setTotal(page.getTotal());
 
             pageResult.setRecords(getVo(page.getRecords()));
             return ApiRes.Custom().addData(pageResult);
@@ -225,8 +225,10 @@ public class ApiSpecialTattooController extends AppBaseController{
                 map3.put("level",2);
                 map3.put("spTattooId",spTattooId);
                 ArUserSpEvaluates childEvaluates = spEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(ArUserSpEvaluatesVos);
             return ApiRes.Custom().addData(voPage);
@@ -272,8 +274,10 @@ public class ApiSpecialTattooController extends AppBaseController{
                 map3.put("type",2);
                 map3.put("level",spEvaluatesMain.getLevel()+2);
                 ArUserSpEvaluates childEvaluates = spEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(ArUserSpEvaluatesVos);
 

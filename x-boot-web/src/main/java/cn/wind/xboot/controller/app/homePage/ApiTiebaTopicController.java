@@ -162,8 +162,10 @@ public class ApiTiebaTopicController extends AppBaseController{
                 map3.put("level",2);
                 map3.put("tbTopicId",tbTopicId);
                 ArUserTbEvaluates childEvaluates = tbEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(vos);
             return ApiRes.Custom().addData(voPage);
@@ -209,8 +211,10 @@ public class ApiTiebaTopicController extends AppBaseController{
                 map3.put("type",2);
                 map3.put("level",skEvaluatesMain.getLevel()+2);
                 ArUserTbEvaluates childEvaluates = tbEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(ArUserSkEvaluatesVos);
 

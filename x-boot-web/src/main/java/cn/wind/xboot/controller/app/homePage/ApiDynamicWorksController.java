@@ -375,8 +375,11 @@ public class ApiDynamicWorksController extends AppBaseController{
                 map3.put("level",2);
                 map3.put("dyWorksId",dyWorksId);
                 ArUserDyEvaluates childEvaluates = dyEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
+
             }
             voPage.setRecords(ArUserDyEvaluatesVos);
             return ApiRes.Custom().addData(voPage);
@@ -422,8 +425,10 @@ public class ApiDynamicWorksController extends AppBaseController{
                 map3.put("type",2);
                 map3.put("level",dyEvaluatesMain.getLevel()+2);
                 ArUserDyEvaluates childEvaluates = dyEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(ArUserDyEvaluatesVos);
 

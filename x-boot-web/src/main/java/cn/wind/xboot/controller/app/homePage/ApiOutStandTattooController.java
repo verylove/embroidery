@@ -210,8 +210,11 @@ public class ApiOutStandTattooController extends AppBaseController{
                 map3.put("level",2);
                 map3.put("otTattooId",otTattooId);
                 ArUserOtEvaluates childEvaluates = otEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
+
             }
             voPage.setRecords(ArUserOtEvaluatesVos);
             return ApiRes.Custom().addData(voPage);
@@ -257,8 +260,10 @@ public class ApiOutStandTattooController extends AppBaseController{
                 map3.put("type",2);
                 map3.put("level",otEvaluatesMain.getLevel()+2);
                 ArUserOtEvaluates childEvaluates = otEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(ArUserOtEvaluatesVos);
 

@@ -128,6 +128,16 @@ public class SmsController {
                     return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
                 }
                 break;
+            case PAY_PASS:
+                //添加支付密码
+                if(user==null){
+                    return apiResponse.failure(ApiStatus.USER_NOT_EXIST);
+                }
+                //1分钟内不可重发发送短信
+                if(LocalCacheUtil.get("CIXIU_PHONE_PAYPASS:"+mobiles)!=null){
+                    return apiResponse.failure(ApiStatus.SMS_WAIT_SEND);
+                }
+                break;
             case NULL:
             default:
                 break;
@@ -166,6 +176,12 @@ public class SmsController {
                         //保存发送记录到缓存中3分钟
                         redisTemplate.opsForValue().set("CIXIU_PHONE_BANK:"+v,vcode,3, TimeUnit.MINUTES);
                         LocalCacheUtil.set("CIXIU_PHONE_BANK:"+v,vcode,60*1000);
+                        break;
+                    case PAY_PASS:
+                        //验证支付密码
+                        //保存发送记录到缓存中3分钟
+                        redisTemplate.opsForValue().set("CIXIU_PHONE_PAYPASS:"+v,vcode,3, TimeUnit.MINUTES);
+                        LocalCacheUtil.set("CIXIU_PHONE_PAYPASS:"+v,vcode,60*1000);
                         break;
                     case NULL:
                     default:

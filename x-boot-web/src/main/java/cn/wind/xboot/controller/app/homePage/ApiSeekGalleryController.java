@@ -288,8 +288,10 @@ public class ApiSeekGalleryController extends AppBaseController{
                 map3.put("level",2);
                 map3.put("skGalleryId",skGalleryId);
                 ArUserSkEvaluates childEvaluates = skEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(ArUserSkEvaluatesVos);
             return ApiRes.Custom().addData(voPage);
@@ -335,8 +337,10 @@ public class ApiSeekGalleryController extends AppBaseController{
                 map3.put("type",2);
                 map3.put("level",skEvaluatesMain.getLevel()+2);
                 ArUserSkEvaluates childEvaluates = skEvaluatesService.findOneInSecondEvaluate(map3);
-                vo.setEvaluterId(childEvaluates.getUserId());
-                vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                if(childEvaluates != null){
+                    vo.setEvaluterId(childEvaluates.getUserId());
+                    vo.setEvaluterAccount(childEvaluates.getUser().getAccount());
+                }
             }
             voPage.setRecords(ArUserSkEvaluatesVos);
 

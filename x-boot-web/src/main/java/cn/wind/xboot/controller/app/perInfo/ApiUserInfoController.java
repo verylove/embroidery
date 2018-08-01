@@ -343,7 +343,7 @@ public class ApiUserInfoController extends AppBaseController {
             @ApiImplicitParam(name = "payPass",value = "支付密码",dataType = "String",required = true,paramType = "query"),
             @ApiImplicitParam(name = "code",value = "验证码",dataType = "String",required = true,paramType = "query")
     })
-    @PostMapping("/resetPassword")
+    @PostMapping("/setPayPass")
     public ApiRes setPayPass(String payPass,String code){
         try{
             ArUser user = userService.selectById(getUserId());

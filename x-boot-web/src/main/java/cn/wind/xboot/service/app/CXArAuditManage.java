@@ -1,13 +1,7 @@
 package cn.wind.xboot.service.app;
 
-import cn.wind.db.ar.entity.ArSignAudit;
-import cn.wind.db.ar.entity.ArStoreAduit;
-import cn.wind.db.ar.entity.ArStorePic;
-import cn.wind.db.ar.entity.ArTattooAduit;
-import cn.wind.db.ar.service.IArSignAuditService;
-import cn.wind.db.ar.service.IArStoreAduitService;
-import cn.wind.db.ar.service.IArStorePicService;
-import cn.wind.db.ar.service.IArTattooAduitService;
+import cn.wind.db.ar.entity.*;
+import cn.wind.db.ar.service.*;
 import cn.wind.xboot.dto.app.ar.arNameAduitDto;
 import cn.wind.xboot.dto.app.ar.arStoreAduitDto;
 import com.google.common.collect.Lists;
@@ -34,6 +28,8 @@ public class CXArAuditManage {
     private IArStorePicService storePicService;
     @Autowired
     private IArTattooAduitService tattooAduitService;
+    @Autowired
+    private IArUserService userService;
 
     @Transactional
     public void newSignAudit(Long userId)throws Exception{
@@ -42,10 +38,17 @@ public class CXArAuditManage {
         signAudits.setStatus(1);
         signAudits.setUserId(userId);
         signAuditService.insert(signAudits);
+
+        //2.更新user表签约保障ID
+        ArUser user = userService.selectById(userId);
+        user.setSignId(signAudits.getId());
+        user.setSignStatus(2);
+        userService.updateById(user);
     }
 
     @Transactional
     public void newStoreAudit(arStoreAduitDto dto, Long userId)throws Exception {
+        //1.插入cx_ar_store_aduit 数据 用户店铺认证
         ArStoreAduit storeAduit = new ArStoreAduit();
         BeanUtils.copyProperties(dto,storeAduit);
         storeAduit.setUserId(userId);
@@ -62,14 +65,27 @@ public class CXArAuditManage {
                 storePicService.insert(pic);
             }
         }
+
+        //2.更新user表店铺认证ID
+        ArUser user = userService.selectById(userId);
+        user.setStoreId(storeAduit.getId());
+        user.setStoreStatus(2);
+        userService.updateById(user);
     }
 
     @Transactional
     public void newNameAudit(arNameAduitDto dto, Long userId)throws Exception {
+        //1.插入cx_ar_tattoo_aduit 数据 用户实名验证
         ArTattooAduit arTattooAduit = new ArTattooAduit();
         BeanUtils.copyProperties(dto,arTattooAduit);
         arTattooAduit.setUserId(userId);
         arTattooAduit.setStatus(1);
         tattooAduitService.insert(arTattooAduit);
+
+        //2.更新user表实名认证ID
+        ArUser user = userService.selectById(userId);
+        user.setNameId(arTattooAduit.getId());
+        user.setNameStatus(2);
+        userService.updateById(user);
     }
 }
