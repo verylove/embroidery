@@ -41,11 +41,10 @@ public class ApiLoginController extends AppBaseController{
     @ApiImplicitParams({
             @ApiImplicitParam(name = "phone", value = "注册的用户手机号", required = true, dataType = "String", paramType = "query"),
             @ApiImplicitParam(name = "code", value = "验证码", required = true, dataType = "String", paramType = "query"),
-            @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String", paramType = "query"),
-            @ApiImplicitParam(name = "type", value = "1-纹身师 0-爱好者", required = true, dataType = "Integer", paramType = "query")
+            @ApiImplicitParam(name = "password", value = "密码", required = true, dataType = "String", paramType = "query")
     })
     @PostMapping("/open/register")
-    public ApiRes register(String phone,String code,String password,Integer type){
+    public ApiRes register(String phone,String code,String password){
         Map<String,Object> map = new HashMap<>();
         try{
             //1.判断手机格式
@@ -72,7 +71,7 @@ public class ApiLoginController extends AppBaseController{
                 return ApiRes.Custom().failure(ApiStatus.USER_ALREADY_EXIST);
             }
             //5.注册用户
-            user = userManage.addUserByIdentity(phone,password,type);
+            user = userManage.addUserByIdentity(phone,password);
             if(user==null){
                 return ApiRes.Custom().failure(ApiStatus.REGISTER_FAIL);
             }

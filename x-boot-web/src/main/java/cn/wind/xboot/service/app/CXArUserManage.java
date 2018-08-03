@@ -46,7 +46,7 @@ public class CXArUserManage {
     @Autowired
     private IMlUserGoodsLogisticsService logisticsService;
 
-    public ArUser addUserByIdentity(String phone, String password, Integer type) {
+    public ArUser addUserByIdentity(String phone, String password) {
 
         ArUser user = new ArUser();
         user.setAccount(phone);
@@ -54,7 +54,7 @@ public class CXArUserManage {
         user.setIcon(
                 contants.defaultHeadImg);
         user.setPassword(password);
-        user.setIdentity(type);
+        user.setIdentity(0);//默认爱好者
         userService.insert(user);
         return user;
     }
@@ -314,8 +314,14 @@ public class CXArUserManage {
     }
 
     @Transactional
-    public void setPayPss(ArUser user, String payPass) {
+    public void setPayPss(ArUser user, String payPass)throws Exception {
         user.setPayPass(payPass);
+        userService.updateById(user);
+    }
+
+    @Transactional
+    public void identitySelect(ArUser user, Integer type)throws Exception {
+        user.setIdentity(type);
         userService.updateById(user);
     }
 }

@@ -2,29 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a217ff-546c-4f84-9a72-f90d51c9d86e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/tencentCloud/WebRTCSigApi.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiStatus.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/res/ApiStatus.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController$1.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-07-30.0.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-01.0.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-02.0.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/SmsController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/enums/SmsTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/enums/SmsTypeEnum.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/x-boot-web/spring.log" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMasterShowController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMasterShowController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,7 +34,71 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="PageVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/PageVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiUserInfoController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="217" column="19" lean-forward="false" selection-start-line="217" selection-start-column="19" selection-end-line="217" selection-end-column="19" />
+              <folding>
+                <element signature="e#7810#7825#0" expanded="true" />
+                <element signature="e#8978#8993#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArUserVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ArUserDailySentimentVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDailySentimentVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="915">
+              <caret line="63" column="15" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RcSecondTransactVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/rc/RcSecondTransactVo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="795">
+              <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rcSecondTransactDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/rc/rcSecondTransactDto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="810">
+              <caret line="60" column="47" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,8 +111,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>getAppID</find>
-      <find>updateByConditions</find>
       <find>String payNo</find>
       <find>String orderNo</find>
       <find>initStock</find>
@@ -85,6 +139,8 @@
       <find>pageForTattoo</find>
       <find>limit 1 order</find>
       <find>childEvaluates</find>
+      <find>like</find>
+      <find>praise_</find>
     </findStrings>
     <replaceStrings>
       <replace>aruser</replace>
@@ -107,11 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/WxPayManage.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrLevelsService.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserBankService.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserBankServiceImpl.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserBankMapper.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserBankMapper.xml" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiBankController.java" />
@@ -141,11 +192,9 @@
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsDetailController.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/tencentCloud/WebRTCSigApi.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/XbootApplication.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" />
         <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" />
@@ -156,8 +205,15 @@
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" />
         <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMasterShowController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java" />
       </list>
     </option>
   </component>
@@ -179,6 +235,10 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="Profiles" type="6783ec58:MavenProjectsStructure$ProfilesNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="embroidery__backstage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
         <path>
@@ -188,8 +248,7 @@
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="embroidery__backstage" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="x-boot-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
         </path>
       </expand>
       <select />
@@ -198,9 +257,8 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-186" />
-    <option name="y" value="-883" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="811" />
   </component>
@@ -219,6 +277,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,220 +290,6 @@
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
               <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xxl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xxl" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xxl" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xxl" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="xxl" type="462c0819:PsiDirectoryNode" />
-              <item name="job" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="handler" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-job" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
               <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -520,20 +367,6 @@
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="homePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -561,62 +394,41 @@
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="mall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="pay" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="perInfo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="intercepotor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -930,7 +742,11 @@
       <workItem from="1532653734798" duration="21164000" />
       <workItem from="1532913227685" duration="37183000" />
       <workItem from="1532998740649" duration="18747000" />
-      <workItem from="1533085364455" duration="17475000" />
+      <workItem from="1533085364455" duration="23498000" />
+      <workItem from="1533171658395" duration="21740000" />
+      <workItem from="1533208474255" duration="622000" />
+      <workItem from="1533258285176" duration="8415000" />
+      <workItem from="1533268054609" duration="626000" />
     </task>
     <task id="LOCAL-00001" summary="first commit 20180705">
       <created>1530784564513</created>
@@ -1023,7 +839,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533024264086</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="commit 20180801(部分BUG修改)">
+      <created>1533115755720</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1533115755720</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1059,7 +882,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="470455000" />
+    <option name="totallyTimeSpent" value="507881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1071,7 +894,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-268" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1080,28 +903,28 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18715084" sideWeight="0.52228826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3343983" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15176715" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.76663357" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08869814" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31843576" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36871508" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26091588" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3590844" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3170391" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3813307" sideWeight="0.47771174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2611732" sideWeight="0.47771174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3170391" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1159,7 +982,8 @@
     <MESSAGE value="commit 20180716(贴吧话题)" />
     <MESSAGE value="commit 20180717(纹纹达人)" />
     <MESSAGE value="commit 20180730(我的、商城)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20180730(我的、商城)" />
+    <MESSAGE value="commit 20180801(部分BUG修改)" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20180801(部分BUG修改)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1171,419 +995,342 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="43" />
+      <option name="time" value="48" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ml/MlUserAddressMapper.xml">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserSkGallery.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="97" column="13" lean-forward="true" selection-start-line="97" selection-start-column="13" selection-end-line="97" selection-end-column="13" />
+        <state relative-caret-position="-192">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSkGalleryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSkGalleryServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="78" column="39" lean-forward="false" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
           <folding>
-            <marker date="1533023677985" expanded="true" signature="1385:1789" ph="SELECT FROM cx_ml_user_address" />
-            <marker date="1533023677985" expanded="true" signature="2819:2874" ph="SELECT FROM... " />
-            <marker date="1533023677985" expanded="true" signature="2819:2893" ph="SELECT FROM cx_ml_user_address" />
+            <marker date="1533127727370" expanded="true" signature="3153:3640" ph="SELECT u.*, cx_ar_user_sk_gallery" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSkGalleryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-923">
-          <caret line="53" column="18" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="18" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="18" column="26" lean-forward="false" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlUserAddressManage.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSkGalleryVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="531">
+          <caret line="52" column="0" lean-forward="true" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiUserAddressController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="115" column="33" lean-forward="false" selection-start-line="115" selection-start-column="33" selection-end-line="115" selection-end-column="33" />
+        <state relative-caret-position="5715">
+          <caret line="413" column="35" lean-forward="false" selection-start-line="413" selection-start-column="27" selection-end-line="413" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsOrderController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSkEvaluatesVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="62" column="87" lean-forward="true" selection-start-line="62" selection-start-column="87" selection-end-line="62" selection-end-column="87" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        <state relative-caret-position="251">
+          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ml/mlGoodsSelectDto.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserTbTopicDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="36" column="47" lean-forward="false" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ml/MlGoodsShopCartVo.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/tencentCloud/WebRTCSigApi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="309" column="24" lean-forward="false" selection-start-line="309" selection-start-column="15" selection-end-line="309" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/HttpClientUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="163" column="78" lean-forward="false" selection-start-line="163" selection-start-column="78" selection-end-line="163" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/message/sms/enums/SmsTypeEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-3281">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="150">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserTbTopicVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="204" column="27" lean-forward="false" selection-start-line="204" selection-start-column="19" selection-end-line="204" selection-end-column="27" />
-          <folding />
+        <state relative-caret-position="750">
+          <caret line="56" column="33" lean-forward="false" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="345" column="31" lean-forward="true" selection-start-line="345" selection-start-column="31" selection-end-line="345" selection-end-column="31" />
-          <folding />
+        <state relative-caret-position="-107">
+          <caret line="196" column="25" lean-forward="false" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserTbEvaluatesVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="58" selection-start-column="6" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="69" column="0" lean-forward="false" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserOtTattooDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="28" column="47" lean-forward="false" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="56" column="29" lean-forward="false" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="266">
+          <caret line="56" column="35" lean-forward="false" selection-start-line="56" selection-start-column="35" selection-end-line="56" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common/SmsController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserOtTattooVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1411">
-          <caret line="155" column="32" lean-forward="false" selection-start-line="155" selection-start-column="25" selection-end-line="155" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="341">
+          <caret line="56" column="40" lean-forward="true" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/src.zip!/java/io/Serializable.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserOtEvaluatesVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1225">
-          <caret line="168" column="17" lean-forward="false" selection-start-line="168" selection-start-column="17" selection-end-line="168" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="265">
+          <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.3.RELEASE/spring-boot-autoconfigure-2.0.3.RELEASE.jar!/org/springframework/boot/autoconfigure/jackson/Jackson2ObjectMapperBuilderCustomizer.class">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="5145">
+          <caret line="374" column="24" lean-forward="true" selection-start-line="374" selection-start-column="24" selection-end-line="374" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/intercepotor/tokenInterceptor.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserDyWorkDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="69" column="61" lean-forward="true" selection-start-line="69" selection-start-column="61" selection-end-line="69" selection-end-column="61" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="32" column="34" lean-forward="false" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/AppBaseController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="130" column="31" lean-forward="false" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arStoreAduitDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1329">
+          <caret line="185" column="29" lean-forward="false" selection-start-line="185" selection-start-column="29" selection-end-line="185" selection-end-column="29" />
+          <folding>
+            <marker date="1533261060178" expanded="true" signature="3430:3969" ph="SELECT u.*,,... cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="3701:3919" ph="SELECT max(a... cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="4063:4636" ph="SELECT u.*,,... cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="4334:4586" ph="SELECT max(a... cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="4731:5232" ph="SELECT u.*, cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="5329:5598" ph="SELECT u.*, cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="5699:5966" ph="SELECT u.*, cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="6450:6811" ph="SELECT u.*, cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="6905:7271" ph="SELECT u.*, cx_ar_user_dy_works" />
+            <marker date="1533261060178" expanded="true" signature="7356:7717" ph="SELECT u.*, cx_ar_user_dy_works" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyWorksMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="31" column="24" lean-forward="false" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyWorksServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="54" column="55" lean-forward="true" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyWorksService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="30" column="24" lean-forward="false" selection-start-line="30" selection-start-column="24" selection-end-line="30" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDyEvaluatesVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <caret line="57" column="32" lean-forward="false" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="626" column="24" lean-forward="false" selection-start-line="626" selection-start-column="24" selection-end-line="626" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDyWorksVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMasterShowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="53" column="20" lean-forward="true" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="986">
+          <caret line="119" column="34" lean-forward="false" selection-start-line="119" selection-start-column="27" selection-end-line="119" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMatarialController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="65" column="48" lean-forward="false" selection-start-line="65" selection-start-column="34" selection-end-line="65" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3210">
+          <caret line="245" column="24" lean-forward="false" selection-start-line="245" selection-start-column="24" selection-end-line="245" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/rc/rcRecruitMentDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/rc/RcTattooRecruitVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="26" selection-end-line="47" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiRecruitmentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="133" column="25" lean-forward="false" selection-start-line="133" selection-start-column="25" selection-end-line="133" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAuditController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="73" column="31" lean-forward="false" selection-start-line="73" selection-start-column="27" selection-end-line="73" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/XbootApplication.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/rc/rcSecondTransactDto.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="100" column="82" lean-forward="true" selection-start-line="100" selection-start-column="82" selection-end-line="100" selection-end-column="82" />
+        <state relative-caret-position="810">
+          <caret line="60" column="47" lean-forward="false" selection-start-line="60" selection-start-column="45" selection-end-line="60" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/rc/RcSecondTransactVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSecondTransactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-315">
+          <caret line="132" column="25" lean-forward="true" selection-start-line="132" selection-start-column="25" selection-end-line="132" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAppointController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="32" column="20" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/login/ApiLoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="929">
-          <caret line="131" column="49" lean-forward="true" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2145">
-          <caret line="153" column="30" lean-forward="false" selection-start-line="153" selection-start-column="30" selection-end-line="153" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/mall/ApiGoodsDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1282">
-          <caret line="311" column="2" lean-forward="false" selection-start-line="311" selection-start-column="2" selection-end-line="311" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXMlGoodsManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="256" column="16" lean-forward="false" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1005">
-          <caret line="112" column="42" lean-forward="false" selection-start-line="112" selection-start-column="37" selection-end-line="112" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAppointController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="57" column="59" lean-forward="false" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arNameAduitDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="38" column="59" lean-forward="false" selection-start-line="38" selection-start-column="53" selection-end-line="38" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArAuditManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="44" column="27" lean-forward="false" selection-start-line="44" selection-start-column="27" selection-end-line="44" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiAuditController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="124" column="26" lean-forward="true" selection-start-line="124" selection-start-column="26" selection-end-line="124" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserSpTattooDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="64" column="29" lean-forward="false" selection-start-line="64" selection-start-column="25" selection-end-line="64" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/res/ApiRes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-900">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
-          <folding>
-            <marker date="1533113497970" expanded="true" signature="3238:3883" ph="SELECT u.*, cx_ar_user_sk_evaluates" />
-            <marker date="1533113497970" expanded="true" signature="3975:4726" ph="SELECT u.*, cx_ar_user_sk_evaluates" />
-            <marker date="1533113497970" expanded="true" signature="3975:4734" ph="SELECT u.*, cx_ar_user_sk_evaluates" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
-          <folding>
-            <marker date="1533113497967" expanded="true" signature="3229:3869" ph="SELECT u.*, cx_ar_user_ot_evaluates" />
-            <marker date="1533113497967" expanded="true" signature="3961:4707" ph="SELECT u.*, cx_ar_user_ot_evaluates" />
-            <marker date="1533113497967" expanded="true" signature="3961:4715" ph="SELECT u.*, cx_ar_user_ot_evaluates" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="110" column="41" lean-forward="false" selection-start-line="110" selection-start-column="41" selection-end-line="110" selection-end-column="41" />
-          <folding>
-            <marker date="1533113497957" expanded="true" signature="3226:3666" ph="SELECT u.*, cx_ar_user_tb_evaluates" />
-            <marker date="1533113497957" expanded="true" signature="3758:4509" ph="SELECT u.*, cx_ar_user_tb_evaluates" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
-          <folding>
-            <marker date="1533113497961" expanded="true" signature="3226:3863" ph="SELECT u.*, cx_ar_user_dy_evaluates" />
-            <marker date="1533113497961" expanded="true" signature="3955:4706" ph="SELECT u.*, cx_ar_user_dy_evaluates" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="116" column="41" lean-forward="false" selection-start-line="116" selection-start-column="41" selection-end-line="116" selection-end-column="41" />
-          <folding>
-            <marker date="1533113497964" expanded="true" signature="3244:3889" ph="SELECT u.*, cx_ar_user_sp_evaluates" />
-            <marker date="1533113497964" expanded="true" signature="3981:4740" ph="SELECT u.*, cx_ar_user_sp_evaluates" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpEvaluatesMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpEvaluatesServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="29" column="38" lean-forward="false" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpEvaluatesService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="177" column="38" lean-forward="false" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="340" column="51" lean-forward="false" selection-start-line="340" selection-start-column="37" selection-end-line="340" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="264" column="56" lean-forward="false" selection-start-line="264" selection-start-column="42" selection-end-line="264" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="426" column="48" lean-forward="false" selection-start-line="426" selection-start-column="34" selection-end-line="426" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSpEvaluatesVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserSpTattooVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="67" column="40" lean-forward="true" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4638">
-          <caret line="374" column="24" lean-forward="true" selection-start-line="374" selection-start-column="24" selection-end-line="374" selection-end-column="24" />
+        <state relative-caret-position="-870">
+          <caret line="73" column="37" lean-forward="false" selection-start-line="73" selection-start-column="37" selection-end-line="73" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1596,11 +1343,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSpTattooManage.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserSignManage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="198" column="67" lean-forward="true" selection-start-line="198" selection-start-column="67" selection-end-line="198" selection-end-column="67" />
+        <state relative-caret-position="-598">
+          <caret line="46" column="20" lean-forward="false" selection-start-line="46" selection-start-column="12" selection-end-line="46" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="151" column="10" lean-forward="false" selection-start-line="151" selection-start-column="7" selection-end-line="151" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserDailySentimentVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="63" column="15" lean-forward="false" selection-start-line="63" selection-start-column="7" selection-end-line="63" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiUserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="217" column="19" lean-forward="false" selection-start-line="217" selection-start-column="19" selection-end-line="217" selection-end-column="19" />
+          <folding>
+            <element signature="e#7810#7825#0" expanded="true" />
+            <element signature="e#8978#8993#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

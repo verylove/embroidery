@@ -77,7 +77,7 @@
         <where>
             u.status = 1
             <if test="content != null">
-                and MATCH(u.`content`) AGAINST(#{content})
+                AND u.`content` like CONCAT(CONCAT('%', #{content}), '%')
             </if>
             <if test="labelId != null">
                 and u.label = #{labelId}

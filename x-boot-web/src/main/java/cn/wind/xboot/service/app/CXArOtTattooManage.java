@@ -72,6 +72,7 @@ public class CXArOtTattooManage {
             ArUserOtPic pic1 = new ArUserOtPic();
             pic1.setImg(pic);
             pic1.setOtTattooId(otTattoo.getId());
+            pics.add(pic1);
         }
         otPicService.insertBatch(pics);
     }

@@ -87,9 +87,9 @@ public class ApiSeekGalleryController extends AppBaseController{
             EntityWrapper<ArUserSkLabel> ew=new EntityWrapper<ArUserSkLabel>();
             ew.eq("level",1);
             List<ArUserSkLabel> labels = skLabelService.selectList(ew);
-            Map<String,Object> map = Maps.newHashMap();
             List<Map<String,Object>> result = new ArrayList<>();
             for(ArUserSkLabel label:labels){
+                Map<String,Object> map = Maps.newHashMap();
                 map.put("main",label);
                 ew = new EntityWrapper<ArUserSkLabel>();
                 ew.eq("level",2).and().eq("pid",label.getId());

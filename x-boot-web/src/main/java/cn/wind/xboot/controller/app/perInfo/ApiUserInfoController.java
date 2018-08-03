@@ -66,6 +66,23 @@ public class ApiUserInfoController extends AppBaseController {
     @Autowired
     private StringRedisTemplate redisTemplate;
 
+    @ApiOperation(value = "身份选择 注册完试用")
+    @ApiImplicitParam(name = "type", value = "1-纹身师 0-爱好者", required = true, dataType = "Integer", paramType = "query")
+    @PostMapping("/identitySelect")
+    public ApiRes identitySelect(Integer type){
+        try{
+            ArUser user = userService.selectById(getUserId());
+            if(user==null){
+                return ApiRes.Custom().failure(ApiStatus.USER_NOT_EXIST);
+            }
+            userManage.identitySelect(user,type);
+            return ApiRes.Custom().success();
+        }catch (Exception e){
+            e.printStackTrace();
+            return ApiRes.Custom().failure(ApiStatus.DATA_POST_FAIL);
+        }
+    }
+
     @ApiOperation(value = "我的页面 我的信息")
     @ApiImplicitParam(name = "userId",value = "用户ID",dataType = "Long",required = true,paramType = "query")
     @GetMapping("/userInfo")
@@ -185,7 +202,7 @@ public class ApiUserInfoController extends AppBaseController {
     public ApiRes pageForMyFocus(@ModelAttribute PageVo<ArUserFollows> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserFollows> ew=new EntityWrapper<ArUserFollows>();
             ew.eq("user_id",getUserId()).and().eq("status",1);

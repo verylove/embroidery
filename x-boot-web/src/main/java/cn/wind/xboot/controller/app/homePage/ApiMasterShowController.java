@@ -46,7 +46,7 @@ public class ApiMasterShowController extends AppBaseController{
     public ApiRes pageInMasterShow(@ModelAttribute PageVo<ArUser> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("praise_num,desc");
+            sort.add("praiseNum,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUser> ew=new EntityWrapper<ArUser>();
             ew.eq("name_status",3);
