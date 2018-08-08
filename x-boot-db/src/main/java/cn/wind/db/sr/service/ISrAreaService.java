@@ -17,4 +17,6 @@ import java.util.Map;
 public interface ISrAreaService extends IService<SrArea> {
 
     List<SrArea> findAllByConditions(Map<String, Object> map);
+
+    SrArea findByName(String s);
 }

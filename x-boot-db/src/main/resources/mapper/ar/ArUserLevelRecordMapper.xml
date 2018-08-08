@@ -43,9 +43,9 @@
 
     <select id="findAllByConditionsYesterDay" resultMap="BaseResultMap">
         SELECT <include refid="Base_Column_List"/>
-        FROM cx_ar_user_level_record
+        FROM cx_ar_user_level_record u
         <where>
-            DateDiff(create_time,getdate())=1
+            TO_DAYS(NOW()) - TO_DAYS(u.create_time) <![CDATA[ <= ]]>  1
             <if test="userId != null">
                 and user_id = #{userId}
             </if>

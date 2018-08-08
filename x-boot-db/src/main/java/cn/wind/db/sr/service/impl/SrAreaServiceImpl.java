@@ -24,4 +24,9 @@ public class SrAreaServiceImpl extends ServiceImpl<SrAreaMapper, SrArea> impleme
     public List<SrArea> findAllByConditions(Map<String, Object> map) {
         return this.baseMapper.findAllByConditions(map);
     }
+
+    @Override
+    public SrArea findByName(String s) {
+        return this.baseMapper.findByName(s);
+    }
 }

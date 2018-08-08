@@ -78,6 +78,7 @@ public enum ApiStatus implements ApiInfo {
     AREA_NOT_EXIST(900517,"该区域不存在"),
     STROE_NOT_EXIST(900518,"该店铺不存在"),
     PASSWORD_NOT_CONSISTENT(900519,"新密码不一致"),
+    ALREADY_SIGN_IN(900520,"今日已签到"),
     /**
      * 600
      */

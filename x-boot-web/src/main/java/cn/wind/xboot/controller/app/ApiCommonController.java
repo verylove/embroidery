@@ -4,6 +4,7 @@ import cn.wind.common.res.ApiRes;
 import cn.wind.common.res.ApiStatus;
 import cn.wind.db.sr.entity.SrArea;
 import cn.wind.db.sr.service.ISrAreaService;
+import cn.wind.xboot.service.AreaManage;
 import cn.wind.xboot.service.app.CXArUserManage;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.google.common.collect.Maps;
@@ -30,6 +31,8 @@ public class ApiCommonController extends AppBaseController{
     private CXArUserManage userManage;
     @Autowired
     private ISrAreaService areaService;
+    @Autowired
+    private AreaManage areaManage;
 
     @ApiOperation(value = "用户是否第一次点赞")
     @GetMapping(value = "/greatStatus")
@@ -135,6 +138,18 @@ public class ApiCommonController extends AppBaseController{
         try{
             userManage.followOneUser(followId,getUserId());
             return ApiRes.Custom().success();
+        }catch (Exception e){
+            e.printStackTrace();
+            return ApiRes.Custom().failure(ApiStatus.DATA_POST_FAIL);
+        }
+    }
+
+    @ApiOperation(value = "获取当前城市")
+    @GetMapping("/getNowWhere")
+    public ApiRes getNowWhere(Double longitude, Double latitude){
+        try{
+            SrArea area = areaManage.getNowWhere(longitude, latitude);
+            return ApiRes.Custom().addData(area);
         }catch (Exception e){
             e.printStackTrace();
             return ApiRes.Custom().failure(ApiStatus.DATA_POST_FAIL);

@@ -122,7 +122,7 @@ public class ApiUserInfoController extends AppBaseController {
     @PostMapping("/signIn")
     public ApiRes signIn(){
         try{
-            return ApiRes.Custom().addData(userSignManage.signIn(getUserId()));
+            return userSignManage.signIn(getUserId());
         }catch (Exception e){
             e.printStackTrace();
             return ApiRes.Custom().failure("签到异常");
@@ -230,7 +230,7 @@ public class ApiUserInfoController extends AppBaseController {
     public ApiRes pageForMyFollow(@ModelAttribute PageVo<ArUserFollows> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserFollows> ew=new EntityWrapper<ArUserFollows>();
             ew.eq("follow_id",getUserId()).and().eq("status",1);
@@ -327,7 +327,7 @@ public class ApiUserInfoController extends AppBaseController {
         try{
             //1.判断密码是否一致
             ArUser user = userService.selectById(getUserId());
-            if(user.getPassword()!=oldPass){
+            if(!user.getPassword().equals(oldPass)){
                 return ApiRes.Custom().failure(ApiStatus.PASSWORD_ERROR);
             }
             //2.判断验证码是否正确
@@ -393,7 +393,7 @@ public class ApiUserInfoController extends AppBaseController {
         try{
             //1.判断密码是否一致
             ArUser user = userService.selectById(getUserId());
-            if(user.getPayPass()!=oldPayPass){
+            if(!user.getPayPass().equals(oldPayPass)){
                 return ApiRes.Custom().failure(ApiStatus.PAY_PASS_ERROR);
             }
             //2.判断验证码是否正确

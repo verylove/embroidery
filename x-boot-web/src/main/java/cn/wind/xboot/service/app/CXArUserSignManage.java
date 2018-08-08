@@ -1,5 +1,7 @@
 package cn.wind.xboot.service.app;
 
+import cn.wind.common.res.ApiRes;
+import cn.wind.common.res.ApiStatus;
 import cn.wind.common.utils.DateUtil;
 import cn.wind.db.ar.entity.*;
 import cn.wind.db.ar.service.*;
@@ -42,7 +44,7 @@ public class CXArUserSignManage {
      * @param userId
      */
     @Transactional
-    public Map<String,Object> signIn(Long userId)throws Exception {
+    public ApiRes signIn(Long userId)throws Exception {
         Map<String,Object> map = new HashMap<>();
         int signDays = 0;
         ArUser user = userService.selectById(userId);
@@ -58,7 +60,7 @@ public class CXArUserSignManage {
             signRecordNow.setSignDate(nowDate);
             signRecordService.insert(signRecordNow);
         }else {
-            throw new Exception("今日已签到");
+            return ApiRes.Custom().failure(ApiStatus.ALREADY_SIGN_IN);
         }
         //获取当天的前一天
 //        Date date = new Date();
@@ -143,6 +145,6 @@ public class CXArUserSignManage {
         map.put("signDays",signDays);
         map.put("activeNum",user.getActiveNum());
         map.put("level",user.getPerLevel());
-        return map;
+        return ApiRes.Custom().addData(map);
     }
 }
