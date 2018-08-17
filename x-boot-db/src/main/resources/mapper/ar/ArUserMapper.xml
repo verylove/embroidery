@@ -102,4 +102,26 @@
         </foreach>
     </select>
 
+    <select id="findAllByConditions" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ar_user u
+        <where>
+            <if test="account != null">
+                u.account like concat(concat('%',#{account}),'%')
+            </if>
+            <if test="phone != null">
+                and u.phone like concat(concat('%',#{phone}),'%')
+            </if>
+            <if test="startDate!=null">
+                AND u.create_time <![CDATA[ >= ]]> #{startDate}
+            </if>
+            <if test="endDate!=null">
+                AND u.create_time <![CDATA[ <= ]]> #{endDate}
+            </if>
+            <if test="identity !=null and identity !=-1 ">
+                AND u.identity= #{identity}
+            </if>
+        </where>
+    </select>
+
 </mapper>

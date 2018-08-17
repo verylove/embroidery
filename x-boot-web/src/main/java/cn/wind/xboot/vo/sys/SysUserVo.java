@@ -106,7 +106,7 @@ public class SysUserVo {
         this.userInfo.setRealName(realName);
         this.userInfo.setIdcard(idcard);
         this.userInfo.setMobile(mobile);
-        if(addressArray.length>0){
+        if(addressArray != null && addressArray.length>0){
             this.userInfo.setProvince(addressArray.length>0?addressArray[0]:province);
             this.userInfo.setCity(addressArray.length>1?addressArray[1]:city);
             this.userInfo.setDistrict(addressArray.length>2?addressArray[2]:district);

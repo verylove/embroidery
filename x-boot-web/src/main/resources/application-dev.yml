@@ -170,6 +170,7 @@ xboot:
     - /push/**
     - /oauth/logout
     - /notice/**
+    - /userAudit/**
   # 忽略鉴权url
   ignoredUrl:
     - /swagger-ui.html

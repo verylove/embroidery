@@ -2,11 +2,14 @@ package cn.wind.db.ar.dao;
 
 import cn.wind.db.ar.entity.ArUser;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -32,4 +35,6 @@ public interface ArUserMapper extends BaseMapper<ArUser> {
     ArUser findOneByQqOpenId(String openId);
 
     List<ArUser> findAllByIdIn(List<Long> userIds);
+
+    List<ArUser> findAllByConditions(Pagination page, Map<String, Object> map);
 }

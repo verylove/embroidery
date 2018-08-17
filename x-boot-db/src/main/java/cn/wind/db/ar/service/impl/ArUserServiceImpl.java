@@ -3,10 +3,12 @@ package cn.wind.db.ar.service.impl;
 import cn.wind.db.ar.entity.ArUser;
 import cn.wind.db.ar.dao.ArUserMapper;
 import cn.wind.db.ar.service.IArUserService;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -37,5 +39,10 @@ public class ArUserServiceImpl extends ServiceImpl<ArUserMapper, ArUser> impleme
     @Override
     public List<ArUser> findAllByIdIn(List<Long> userIds) {
         return this.baseMapper.findAllByIdIn(userIds);
+    }
+
+    @Override
+    public Page<ArUser> findAllByConditions(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllByConditions(page,map));
     }
 }

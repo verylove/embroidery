@@ -156,5 +156,19 @@ public class ApiCommonController extends AppBaseController{
         }
     }
 
+    @ApiOperation(value = "获取某城市下的所有县区")
+    @GetMapping(value = "allCityList")
+    public ApiRes allCityList(){
+        try{
+            Map<String,Object> map = Maps.newHashMap();
+            map.put("level",2);
+            List<SrArea> areaList = areaService.findAllByConditions(map);
+            return ApiRes.Custom().add(areaList);
+        }catch (Exception e){
+            e.printStackTrace();
+            return ApiRes.Custom().failure(ApiStatus.DATA_GET_FAIL);
+        }
+    }
+
 
 }

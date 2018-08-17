@@ -82,7 +82,7 @@ public class CXArUserSignManage {
             }
             //用户活跃值
             user.setActiveNum(user.getActiveNum()+1L);
-            signDays=0;
+            signDays=1;
         }else {
             //连续7天签到
             if(signNum.getContinueDays()==6){
@@ -91,7 +91,7 @@ public class CXArUserSignManage {
                 //用户活跃值
                 user.setActiveNum(user.getActiveNum()+3L);
             }else {
-                signDays=signNum.getContinueDays();
+                signDays=signNum.getContinueDays()+1;
                 signNum.setContinueDays(signNum.getContinueDays()+1);
                 //用户活跃值
                 user.setActiveNum(user.getActiveNum()+1L);

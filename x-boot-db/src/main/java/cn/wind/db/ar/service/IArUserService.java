@@ -1,9 +1,11 @@
 package cn.wind.db.ar.service;
 
 import cn.wind.db.ar.entity.ArUser;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -22,4 +24,6 @@ public interface IArUserService extends IService<ArUser> {
     ArUser findOneByQqOpenId(String openId);
 
     List<ArUser> findAllByIdIn(List<Long> userIds);
+
+    Page<ArUser> findAllByConditions(Page page, Map<String, Object> map);
 }
