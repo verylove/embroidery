@@ -2,20 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="21a217ff-546c-4f84-9a72-f90d51c9d86e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/userAudit/WebUserAuditController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/AppArUserVo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/UserController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserVo.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/x-boot-web/spring.log" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserSignManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserSignManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/sys/SysUserVo.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/sys/SysUserVo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,11 +43,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebUserAuditController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebUserAuditController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/userAudit/WebUserAuditController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="226">
               <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-420">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiCommonController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1874">
+              <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -346,6 +354,19 @@
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -784,7 +805,7 @@
       <workItem from="1533815798610" duration="1779000" />
       <workItem from="1533865960684" duration="3196000" />
       <workItem from="1534381242983" duration="18349000" />
-      <workItem from="1534468684730" duration="3448000" />
+      <workItem from="1534468684730" duration="3902000" />
     </task>
     <task id="LOCAL-00001" summary="first commit 20180705">
       <created>1530784564513</created>
@@ -898,7 +919,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533722313249</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="commit 20180817(部分BUG修改)">
+      <created>1534476422379</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1534476422379</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -934,7 +962,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="551718000" />
+    <option name="totallyTimeSpent" value="552172000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1037,7 +1065,8 @@
     <MESSAGE value="commit 20180801(部分BUG修改)" />
     <MESSAGE value="commit 20180803(部分BUG修改)" />
     <MESSAGE value="commit 20180808(部分BUG修改)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20180808(部分BUG修改)" />
+    <MESSAGE value="commit 20180817(部分BUG修改)" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20180817(部分BUG修改)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1046,20 +1075,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserSignManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="55" column="98" lean-forward="true" selection-start-line="55" selection-start-column="98" selection-end-line="55" selection-end-column="98" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserZxTattooDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="38" column="20" lean-forward="true" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -1317,6 +1332,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="38" column="36" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1324,6 +1340,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
           <caret line="45" column="66" lean-forward="false" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="66" />
+          <folding>
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1075#1076#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1331,6 +1351,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="27" column="36" lean-forward="false" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1430,6 +1451,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/ApiCommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1874">
+          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
         </state>
       </provider>
