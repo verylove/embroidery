@@ -1,6 +1,7 @@
 package cn.wind.db.ar.service;
 
 import cn.wind.db.ar.entity.ArTattooAduit;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
 
 import java.util.Map;
@@ -16,4 +17,6 @@ import java.util.Map;
 public interface IArTattooAduitService extends IService<ArTattooAduit> {
 
     ArTattooAduit findOneByConditions(Map<String, Object> map);
+
+    Page<ArTattooAduit> findAllByConditions(Page page, Map<String, Object> map);
 }

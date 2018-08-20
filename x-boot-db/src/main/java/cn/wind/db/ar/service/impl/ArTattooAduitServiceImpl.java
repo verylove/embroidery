@@ -3,6 +3,7 @@ package cn.wind.db.ar.service.impl;
 import cn.wind.db.ar.entity.ArTattooAduit;
 import cn.wind.db.ar.dao.ArTattooAduitMapper;
 import cn.wind.db.ar.service.IArTattooAduitService;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -22,5 +23,10 @@ public class ArTattooAduitServiceImpl extends ServiceImpl<ArTattooAduitMapper, A
     @Override
     public ArTattooAduit findOneByConditions(Map<String, Object> map) {
         return this.baseMapper.findOneByConditions(map);
+    }
+
+    @Override
+    public Page<ArTattooAduit> findAllByConditions(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllByConditions(page,map));
     }
 }

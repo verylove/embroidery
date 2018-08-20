@@ -46,3 +46,145 @@ java.lang.InterruptedException: sleep interrupted
 2018-08-17 09:48:51.164  WARN 94220 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
 2018-08-17 09:48:51.178  WARN 94220 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
 2018-08-17 09:48:51.786  WARN 94220 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!
+2018-08-17 15:41:41.590 ERROR 94220 --- [Thread-87] c.x.j.c.thread.ExecutorRegistryThread    : sleep interrupted
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 15:41:41.610 ERROR 94220 --- [Thread-88] c.x.j.core.thread.TriggerCallbackThread  : null
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048) ~[na:1.8.0_144]
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442) ~[na:1.8.0_144]
+	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 15:41:41.633 ERROR 94220 --- [Thread-57] c.x.j.a.c.t.JobRegistryMonitorHelper     : job registry instance error:{}
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:81) ~[classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 15:41:41.633 ERROR 94220 --- [Thread-58] c.x.j.a.c.thread.JobFailMonitorHelper    : job monitor error:{}
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.admin.core.thread.JobFailMonitorHelper$1.run(JobFailMonitorHelper.java:77) ~[classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 15:42:21.878  WARN 97042 --- [localhost-startStop-1] c.w.a.s.h.MyFilterSecurityInterceptor    : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+2018-08-17 15:42:22.957  WARN 97042 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2018-08-17 15:42:33.415  WARN 97042 --- [main] cn.wind.xboot.config.CacheConfiguration  : init redis缓存管理对象
+2018-08-17 15:42:42.283  WARN 97042 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-08-17 15:42:42.297  WARN 97042 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
+2018-08-17 15:42:42.922  WARN 97042 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!
+2018-08-17 17:02:35.571 ERROR 97042 --- [Thread-87] c.x.j.c.thread.ExecutorRegistryThread    : sleep interrupted
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:02:35.592 ERROR 97042 --- [Thread-88] c.x.j.core.thread.TriggerCallbackThread  : null
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048) ~[na:1.8.0_144]
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442) ~[na:1.8.0_144]
+	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:02:35.597 ERROR 97042 --- [Thread-83] c.x.j.c.r.n.jetty.server.JettyServer     : null
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088) ~[na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475) ~[na:1.8.0_144]
+	at org.eclipse.jetty.util.thread.ExecutorThreadPool.join(ExecutorThreadPool.java:182) ~[jetty-util-9.2.24.v20180105.jar:9.2.24.v20180105]
+	at org.eclipse.jetty.server.Server.join(Server.java:556) ~[jetty-server-9.2.24.v20180105.jar:9.2.24.v20180105]
+	at com.xxl.job.core.rpc.netcom.jetty.server.JettyServer$1.run(JettyServer.java:55) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:02:35.608 ERROR 97042 --- [Thread-57] c.x.j.a.c.t.JobRegistryMonitorHelper     : job registry instance error:{}
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:81) ~[classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:02:35.609 ERROR 97042 --- [Thread-58] c.x.j.a.c.thread.JobFailMonitorHelper    : job monitor error:{}
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.admin.core.thread.JobFailMonitorHelper$1.run(JobFailMonitorHelper.java:77) ~[classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:03:16.027  WARN 97730 --- [localhost-startStop-1] c.w.a.s.h.MyFilterSecurityInterceptor    : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+2018-08-17 17:03:17.114  WARN 97730 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2018-08-17 17:03:28.044  WARN 97730 --- [main] cn.wind.xboot.config.CacheConfiguration  : init redis缓存管理对象
+2018-08-17 17:03:37.065  WARN 97730 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-08-17 17:03:37.078  WARN 97730 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
+2018-08-17 17:03:37.698  WARN 97730 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!
+2018-08-17 17:55:55.292 ERROR 97730 --- [Thread-89] c.x.j.c.thread.ExecutorRegistryThread    : sleep interrupted
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:55:55.318 ERROR 97730 --- [Thread-90] c.x.j.core.thread.TriggerCallbackThread  : null
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048) ~[na:1.8.0_144]
+	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442) ~[na:1.8.0_144]
+	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:55:55.326 ERROR 97730 --- [Thread-85] c.x.j.c.r.n.jetty.server.JettyServer     : null
+
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088) ~[na:1.8.0_144]
+	at java.util.concurrent.ThreadPoolExecutor.awaitTermination(ThreadPoolExecutor.java:1475) ~[na:1.8.0_144]
+	at org.eclipse.jetty.util.thread.ExecutorThreadPool.join(ExecutorThreadPool.java:182) ~[jetty-util-9.2.24.v20180105.jar:9.2.24.v20180105]
+	at org.eclipse.jetty.server.Server.join(Server.java:556) ~[jetty-server-9.2.24.v20180105.jar:9.2.24.v20180105]
+	at com.xxl.job.core.rpc.netcom.jetty.server.JettyServer$1.run(JettyServer.java:55) ~[xxl-job-core-1.9.1.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:55:55.343 ERROR 97730 --- [Thread-58] c.x.j.a.c.t.JobRegistryMonitorHelper     : job registry instance error:{}
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:81) ~[classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+
+2018-08-17 17:55:55.343 ERROR 97730 --- [Thread-59] c.x.j.a.c.thread.JobFailMonitorHelper    : job monitor error:{}
+
+java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
+	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
+	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
+	at com.xxl.job.admin.core.thread.JobFailMonitorHelper$1.run(JobFailMonitorHelper.java:77) ~[classes/:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
+

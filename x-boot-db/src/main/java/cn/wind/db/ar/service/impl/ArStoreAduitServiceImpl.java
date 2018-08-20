@@ -3,6 +3,7 @@ package cn.wind.db.ar.service.impl;
 import cn.wind.db.ar.entity.ArStoreAduit;
 import cn.wind.db.ar.dao.ArStoreAduitMapper;
 import cn.wind.db.ar.service.IArStoreAduitService;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -22,5 +23,10 @@ public class ArStoreAduitServiceImpl extends ServiceImpl<ArStoreAduitMapper, ArS
     @Override
     public ArStoreAduit findOneByConditions(Map<String, Object> map) {
         return this.baseMapper.findOneByConditions(map);
+    }
+
+    @Override
+    public Page<ArStoreAduit> findAllByConditions(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllByConditions(page,map));
     }
 }

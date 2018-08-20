@@ -17,6 +17,7 @@
         <result column="content" property="content" />
         <result column="status" property="status" />
         <result column="bus_license" property="busLicense" />
+        <association property="user" javaType="cn.wind.db.ar.entity.ArUser" resultMap="cn.wind.db.ar.dao.ArUserMapper.UserResultMap"/>
     </resultMap>
 
     <!-- 通用查询结果列 -->
@@ -27,6 +28,46 @@
         create_by,
         modify_by,
         store_name, store_address, user_id, description, remark, content, status, bus_license
+    </sql>
+
+    <sql id="Base_UserInfo_Column_List">
+        aruser.create_time aruser_create_time,
+        aruser.create_by aruser_create_by,
+        aruser.modify_time aruser_modify_time,
+        aruser.modify_by aruser_modify_by,
+        aruser.id aruser_id,
+        aruser.account aruser_account,
+        aruser.phone aruser_phone,
+        aruser.password aruser_password,
+        aruser.icon aruser_icon,
+        aruser.sex aruser_sex,
+        aruser.profile aruser_profile,
+        aruser.identity aruser_identity,
+        aruser.province aruser_province,
+        aruser.city aruser_city,
+        aruser.county  aruser_county,
+        aruser.per_address aruser_per_address,
+        aruser.work_num aruser_work_num,
+        aruser.work_place aruser_work_place,
+        aruser.sign_id aruser_sign_id,
+        aruser.name_id aruser_name_id,
+        aruser.store_id aruser_store_id,
+        aruser.sign_status aruser_sign_status,
+        aruser.name_status aruser_name_status,
+        aruser.store_status aruser_store_status,
+        aruser.wx_open_id aruser_wx_open_id,
+        aruser.qq_open_id aruser_qq_open_id,
+        aruser.per_level aruser_per_level,
+        aruser.active_num aruser_active_num,
+        aruser.charm_num aruser_charm_num,
+        aruser.wealth_num aruser_wealth_num,
+        aruser.balance aruser_balance,
+        aruser.great_status aruser_great_status,
+        aruser.sentiment_num aruser_sentiment_num,
+        aruser.praise_num aruser_praise_num,
+        aruser.focus_num aruser_focus_num,
+        aruser.follow_num aruser_follow_num,
+        aruser.pay_pass aruser_pay_pass
     </sql>
 
     <select id="findOneByConditions" resultMap="BaseResultMap">
@@ -45,6 +86,31 @@
             </if>
         </where>
         limit 1
+    </select>
+
+    <select id="findAllByConditions" resultMap="BaseResultMap">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_store_aduit u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            <if test="account != null">
+                aruser.account like concat(concat('%',#{account}),'%')
+            </if>
+            <if test="phone != null">
+                and aruser.phone like concat(concat('%',#{phone}),'%')
+            </if>
+            <if test="status !=null and status !=-1 ">
+                and u.status = #{status}
+            </if>
+            <if test="storeName !=null">
+                and u.storeName like concat(concat('%',#{storeName}),'%')
+            </if>
+            <if test="startDate!=null">
+                AND u.create_time <![CDATA[ >= ]]> #{startDate}
+            </if>
+            <if test="endDate!=null">
+                AND u.create_time <![CDATA[ <= ]]> #{endDate}
+            </if>
+        </where>
     </select>
 
 </mapper>

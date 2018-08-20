@@ -1,5 +1,6 @@
 package cn.wind.db.ar.entity;
 
+import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.annotations.Version;
 import cn.wind.mybatis.common.AuditEntity;
@@ -55,5 +56,7 @@ public class ArTattooAduit extends AuditEntity {
      */
     private Integer status;
 
+    @TableField(exist=false)
+    private ArUser user;
 
 }

@@ -1,5 +1,6 @@
 package cn.wind.db.ar.entity;
 
+import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.annotations.TableName;
 import com.baomidou.mybatisplus.annotations.Version;
 import cn.wind.mybatis.common.AuditEntity;
@@ -9,6 +10,8 @@ import com.baomidou.mybatisplus.annotations.Version;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+
+import java.util.List;
 
 /**
  * <p>
@@ -59,5 +62,10 @@ public class ArStoreAduit extends AuditEntity {
      */
     private String busLicense;
 
+    @TableField(exist = false)
+    private ArUser user;
+
+    @TableField(exist = false)
+    private List<ArStorePic> pics;
 
 }

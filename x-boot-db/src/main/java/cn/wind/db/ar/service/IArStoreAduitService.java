@@ -1,6 +1,7 @@
 package cn.wind.db.ar.service;
 
 import cn.wind.db.ar.entity.ArStoreAduit;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
 
 import java.util.Map;
@@ -16,4 +17,6 @@ import java.util.Map;
 public interface IArStoreAduitService extends IService<ArStoreAduit> {
 
     ArStoreAduit findOneByConditions(Map<String, Object> map);
+
+    Page<ArStoreAduit> findAllByConditions(Page page, Map<String, Object> map);
 }
