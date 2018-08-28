@@ -327,11 +327,15 @@ public class ApiDynamicWorksController extends AppBaseController{
             }
             Page<ArUserDyGreatNum> list =dyGreatNumService.selectPage(pageVo.initPage(),ew);
             List<ArUserDyGreatNum> nums = list.getRecords();
+            Page<ArUserDyGreatNumVo> voPage = new Page<>(list.getCurrent(),list.getSize());
+            if(nums==null || nums.size()<1){
+                return ApiRes.Custom().addData(voPage);
+            }
             List<Long> userIds = nums.stream().map(ArUserDyGreatNum::getUserId).collect(Collectors.toList());
             List<ArUser> users = userService.findAllByIdIn(userIds);
             Map<Long,ArUser> map = users.stream().collect(Collectors.toMap(ArUser::getId,Function.identity()));
 
-            Page<ArUserDyGreatNumVo> voPage = new Page<>(list.getCurrent(),list.getSize());
+
             voPage.setTotal(list.getTotal());
             List<ArUserDyGreatNumVo> vos = Lists.newArrayList();
             for(ArUserDyGreatNum num:nums){

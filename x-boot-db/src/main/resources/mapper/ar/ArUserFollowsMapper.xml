@@ -24,4 +24,21 @@
         user_id, follow_id, status
     </sql>
 
+    <select id="findAllFollowIdsByUserIdAndShieldingId" resultType="java.lang.Long" parameterType="java.util.Map">
+        SELECT follow_id FROM cx_ar_user_follows
+        <where>
+            status = 1
+            <if test="userId != null">
+                and user_id = #{userId}
+            </if>
+            <if test="shieldingIds != null and shieldingIds.size > 0">
+                and follow_id not in
+                <foreach collection="shieldingIds" item="item" separator="," open="(" close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+        order by create_time desc
+    </select>
+
 </mapper>

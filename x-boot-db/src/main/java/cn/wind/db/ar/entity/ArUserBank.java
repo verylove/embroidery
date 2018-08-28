@@ -53,7 +53,7 @@ public class ArUserBank extends AuditEntity {
     /**
      * 1-有效 0-失效
      */
-    private Integer status;
+    private Integer status=1;
 
 
 }

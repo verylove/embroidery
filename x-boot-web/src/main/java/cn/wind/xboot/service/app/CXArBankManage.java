@@ -2,6 +2,7 @@ package cn.wind.xboot.service.app;
 
 import cn.wind.db.ar.entity.ArUserBank;
 import cn.wind.db.ar.service.IArUserBankService;
+import cn.wind.xboot.dto.app.ar.arUserBankDto;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -61,5 +62,26 @@ public class CXArBankManage {
 
         bank2.setType(1);
         userBankService.updateById(bank2);
+    }
+
+    @Transactional
+    public void addBankCard(arUserBankDto dto, Long userId)throws Exception {
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("userId",userId);
+        map.put("status",1);
+        map.put("type",1);
+        List<ArUserBank> banks = userBankService.findAllByConditions(map);
+        ArUserBank bank = new ArUserBank();
+        bank.setUserId(userId);
+        bank.setBankCard(dto.getBankCard());
+        bank.setIdentityCard(dto.getIdentityCard());
+        bank.setBankName(dto.getBankName());
+        bank.setBranchName(dto.getBranchName());
+        if(banks==null || banks.size()<1){//无银行卡
+            bank.setType(1);
+        }else {
+            bank.setType(0);
+        }
+        userBankService.insert(bank);
     }
 }

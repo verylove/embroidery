@@ -156,6 +156,10 @@ public class ArUser extends AuditEntity {
      * 支付密码
      */
     private String payPass;
+    /**
+     * 直播收益
+     */
+    private Long liveEarnings=0L;
 
 
 }

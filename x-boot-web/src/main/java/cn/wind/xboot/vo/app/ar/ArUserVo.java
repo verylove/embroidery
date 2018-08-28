@@ -38,6 +38,8 @@ public class ArUserVo {
     private Long praiseNum;
     private Long focusNum;
     private Long followNum;
+    private String payPass;
+    private Long liveEarnings;
 
     private String aduit;//认证标签
     private String businessCard;//名片

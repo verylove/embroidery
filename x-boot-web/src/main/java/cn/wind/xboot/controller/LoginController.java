@@ -50,7 +50,12 @@ public class LoginController {
         params.add("password", password);
         params.add("grant_type", grant_type);
         HttpEntity<MultiValueMap<String, String>> requestEntity = new HttpEntity<MultiValueMap<String, String>>(params, headers);
-        return restTemplate.postForEntity("http://127.0.0.1:" + port + "/oauth/token", requestEntity, Map.class);
+        long starTime=System.currentTimeMillis();
+        ResponseEntity s = restTemplate.postForEntity("http://127.0.0.1:" + port + "/oauth/token", requestEntity, Map.class);
+        long endTime=System.currentTimeMillis();
+        long Time=endTime-starTime;
+        System.out.println(Time);
+        return s;
     }
     @Autowired
     private ConsumerTokenServices consumerTokenServices;

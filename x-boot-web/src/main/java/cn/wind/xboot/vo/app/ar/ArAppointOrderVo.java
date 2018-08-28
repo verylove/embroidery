@@ -2,7 +2,6 @@ package cn.wind.xboot.vo.app.ar;
 
 import lombok.Data;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -37,7 +36,7 @@ public class ArAppointOrderVo {
     /**
      * 预约日期
      */
-    private LocalDate appointDate;
+    private Date appointDate;
     /**
      * 预约时间
      */

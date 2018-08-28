@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -28,5 +29,10 @@ public class ArUserFollowsServiceImpl extends ServiceImpl<ArUserFollowsMapper, A
     @Override
     public List<Long> findAllFollowIdsByUserId(Long userId) {
         return this.baseMapper.findAllFollowIdsByUserId(userId);
+    }
+
+    @Override
+    public List<Long> findAllFollowIdsByUserIdAndShieldingId(Map<String,Object> map) {
+        return this.baseMapper.findAllFollowIdsByUserIdAndShieldingId(map);
     }
 }

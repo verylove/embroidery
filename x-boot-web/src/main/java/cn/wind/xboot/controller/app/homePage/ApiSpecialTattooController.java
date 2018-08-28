@@ -177,11 +177,15 @@ public class ApiSpecialTattooController extends AppBaseController{
             }
             Page<ArUserSpGreatNum> list =spGreatNumService.selectPage(pageVo.initPage(),ew);
             List<ArUserSpGreatNum> nums = list.getRecords();
+            Page<ArUserSpGreatNumVo> voPage = new Page<>(list.getCurrent(),list.getSize());
+            if(nums==null || nums.size()<1){
+                return ApiRes.Custom().addData(voPage);
+            }
             List<Long> userIds = nums.stream().map(ArUserSpGreatNum::getUserId).collect(Collectors.toList());
             List<ArUser> users = userService.findAllByIdIn(userIds);
             Map<Long,ArUser> map = users.stream().collect(Collectors.toMap(ArUser::getId,Function.identity()));
 
-            Page<ArUserSpGreatNumVo> voPage = new Page<>(list.getCurrent(),list.getSize());
+
             voPage.setTotal(list.getTotal());
             List<ArUserSpGreatNumVo> vos = Lists.newArrayList();
             for(ArUserSpGreatNum num:nums){

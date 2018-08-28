@@ -120,7 +120,7 @@ public class TestCase {
                 .packageName("cn.wind.db")
                 .entityLombokModel(true)
                 .prefixes(new String[]{"cx_"})
-                .tableNames(new String[]{"cx_ar_user_bank"})
+                .tableNames(new String[]{"cx_ar_user_shielding"})
                 .build();
         MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
         generator.generateByTables(generatorDto);
@@ -161,6 +161,26 @@ public class TestCase {
                 .entityLombokModel(true)
                 .prefixes(new String[]{"cx_"})
                 .tableNames(new String[]{"cx_ml_user_goods_logistics"})
+                .build();
+        MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
+        generator.generateByTables(generatorDto);
+    }
+
+    @Test
+    public void test9() {
+        MyBatisPlusGenerator.GeneratorDto generatorDto= MyBatisPlusGenerator.GeneratorDto.builder()
+                .author("changzhaoliang")
+                .url("jdbc:mysql://localhost:3306/embroidery_dev?characterEncoding=utf8&serverTimezone=Hongkong&useSSL=false")
+                .username("root")
+                .password("czl19950702")
+                .type("com.mysql.jdbc.Driver")
+                .basePath("/Users/changzhaoliang/Desktop/代码/embroidery__backstage/x-boot-db")
+                .outputDir("/src/main/java")
+                .base("bc")
+                .packageName("cn.wind.db")
+                .entityLombokModel(true)
+                .prefixes(new String[]{"cx_"})
+                .tableNames(new String[]{"cx_bc_pk_total"})
                 .build();
         MyBatisPlusGenerator generator=new MyBatisPlusGenerator();
         generator.generateByTables(generatorDto);

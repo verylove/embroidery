@@ -45,4 +45,14 @@ public class ArUserServiceImpl extends ServiceImpl<ArUserMapper, ArUser> impleme
     public Page<ArUser> findAllByConditions(Page page, Map<String, Object> map) {
         return page.setRecords(this.baseMapper.findAllByConditions(page,map));
     }
+
+    @Override
+    public List<ArUser> findAllByIdentity(int category) {
+        return this.baseMapper.findAllByIdentity(category);
+    }
+
+    @Override
+    public List<ArUser> findAll() {
+        return this.baseMapper.findAll();
+    }
 }

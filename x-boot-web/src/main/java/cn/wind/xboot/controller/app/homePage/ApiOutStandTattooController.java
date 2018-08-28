@@ -162,11 +162,15 @@ public class ApiOutStandTattooController extends AppBaseController{
             }
             Page<ArUserOtGreatNum> list =otGreatNumService.selectPage(pageVo.initPage(),ew);
             List<ArUserOtGreatNum> nums = list.getRecords();
+            Page<ArUserOtGreatNumVo> voPage = new Page<>(list.getCurrent(),list.getSize());
+            if(nums==null || nums.size()<1){
+                return ApiRes.Custom().addData(voPage);
+            }
             List<Long> userIds = nums.stream().map(ArUserOtGreatNum::getUserId).collect(Collectors.toList());
             List<ArUser> users = userService.findAllByIdIn(userIds);
             Map<Long,ArUser> map = users.stream().collect(Collectors.toMap(ArUser::getId,Function.identity()));
 
-            Page<ArUserOtGreatNumVo> voPage = new Page<>(list.getCurrent(),list.getSize());
+
             voPage.setTotal(list.getTotal());
             List<ArUserOtGreatNumVo> vos = Lists.newArrayList();
             for(ArUserOtGreatNum num:nums){

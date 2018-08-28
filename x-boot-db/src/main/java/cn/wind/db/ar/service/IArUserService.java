@@ -26,4 +26,8 @@ public interface IArUserService extends IService<ArUser> {
     List<ArUser> findAllByIdIn(List<Long> userIds);
 
     Page<ArUser> findAllByConditions(Page page, Map<String, Object> map);
+
+    List<ArUser> findAllByIdentity(int category);
+
+    List<ArUser> findAll();
 }

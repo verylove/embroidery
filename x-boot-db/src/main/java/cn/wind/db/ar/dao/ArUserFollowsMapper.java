@@ -6,6 +6,7 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -22,6 +23,8 @@ public interface ArUserFollowsMapper extends BaseMapper<ArUserFollows> {
     @Select("select "+RESULT_COLUMN+" from cx_ar_user_follows where user_id = #{userId} and follow_id = #{followId} limit 1")
     ArUserFollows findOneByUserIdAndFollowId(@Param("userId") Long userId, @Param("followId") Long followId);
 
-    @Select("select follow_id from cx_ar_user_follows where user_id = #{userId}")
+    @Select("select follow_id from cx_ar_user_follows where user_id = #{userId} and status = 1")
     List<Long> findAllFollowIdsByUserId(@Param("userId") Long userId);
+
+    List<Long> findAllFollowIdsByUserIdAndShieldingId(Map<String,Object> map);
 }

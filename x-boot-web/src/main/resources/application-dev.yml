@@ -177,6 +177,7 @@ xboot:
     - /swagger-resources/**
     - /swagger/**
     - /api/**
+    - /weapp/**
     - /**/v2/api-docs
     - /webjars/**
     - /job/**

@@ -41,6 +41,7 @@
         <result column="focus_num" property="focusNum" />
         <result column="follow_num" property="followNum" />
         <result column="pay_pass" property="payPass" />
+        <result column="live_earnings" property="liveEarnings" />
     </resultMap>
 
     <resultMap id="UserResultMap" type="cn.wind.db.ar.entity.ArUser">
@@ -81,6 +82,7 @@
         <result column="aruser_focus_num" property="focusNum" />
         <result column="aruser_follow_num" property="followNum" />
         <result column="aruser_pay_pass" property="payPass" />
+        <result column="aruser_live_earnings" property="liveEarnings" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
@@ -90,7 +92,7 @@
         modify_time,
         create_by,
         modify_by,
-        account, phone, password, sex, icon, profile, `identity`, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num, balance, great_status, sentiment_num, praise_num, focus_num, follow_num,pay_pass
+        account, phone, password, sex, icon, profile, `identity`, province, city, county, per_address, work_num, work_place, sign_id, name_id, store_id, sign_status, name_status, store_status, wx_open_id, qq_open_id, per_level, active_num, charm_num, wealth_num, balance, great_status, sentiment_num, praise_num, focus_num, follow_num,pay_pass,live_earnings
     </sql>
 
     <select id="findAllByIdIn" resultMap="BaseResultMap" parameterType="java.util.List">

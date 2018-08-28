@@ -4,6 +4,7 @@ import cn.wind.db.ar.entity.ArUserFollows;
 import com.baomidou.mybatisplus.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -18,4 +19,6 @@ public interface IArUserFollowsService extends IService<ArUserFollows> {
     ArUserFollows findOneByUserIdAndFollowId(Long userId, Long followId);
 
     List<Long> findAllFollowIdsByUserId(Long userId);
+
+    List<Long> findAllFollowIdsByUserIdAndShieldingId(Map<String,Object> map);
 }

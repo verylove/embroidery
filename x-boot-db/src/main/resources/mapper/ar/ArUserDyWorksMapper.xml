@@ -72,7 +72,8 @@
         aruser.praise_num aruser_praise_num,
         aruser.focus_num aruser_focus_num,
         aruser.follow_num aruser_follow_num,
-        aruser.pay_pass aruser_pay_pass
+        aruser.pay_pass aruser_pay_pass,
+        aruser.live_earnings aruser_live_earnings
     </sql>
 
     <select id="findAllStoreByConditions" resultMap="BaseResultMap">

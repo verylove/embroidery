@@ -8,6 +8,7 @@ package cn.wind.common.utils;
 import lombok.Data;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.*;
 import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.HttpRequestRetryHandler;
@@ -45,6 +46,7 @@ import org.springframework.http.ResponseEntity;
 import javax.net.ssl.*;
 import java.io.*;
 import java.net.SocketTimeoutException;
+import java.net.URLEncoder;
 import java.net.UnknownHostException;
 import java.nio.charset.Charset;
 import java.security.cert.CertificateException;
@@ -466,5 +468,49 @@ public class HttpClientUtil {
         private String relativePath;
         private String absolutePath;
         private long size;
+    }
+
+    public static HttpResponse doGet(String host, String path, String method,
+                                     Map<String, String> headers,
+                                     Map<String, String> querys)
+            throws Exception{
+        HttpGet request = new HttpGet(buildUrl(host, path, querys));
+        for (Map.Entry<String, String> e : headers.entrySet()) {
+            request.addHeader(e.getKey(), e.getValue());
+        }
+
+        return httpClient.execute(request);
+
+    }
+
+    private static String buildUrl(String host, String path, Map<String, String> querys) throws UnsupportedEncodingException {
+        StringBuilder sbUrl = new StringBuilder();
+        sbUrl.append(host);
+        if (!StringUtils.isBlank(path)) {
+            sbUrl.append(path);
+        }
+        if (null != querys) {
+            StringBuilder sbQuery = new StringBuilder();
+            for (Map.Entry<String, String> query : querys.entrySet()) {
+                if (0 < sbQuery.length()) {
+                    sbQuery.append("&");
+                }
+                if (StringUtils.isBlank(query.getKey()) && !StringUtils.isBlank(query.getValue())) {
+                    sbQuery.append(query.getValue());
+                }
+                if (!StringUtils.isBlank(query.getKey())) {
+                    sbQuery.append(query.getKey());
+                    if (!StringUtils.isBlank(query.getValue())) {
+                        sbQuery.append("=");
+                        sbQuery.append(URLEncoder.encode(query.getValue(), "utf-8"));
+                    }
+                }
+            }
+            if (0 < sbQuery.length()) {
+                sbUrl.append("?").append(sbQuery);
+            }
+        }
+
+        return sbUrl.toString();
     }
 }

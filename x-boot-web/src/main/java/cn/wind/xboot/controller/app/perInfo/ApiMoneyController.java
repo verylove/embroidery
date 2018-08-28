@@ -45,7 +45,7 @@ public class ApiMoneyController extends AppBaseController{
     public ApiRes pageInMoneyRecord(@ModelAttribute PageVo<ArUserMoneyRecord> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserMoneyRecord> ew=new EntityWrapper<ArUserMoneyRecord>();
             ew.eq("user_id",getUserId()).and().eq("status",2);
@@ -63,7 +63,7 @@ public class ApiMoneyController extends AppBaseController{
     public ApiRes pageInMoneyRecordPlus(@ModelAttribute PageVo<ArUserMoneyRecord> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserMoneyRecord> ew=new EntityWrapper<ArUserMoneyRecord>();
             Integer[] types = {1,4};
@@ -82,7 +82,7 @@ public class ApiMoneyController extends AppBaseController{
     public ApiRes pageInMoneyRecordMinus(@ModelAttribute PageVo<ArUserMoneyRecord> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserMoneyRecord> ew=new EntityWrapper<ArUserMoneyRecord>();
             Integer[] types = {2,3};
@@ -100,7 +100,7 @@ public class ApiMoneyController extends AppBaseController{
     public ApiRes pageInWithdraw(@ModelAttribute PageVo<ArUserMoneyRecord> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserMoneyRecord> ew=new EntityWrapper<ArUserMoneyRecord>();
             ew.eq("user_id",getUserId()).and().eq("status",2).and().eq("type",3);
@@ -117,7 +117,7 @@ public class ApiMoneyController extends AppBaseController{
     public ApiRes pageInWithdrawIng(@ModelAttribute PageVo<ArUserMoneyRecord> pageVo){
         try{
             List<String> sort = Lists.newArrayList();
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserMoneyRecord> ew=new EntityWrapper<ArUserMoneyRecord>();
             ew.eq("user_id",getUserId()).and().eq("status",1).and().eq("type",3);
