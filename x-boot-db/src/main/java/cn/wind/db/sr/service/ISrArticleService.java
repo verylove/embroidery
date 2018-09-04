@@ -1,7 +1,10 @@
 package cn.wind.db.sr.service;
 
 import cn.wind.db.sr.entity.SrArticle;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
+
+import java.util.Map;
 
 /**
  * <p>
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface ISrArticleService extends IService<SrArticle> {
 
+    Page<SrArticle> findAllByConditions(Page page, Map<String, Object> map);
 }

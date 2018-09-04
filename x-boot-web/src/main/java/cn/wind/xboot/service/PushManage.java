@@ -1,9 +1,12 @@
 package cn.wind.xboot.service;
 
 import cn.wind.xboot.vo.PushVo;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Maps;
 import org.springframework.stereotype.Service;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.util.Map;
 
 import cn.jiguang.common.ServiceHelper;
 import cn.jiguang.common.connection.NettyHttpClient;
@@ -31,7 +34,16 @@ public class PushManage {
     protected static final Logger LOG = LoggerFactory.getLogger(PushManage.class);
 
     public static void main(String[] args) {
-
+        PushVo vo = new PushVo();
+        vo.setALIAS_LIST(Lists.newArrayList("15268845156"));
+        vo.setALERT("今天是伏天");
+        vo.setTITLE("sfs");
+        vo.setMSG_CONTENT("it is hot!!!");
+        vo.setType(1);
+        Map map= Maps.newHashMap();
+        map.put("type","1");
+        vo.setExtra(map);
+        PushManage.sendPushWithCallback(vo);
     }
 
     // 使用 NettyHttpClient 异步接口发送请求

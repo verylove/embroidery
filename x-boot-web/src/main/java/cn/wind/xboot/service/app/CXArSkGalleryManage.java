@@ -4,6 +4,8 @@ import cn.wind.db.ar.entity.*;
 import cn.wind.db.ar.service.*;
 import cn.wind.xboot.dto.app.ar.arUserSkGalleryDto;
 import cn.wind.xboot.enums.contants;
+import cn.wind.xboot.tencent.thread.MyEvaluateThread;
+import cn.wind.xboot.tencent.thread.MyGreatThread;
 import com.google.common.collect.Maps;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -154,6 +156,18 @@ public class CXArSkGalleryManage {
         userService.updateById(user);
 
         cxCommonManage.greatAction(userId,skGallery.getUserId(),1);
+
+        ArUser author = userService.selectById(skGallery.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+skGallery.getContent()+"...";
+
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,skGallery.getUserId(),skGallery.getId(),2,a,skGalleryId);
+            }
+        }.start();
     }
 
     /**
@@ -189,6 +203,18 @@ public class CXArSkGalleryManage {
         //2.修改cx_ar_user_sk_gallery的message_num留言数
         skGallery.setMessageNum(skGallery.getMessageNum()+1);
         skGalleryService.updateById(skGallery);
+
+        ArUser author = userService.selectById(skGallery.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+skGallery.getContent()+"...";
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,skGallery.getUserId(),content,evaluates.getId(),2,a,skGalleryId);
+            }
+        }.start();
     }
 
     /**
@@ -250,6 +276,22 @@ public class CXArSkGalleryManage {
         userService.updateById(user);
 
         cxCommonManage.greatAction(userId,skEvaluates.getUserId(),1);
+
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("id",skEvaluates.getSeekGalleryId());
+        ArUserSkGallery skGallery = skGalleryService.findOneByConditions(map);
+
+        ArUser author = userService.selectById(skGallery.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+skGallery.getContent()+"...";
+
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,skGallery.getUserId(),skGallery.getId(),8,a,skGallery.getId());
+            }
+        }.start();
     }
 
     /**
@@ -284,6 +326,22 @@ public class CXArSkGalleryManage {
         //2.修改cx_ar_user_sk_evaluates的reply_num留言数
         skEvaluates.setReplyNum(skEvaluates.getReplyNum()+1);
         skEvaluatesService.updateById(skEvaluates);
+
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("id",skEvaluates.getSeekGalleryId());
+        ArUserSkGallery skGallery = skGalleryService.findOneByConditions(map);
+
+        ArUser author = userService.selectById(skGallery.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+skGallery.getContent()+"...";
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,skGallery.getUserId(),content,evaluates.getId(),8,a,skGallery.getId());
+            }
+        }.start();
     }
 
 }

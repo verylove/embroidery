@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21a217ff-546c-4f84-9a72-f90d51c9d86e" name="Default" comment="">
+    <list default="true" id="21a217ff-546c-4f84-9a72-f90d51c9d86e" name="Default" comment="commit 20180828(部分BUG修改,直播添加)">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-08.0.gz" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-09.0.gz" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-10.0.gz" />
@@ -11,176 +11,111 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-21.0.gz" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-22.0.gz" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-27.0.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_52.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_52.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserShieldingMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserShielding.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserShieldingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserShieldingServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcPkTotalMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcPkTotal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcPkTotalService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcPkTotalServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserShieldingMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcPkTotalMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserBankDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/common/CORSFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/common/Config.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/DoubleRoom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/LiveRoom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/MultiRoom.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/Util.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/IMMgr.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/LiveUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/RoomMgr.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Audience.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Pusher.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/AddAudienceReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/AddPusherReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/CreateGroupReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/CreateRoomReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/DelAudienceReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/DeletePusherReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/DestroyGroupReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/DestroyRoomReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/GetAudiencesReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/GetCustomInfoReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/GetLoginInfoReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/GetPushUrlReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/GetPushersReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/GetRoomListReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/NotifyPusherChangeReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/PusherHeartbeatReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/SetCustomInfoReq.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/BaseRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/CreateRoomRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetAudiencesRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetCustomInfoRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetLoginInfoRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetPushUrlRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetRoomListRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetStreamStatusOutPut.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetStreamStatusRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetTestPushUrlRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetTestRtmpAccUrlRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetUserDetailRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetUserListRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/LoginRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/MergeStreamRsp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Room.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/StreamIDS.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/RoomService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/UtilService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/RoomServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/UtilServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/tls/base64_url/base64_url.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/tls/tls_sigature/tls_sigature.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/utils/RestTemplateConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/utils/Utils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$1.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$2.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$FileResutlt.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil$FileResutlt.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil.class" afterPath="$PROJECT_DIR$/x-boot-common/target/classes/cn/wind/common/utils/HttpClientUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-28.0.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log.2018-08-29.0.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserBlacklistMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMessageMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserBlacklist.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserMessage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserBlacklistService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserMessageService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserBlacklistServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserMessageServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcExceptionRecordMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcGiftMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcPkDetailMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcPkWeekRecordMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcRecordMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcExceptionRecord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcGift.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcPkDetail.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcPkWeekRecord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcRecord.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcExceptionRecordService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcGiftService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcPkDetailService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcPkWeekRecordService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcRecordService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcExceptionRecordServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcGiftServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcPkDetailServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcPkWeekRecordServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcRecordServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserBlacklistMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMessageMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcExceptionRecordMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcGiftMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcPkDetailMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcPkWeekRecordMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcRecordMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiMessageController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebConsultTattooController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebHomeBannerController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebMatarialController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebSpecialTattooController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebArticleManage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebBannerImgManage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebSpTattooManage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebZxTattooManage.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/IM.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/MsgInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/SendMsgReq.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetGiftListRsp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetResultRsp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetRewardRsp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/IMService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/IMServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/MyEvaluateThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/MyFollowThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/MyGreatThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/rewardThread.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/utils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/utils/SpringContextUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserFollowMessageVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserMessageVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/spTattoo/AppArSpTattooVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/zxTattoo/AppArZxTattooVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/sr/AppSrArticleVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/sr/AppSrBannerImgVo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/target/test-classes/cn/wind/db/TestCase.class" afterPath="$PROJECT_DIR$/x-boot-db/target/test-classes/cn/wind/db/TestCase.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$1.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$2.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$MyStartupRunner1.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication$MyStartupRunner1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/XbootApplication.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/AliOssConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/AliOssConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/CacheConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/CacheConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/SecurityConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/SecurityConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/WebAppConfiguration.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/config/WebAppConfiguration.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/BaseController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/BaseController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/JobController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/JobController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LogController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LogController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LoginController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/NoticeController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/NoticeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/PermissionController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/PermissionController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/RoleController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/RoleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/IpInfoController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/IpInfoController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/UploadController.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/common/UploadController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/intercepotor/JobPermissionInterceptor.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/controller/intercepotor/JobPermissionInterceptor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/ButtonType.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/ButtonType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/PermType.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/enums/PermType.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/MyLogHandler.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/MyLogHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/SaveLogThread.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/handler/SaveLogThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/dto/Pair.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/dto/Pair.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/EmailService.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/EmailService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/impl/EmailServiceImpl.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/email/service/impl/EmailServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Provider.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Provider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig$PushConfigDto.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig$PushConfigDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushAfterOpenEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushAfterOpenEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDeviceTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDeviceTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDisplayTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDisplayTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDtoBuilder.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushDtoBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto$PushTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/PushDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Pusher.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/Pusher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/factory/UProvider.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/factory/UProvider.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/impl/UPusher.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/push/impl/UPusher.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq$SmsQueryReqBuilder.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq$SmsQueryReqBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsQueryReq.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq$SmsSendReqBuilder.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq$SmsSendReqBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/dto/SmsSendReq.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/enums/SmsTypeEnum.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/enums/SmsTypeEnum.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/SmsService.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/SmsService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/impl/AliSmsSeriviceImpl.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/message/sms/service/impl/AliSmsSeriviceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/OssClientManage.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/OssClientManage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UploadService.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UploadService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UserManage.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/service/UserManage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/PageVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/PageVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/SearchVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/SearchVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfNoticeVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfNoticeVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfSmsVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/pf/PfSmsVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysPermissionVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysPermissionVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysRoleVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysRoleVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserInfoVo.class" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/cn/wind/xboot/vo/sys/SysUserInfoVo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/test-classes/cn/wind/web/service/Test.class" afterPath="$PROJECT_DIR$/x-boot-web/target/test-classes/cn/wind/web/service/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/log/x-boot-web/spring.log" afterPath="$PROJECT_DIR$/log/x-boot-web/spring.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/HttpClientUtil.java" afterPath="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/HttpClientUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserFollowsMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserFollowsMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserBank.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserBank.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserFollowsService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserFollowsService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserFollowsServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserFollowsServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArAppointOrderMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArAppointOrderMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArStoreAduitMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArStoreAduitMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArTattooAduitMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArTattooAduitMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserFollowsMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserFollowsMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtTattooMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtTattooMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpTattooMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpTattooMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbTopicMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbTopicMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyGreatNumMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyGreatNumMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserZxTattooMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserZxTattooMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserZxTattooService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserZxTattooService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserZxTattooServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserZxTattooServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrAreaMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrAreaMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrArticleMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrArticleMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrBannerImgMapper.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrBannerImgMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrAreaService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrAreaService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrArticleService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrArticleService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrBannerImgService.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrBannerImgService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrAreaServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrAreaServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrArticleServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrArticleServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrBannerImgServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrBannerImgServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserZxTattooMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserZxTattooMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcSecondTransactionsMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcSecondTransactionsMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcTattooRecruitmentMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcTattooRecruitmentMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrArticleMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrArticleMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrBannerImgMapper.xml" afterPath="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrBannerImgMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java" afterPath="$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/pom.xml" afterPath="$PROJECT_DIR$/x-boot-web/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/LoginController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/LoginController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiBankController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiBankController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiMoneyController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiMoneyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArBankManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArBankManage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArAppointOrderVo.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArAppointOrderVo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMatarialController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMatarialController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/userAudit/WebUserAuditController.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/userAudit/WebUserAuditController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/PushManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/PushManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArDyWorkManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArDyWorkManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSkGalleryManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSkGalleryManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSpTattooManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSpTattooManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArTbTopicManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArTbTopicManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/LiveRoom.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/LiveRoom.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/IMMgr.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/IMMgr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/RoomMgr.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/RoomMgr.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/RoomService.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/RoomService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/RoomServiceImpl.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/RoomServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/tls/base64_url/base64_url.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/tls/base64_url/base64_url.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/tls/tls_sigature/tls_sigature.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/tls/tls_sigature/tls_sigature.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/PushVo.java" afterPath="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/PushVo.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" afterPath="$PROJECT_DIR$/x-boot-web/target/classes/application-dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/x-boot-web/x-boot-web.iml" afterPath="$PROJECT_DIR$/x-boot-web/x-boot-web.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -223,84 +158,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="LiveRoom.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/LiveRoom.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/RoomService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RoomServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/RoomServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="149" column="21" lean-forward="true" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetUserDetailRsp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetUserDetailRsp.java">
+      <file leaf-file-name="ApiConsultTattooController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="29" />
+              <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WebConsultTattooController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebConsultTattooController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-833">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding>
-                <element signature="e#438#439#0" expanded="true" />
-                <element signature="e#463#464#0" expanded="true" />
-                <element signature="e#497#498#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#704#705#0" expanded="true" />
-                <element signature="e#731#732#0" expanded="true" />
-                <element signature="e#771#772#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#839#840#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#919#920#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#996#997#0" expanded="true" />
-                <element signature="e#1031#1032#0" expanded="true" />
-                <element signature="e#1085#1086#0" expanded="true" />
-                <element signature="e#1133#1134#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1208#1209#0" expanded="true" />
-                <element signature="e#1265#1266#0" expanded="true" />
-                <element signature="e#1313#1314#0" expanded="true" />
-                <element signature="e#1344#1345#0" expanded="true" />
-                <element signature="e#1373#1374#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1451#1452#0" expanded="true" />
-                <element signature="e#1487#1488#0" expanded="true" />
-                <element signature="e#1521#1522#0" expanded="true" />
-                <element signature="e#1573#1574#0" expanded="true" />
-                <element signature="e#1619#1620#0" expanded="true" />
+                <element signature="e#3566#3567#0" expanded="true" />
+                <element signature="e#3630#3631#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoomMgr.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/RoomMgr.java">
+      <file leaf-file-name="WebZxTattooManage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebZxTattooManage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="518" column="33" lean-forward="false" selection-start-line="518" selection-start-column="33" selection-end-line="518" selection-end-column="33" />
+            <state relative-caret-position="405">
+              <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -308,50 +193,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IBcPkTotalService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcPkTotalService.java">
+      <file leaf-file-name="IArUserZxTattooService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserZxTattooService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BcPkTotalServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcPkTotalServiceImpl.java">
+      <file leaf-file-name="AppArZxTattooVo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/zxTattoo/AppArZxTattooVo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="126">
+              <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="28" />
               <folding>
-                <element signature="e#573#574#0" expanded="true" />
-                <element signature="e#635#636#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-                <element signature="e#765#766#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BcPkTotalMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcPkTotalMapper.java">
+      <file leaf-file-name="WebSpecialTattooController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebSpecialTattooController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BcPkTotalMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcPkTotalMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+            <state relative-caret-position="495">
+              <caret line="95" column="57" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="95" selection-end-column="57" />
               <folding>
-                <marker date="1535447864581" expanded="true" signature="1381:1610" ph="SELECT c.row... user_id" />
-                <marker date="1535447864581" expanded="true" signature="1411:1607" ph="SELECT a.use... cx_bc_pk_total" />
-                <marker date="1535447864581" expanded="true" signature="1497:1515" ph="select (@row... " />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -364,33 +234,13 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>appointDate</find>
-      <find>DateDiff</find>
-      <find>to_days</find>
-      <find>Config.IM.ADMINISTRATOR</find>
-      <find>getQueryString</find>
-      <find>shieldingService</find>
-      <find>updateById</find>
-      <find>delete_group_member</find>
-      <find>Pusher</find>
-      <find>aruser_</find>
-      <find>live_earnings</find>
-      <find>CachingConfigurerSupport</find>
-      <find>redis</find>
-      <find>Http</find>
-      <find>doGet</find>
-      <find>headers</find>
-      <find>sendPostRequest</find>
-      <find>HttpClientUtil</find>
-      <find>ResponseEntity</find>
-      <find>HttpResponse</find>
-      <find>RestTemplate</find>
       <find>userID</find>
       <find>category</find>
       <find>restTemplate</find>
@@ -398,8 +248,29 @@
       <find>addRoom</find>
       <find>bcOnlineService</find>
       <find>IBcOnlineService</find>
-      <find>rsp</find>
       <find>setCityId</find>
+      <find>rsp</find>
+      <find>opsForHash</find>
+      <find>user.getBalance(</find>
+      <find>getBalance()</find>
+      <find>score</find>
+      <find>opsForZSet</find>
+      <find>opsForValue</find>
+      <find>pkWeekRecordService</find>
+      <find>api/common</find>
+      <find>api/open</find>
+      <find>api/app</find>
+      <find>PushManage</find>
+      <find>rewardThread</find>
+      <find>PermType</find>
+      <find>getOtTattooId</find>
+      <find>myEvaluateThread</find>
+      <find>stream()</find>
+      <find>getId()</find>
+      <find>compareTo</find>
+      <find>deleteById</find>
+      <find>page.getCurrent()</find>
+      <find>BeanUtils</find>
     </findStrings>
     <replaceStrings>
       <replace>aruser</replace>
@@ -415,10 +286,16 @@
       <dir>$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent</dir>
       <dir>$PROJECT_DIR$/x-boot-db/src/main/resources/mapper</dir>
       <dir>$PROJECT_DIR$/x-boot-db</dir>
+      <dir>$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/common</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="www" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -428,57 +305,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserFollowsMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetUserListRsp.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyWorksMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArAppointOrderMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArStoreAduitMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArTattooAduitMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserDyEvaluatesMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtEvaluatesMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserOtTattooMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkEvaluatesMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSkGalleryMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpTattooMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbEvaluatesMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserTbTopicMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserZxTattooMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcSecondTransactionsMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/rc/RcTattooRecruitmentMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/dto/app/ar/arUserBankDto.java" />
-        <option value="$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/HttpClientUtil.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserBankService.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserBank.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArBankManage.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiBankController.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/CreateRoomReq.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/AddPusherReq.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Room.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/utils/RedisPageList.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/DestroyRoomReq.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserService.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java" />
         <option value="$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcPkTotal.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetUserDetailRsp.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/LiveRoom.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/RoomService.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/RoomServiceImpl.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcPkTotalService.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcPkTotalServiceImpl.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcPkTotalMapper.java" />
-        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcPkTotalMapper.xml" />
-        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/RoomMgr.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/PushManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/PushVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/rewardThread.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/utils.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/MyFollowThread.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserMessageVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserMessage.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserMessageMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/MyEvaluateThread.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/thread/MyGreatThread.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArOtTattooManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArDyWorkManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSkGalleryManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArSpTattooManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArTbTopicManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserFollowMessageVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/perInfo/ApiMessageController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/sr/AppSrBannerImgVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMatarialController.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrBannerImgService.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrBannerImgServiceImpl.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrBannerImgMapper.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrBannerImgMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homeBanner/WebHomeBannerController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/userAudit/WebUserAuditController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebHomeBannerController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebBannerImgManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrAreaService.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrAreaServiceImpl.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrAreaMapper.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/spTattoo/AppArSpTattooVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebSpTattooManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebSpecialTattooController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/sr/AppSrArticleVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrArticleService.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrArticleMapper.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrArticleMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebArticleManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebMatarialController.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/zxTattoo/AppArZxTattooVo.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserZxTattooService.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserZxTattooServiceImpl.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserZxTattooMapper.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserZxTattooMapper.xml" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebZxTattooManage.java" />
+        <option value="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebConsultTattooController.java" />
+        <option value="$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyGreatNumMapper.java" />
       </list>
     </option>
   </component>
@@ -522,9 +399,8 @@
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-154" />
-    <option name="y" value="-963" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="811" />
   </component>
@@ -543,6 +419,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
@@ -555,6 +433,87 @@
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
               <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-db" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
               <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -607,18 +566,6 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -643,7 +590,7 @@
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="intercepotor" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -655,32 +602,9 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="homePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -692,8 +616,8 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="logic" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -705,8 +629,9 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="homePage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -718,21 +643,6 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="Response" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
-              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
-              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cn" type="462c0819:PsiDirectoryNode" />
-              <item name="wind" type="462c0819:PsiDirectoryNode" />
-              <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -745,8 +655,91 @@
               <item name="cn" type="462c0819:PsiDirectoryNode" />
               <item name="wind" type="462c0819:PsiDirectoryNode" />
               <item name="xboot" type="462c0819:PsiDirectoryNode" />
-              <item name="tencent" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+              <item name="spTattoo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ar" type="462c0819:PsiDirectoryNode" />
+              <item name="zxTattoo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
+              <item name="embroidery__backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="x-boot-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="wind" type="462c0819:PsiDirectoryNode" />
+              <item name="xboot" type="462c0819:PsiDirectoryNode" />
+              <item name="vo" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="sr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="embroidery" type="b2602c69:ProjectViewProjectNode" />
@@ -760,8 +753,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -782,17 +773,17 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/x-boot-web" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent" />
+      <recent name="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.wind.xboot.tencent.common" />
       <recent name="cn.wind.xboot.controller.intercepotor" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent" />
-      <recent name="$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller" />
-      <recent name="$PROJECT_DIR$" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/x-boot-web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -822,30 +813,24 @@
       <module name="x-boot-jdbc" />
       <envs />
     </configuration>
-    <configuration name="TestCase.test5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PushManage" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="cn.wind.db.*" />
+          <option name="PATTERN" value="cn.wind.xboot.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <module name="x-boot-db" />
+      <option name="MAIN_CLASS_NAME" value="cn.wind.xboot.service.PushManage" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="cn.wind.db" />
-      <option name="MAIN_CLASS_NAME" value="cn.wind.db.TestCase" />
-      <option name="METHOD_NAME" value="test5" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
+      <module name="x-boot-web" />
       <envs />
-      <patterns />
     </configuration>
     <configuration name="TestCase.test6" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -1025,19 +1010,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.EmbroideryApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.JdbcApplication" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCase.test5" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCase.test6" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCase.test8" />
-      <item index="5" class="java.lang.String" itemvalue="Application.WebRTCSigApi" />
-      <item index="6" class="java.lang.String" itemvalue="JUnit.TestCase.test9" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCase.test6" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCase.test8" />
+      <item index="4" class="java.lang.String" itemvalue="Application.WebRTCSigApi" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestCase.test9" />
+      <item index="6" class="java.lang.String" itemvalue="Application.PushManage" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCase.test9" />
+        <item index="0" class="java.lang.String" itemvalue="Application.PushManage" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.TestCase.test6" />
-        <item index="2" class="java.lang.String" itemvalue="Application.WebRTCSigApi" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestCase.test8" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestCase.test5" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCase.test9" />
+        <item index="3" class="java.lang.String" itemvalue="Application.WebRTCSigApi" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestCase.test8" />
       </list>
     </recent_temporary>
   </component>
@@ -1106,7 +1091,13 @@
       <workItem from="1534988319096" duration="12949000" />
       <workItem from="1535091863630" duration="758000" />
       <workItem from="1535333514367" duration="18826000" />
-      <workItem from="1535419834608" duration="16062000" />
+      <workItem from="1535419834608" duration="18393000" />
+      <workItem from="1535505693574" duration="22084000" />
+      <workItem from="1535592602808" duration="19699000" />
+      <workItem from="1535678640598" duration="19627000" />
+      <workItem from="1535938064507" duration="17820000" />
+      <workItem from="1535973650968" duration="2163000" />
+      <workItem from="1536023741390" duration="6337000" />
     </task>
     <task id="LOCAL-00001" summary="first commit 20180705">
       <created>1530784564513</created>
@@ -1241,30 +1232,22 @@
       <option name="project" value="LOCAL" />
       <updated>1534764474395</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit 20180828(部分BUG修改,直播添加)">
+      <created>1535448046797</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1535448046797</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCase_test8 - 2018.07.25 at 09h 50m 59s.xml">
-      <configuration name="TestCase.test8" configurationId="JUnit" />
+    <history-entry file="TestCase_test6 - 2018.08.30 at 15h 24m 12s.xml">
+      <configuration name="TestCase.test6" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestCase_test8 - 2018.07.25 at 10h 10m 14s.xml">
-      <configuration name="TestCase.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCase_test8 - 2018.07.25 at 10h 10m 35s.xml">
-      <configuration name="TestCase.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCase_test8 - 2018.07.25 at 16h 18m 13s.xml">
-      <configuration name="TestCase.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCase_test8 - 2018.07.25 at 16h 18m 30s.xml">
-      <configuration name="TestCase.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCase_test8 - 2018.07.25 at 16h 18m 42s.xml">
-      <configuration name="TestCase.test8" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCase_test8 - 2018.07.25 at 18h 11m 50s.xml">
-      <configuration name="TestCase.test8" configurationId="JUnit" />
+    <history-entry file="TestCase_test6 - 2018.08.30 at 17h 03m 43s.xml">
+      <configuration name="TestCase.test6" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestCase_test8 - 2018.07.27 at 11h 56m 25s.xml">
       <configuration name="TestCase.test8" configurationId="JUnit" />
@@ -1275,9 +1258,24 @@
     <history-entry file="TestCase_test9 - 2018.08.28 at 14h 14m 18s.xml">
       <configuration name="TestCase.test9" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestCase_test9 - 2018.08.28 at 17h 58m 57s.xml">
+      <configuration name="TestCase.test9" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCase_test9 - 2018.08.29 at 10h 23m 47s.xml">
+      <configuration name="TestCase.test9" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCase_test9 - 2018.08.29 at 14h 15m 35s.xml">
+      <configuration name="TestCase.test9" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCase_test9 - 2018.08.29 at 14h 15m 49s.xml">
+      <configuration name="TestCase.test9" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCase_test9 - 2018.08.29 at 14h 48m 05s.xml">
+      <configuration name="TestCase.test9" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="655499000" />
+    <option name="totallyTimeSpent" value="745560000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1289,37 +1287,37 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-268" y="-1057" width="1920" height="1057" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="811" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253638" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18715084" sideWeight="0.52228826" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08869814" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.62681913" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3058659" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41759777" sideWeight="0.51555556" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37911302" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17039107" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7150838" sideWeight="0.475" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952183" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2257721" sideWeight="0.495842" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3748212" sideWeight="0.495842" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22889842" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21787709" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2472067" sideWeight="0.47771174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28647497" sideWeight="0.504158" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36486486" sideWeight="0.47771174" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32402235" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41759777" sideWeight="0.48444444" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1382,472 +1380,438 @@
     <MESSAGE value="commit 20180808(部分BUG修改)" />
     <MESSAGE value="commit 20180817(部分BUG修改)" />
     <MESSAGE value="commit 20180820(部分BUG修改)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit 20180820(部分BUG修改)" />
+    <MESSAGE value="commit 20180828(部分BUG修改,直播添加)" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 20180828(部分BUG修改,直播添加)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="80" />
+      <option name="time" value="85" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserMapper.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/userAudit/WebUserAuditController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="41" column="67" lean-forward="false" selection-start-line="40" selection-start-column="4" selection-end-line="41" selection-end-column="67" />
-          <folding />
+        <state relative-caret-position="209">
+          <caret line="95" column="63" lean-forward="false" selection-start-line="95" selection-start-column="63" selection-end-line="95" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/GetRoomListReq.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebBannerImgManage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="630">
+          <caret line="42" column="18" lean-forward="false" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/DestroyRoomReq.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrAreaService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="18" lean-forward="false" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="e#312#313#0" expanded="false" />
-            <element signature="e#341#342#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetRoomListRsp.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrAreaServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#463#464#0" expanded="false" />
-            <element signature="e#496#497#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="232">
+          <caret line="34" column="45" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/config/PayConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrAreaMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="28" column="66" lean-forward="true" selection-start-line="28" selection-start-column="66" selection-end-line="28" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpTattooMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/pay/ApiPayController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="121" column="47" lean-forward="true" selection-start-line="121" selection-start-column="47" selection-end-line="121" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/CreateRoomReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/AddPusherReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Request/AddAudienceReq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="33" lean-forward="false" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetTestPushUrlRsp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/test/java/cn/wind/db/TestCase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="182" column="56" lean-forward="false" selection-start-line="182" selection-start-column="56" selection-end-line="182" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetUserListRsp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="161" column="29" lean-forward="false" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/app/ar/ArUserVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="45" column="45" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/CreateRoomRsp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetAudiencesRsp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <caret line="101" column="4" lean-forward="false" selection-start-line="101" selection-start-column="4" selection-end-line="101" selection-end-column="4" />
           <folding>
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#677#678#0" expanded="false" />
+            <marker date="1534989827501" expanded="true" signature="3785:4109" ph="SELECT u.*,,... cx_ar_user_sp_tattoo" />
+            <marker date="1534989827501" expanded="true" signature="4185:4522" ph="SELECT u.*, cx_ar_user_sp_tattoo" />
+            <marker date="1534989827501" expanded="true" signature="4602:4798" ph="SELECT u.*, cx_ar_user_sp_tattoo" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetCustomInfoRsp.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpTattooMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="269">
+          <caret line="24" column="19" lean-forward="false" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetLoginInfoRsp.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpTattooServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="270">
+          <caret line="34" column="38" lean-forward="true" selection-start-line="34" selection-start-column="38" selection-end-line="34" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/IMMgr.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpTattooService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="33" column="20" lean-forward="false" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/entity/BcPkTotal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/pojo/Response/GetUserDetailRsp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#463#464#0" expanded="true" />
-            <element signature="e#497#498#0" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#589#590#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#704#705#0" expanded="true" />
-            <element signature="e#731#732#0" expanded="true" />
-            <element signature="e#771#772#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#839#840#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#919#920#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1031#1032#0" expanded="true" />
-            <element signature="e#1085#1086#0" expanded="true" />
-            <element signature="e#1133#1134#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1265#1266#0" expanded="true" />
-            <element signature="e#1313#1314#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1373#1374#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1451#1452#0" expanded="true" />
-            <element signature="e#1487#1488#0" expanded="true" />
-            <element signature="e#1521#1522#0" expanded="true" />
-            <element signature="e#1573#1574#0" expanded="true" />
-            <element signature="e#1619#1620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/handler/MyMetaObjectHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="56" column="48" lean-forward="false" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-common/src/main/java/cn/wind/common/utils/UserUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1694">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="331" column="55" lean-forward="false" selection-start-line="331" selection-start-column="55" selection-end-line="331" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSeekGalleryController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="244" column="55" lean-forward="true" selection-start-line="244" selection-start-column="55" selection-end-line="244" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMasterShowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMatarialController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-194">
-          <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiOutStandTattooController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="166" column="55" lean-forward="false" selection-start-line="166" selection-start-column="55" selection-end-line="166" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiRecruitmentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1574">
-          <caret line="43" column="13" lean-forward="false" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSecondTransactController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1634">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="269">
+          <caret line="22" column="19" lean-forward="false" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiSpecialTattooController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="181" column="55" lean-forward="false" selection-start-line="181" selection-start-column="55" selection-end-line="181" selection-end-column="55" />
+        <state relative-caret-position="267">
+          <caret line="224" column="22" lean-forward="true" selection-start-line="224" selection-start-column="22" selection-end-line="224" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiTiebaTopicController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserSpEvaluatesMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="-175">
+          <caret line="75" column="4" lean-forward="false" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="4" />
+          <folding>
+            <marker date="1534989827513" expanded="true" signature="3295:3940" ph="SELECT u.*, cx_ar_user_sp_evaluates" />
+            <marker date="1534989827513" expanded="true" signature="4032:4791" ph="SELECT u.*, cx_ar_user_sp_evaluates" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/config/AliOssConfiguration.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserSpEvaluatesMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
+          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/UserController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserSpEvaluatesServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-          <folding />
+        <state relative-caret-position="165">
+          <caret line="24" column="58" lean-forward="true" selection-start-line="24" selection-start-column="58" selection-end-line="24" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/client/RestTemplate.class">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserSpEvaluatesService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="257" column="33" lean-forward="false" selection-start-line="257" selection-start-column="33" selection-end-line="257" selection-end-column="33" />
-          <folding />
+        <state relative-caret-position="135">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebSpTattooManage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="54" column="48" lean-forward="true" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="232">
+          <caret line="76" column="41" lean-forward="false" selection-start-line="76" selection-start-column="41" selection-end-line="76" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/sys/SysUserVo.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiMatarialController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="88" column="25" lean-forward="true" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="25" />
+        <state relative-caret-position="525">
+          <caret line="56" column="82" lean-forward="false" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sys/entity/SysUser.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/entity/SrArticle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="51" column="25" lean-forward="true" selection-start-line="28" selection-start-column="4" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/sr/AppSrArticleVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/sr/SrArticleMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
+          <folding>
+            <marker date="1535967001311" expanded="true" signature="1219:1288" ph="SELECT FROM cx_sr_article" />
+            <marker date="1535967001311" expanded="true" signature="1219:1535" ph="SELECT FROM cx_sr_article" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebHomeBannerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-173">
+          <caret line="45" column="56" lean-forward="true" selection-start-line="44" selection-start-column="4" selection-end-line="45" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/dao/SrArticleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="39" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/impl/SrArticleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="66" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/sr/service/ISrArticleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="18" column="39" lean-forward="false" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-jdbc/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/handler/MyMetaObjectHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/config/DbConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/app/CXArUserManage.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="160" column="47" lean-forward="false" selection-start-line="160" selection-start-column="47" selection-end-line="160" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserFollows.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/controller/LiveRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/RoomService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/service/impl/RoomServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="149" column="21" lean-forward="true" selection-start-line="149" selection-start-column="21" selection-end-line="149" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/config/WebAppConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="77" column="77" lean-forward="false" selection-start-line="77" selection-start-column="70" selection-end-line="77" selection-end-column="77" />
+        <state relative-caret-position="15">
+          <caret line="1" column="33" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="178" column="13" lean-forward="true" selection-start-line="178" selection-start-column="4" selection-end-line="178" selection-end-column="13" />
+        <state relative-caret-position="532">
+          <caret line="167" column="18" lean-forward="true" selection-start-line="167" selection-start-column="18" selection-end-line="167" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/IBcPkTotalService.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/service/impl/BcPkTotalServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebArticleManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="51" column="41" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="45" column="27" lean-forward="false" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebMatarialController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <caret line="27" column="59" lean-forward="true" selection-start-line="27" selection-start-column="59" selection-end-line="27" selection-end-column="59" />
           <folding>
-            <element signature="e#573#574#0" expanded="true" />
-            <element signature="e#635#636#0" expanded="true" />
-            <element signature="e#707#708#0" expanded="true" />
-            <element signature="e#765#766#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1175#1176#0" expanded="true" />
+            <element signature="e#1202#1203#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/bc/dao/BcPkTotalMapper.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/entity/ArUserZxTattoo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="630">
+          <caret line="51" column="7" lean-forward="true" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/bc/BcPkTotalMapper.xml">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/sr/AppSrBannerImgVo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+        <state relative-caret-position="450">
+          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/spTattoo/AppArSpTattooVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1125">
+          <caret line="82" column="7" lean-forward="true" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/vo/web/ar/zxTattoo/AppArZxTattooVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="15" column="28" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="28" />
           <folding>
-            <marker date="1535447864581" expanded="true" signature="1381:1610" ph="SELECT c.row... user_id" />
-            <marker date="1535447864581" expanded="true" signature="1411:1607" ph="SELECT a.use... cx_bc_pk_total" />
-            <marker date="1535447864581" expanded="true" signature="1497:1515" ph="select (@row... " />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/tencent/logic/RoomMgr.java">
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiConsultTattooController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="518" column="33" lean-forward="false" selection-start-line="518" selection-start-column="33" selection-end-line="518" selection-end-column="33" />
+        <state relative-caret-position="105">
+          <caret line="42" column="42" lean-forward="false" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/resources/mapper/ar/ArUserZxTattooMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="102" column="24" lean-forward="false" selection-start-line="102" selection-start-column="24" selection-end-line="102" selection-end-column="24" />
+          <folding>
+            <marker date="1536028889947" expanded="true" signature="3199:3536" ph="SELECT u.*, cx_ar_user_zx_tattoo" />
+            <marker date="1536028889947" expanded="true" signature="3624:3944" ph="SELECT u.*, cx_ar_user_zx_tattoo" />
+            <marker date="1536028889947" expanded="true" signature="4063:4207" ph="SELECT u.*, cx_ar_user_zx_tattoo" />
+            <marker date="1536028889947" expanded="true" signature="4063:4301" ph="SELECT u.*, cx_ar_user_zx_tattoo" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserZxTattooMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="45" lean-forward="false" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserZxTattooService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="22" column="45" lean-forward="false" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebSpecialTattooController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="95" column="57" lean-forward="true" selection-start-line="84" selection-start-column="8" selection-end-line="95" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/service/web/WebZxTattooManage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="41" lean-forward="false" selection-start-line="27" selection-start-column="41" selection-end-line="27" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyWorksServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="38" column="31" lean-forward="false" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyWorksService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserZxTattooServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="34" column="67" lean-forward="false" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/dao/ArUserDyGreatNumMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/impl/ArUserDyGreatNumServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-db/src/main/java/cn/wind/db/ar/service/IArUserDyGreatNumService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/app/homePage/ApiDynamicWorksController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1666">
+          <caret line="187" column="47" lean-forward="true" selection-start-line="187" selection-start-column="47" selection-end-line="187" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/x-boot-web/src/main/java/cn/wind/xboot/controller/web/homePage/WebConsultTattooController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-833">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#3566#3567#0" expanded="true" />
+            <element signature="e#3630#3631#0" expanded="true" />
           </folding>
         </state>
       </provider>

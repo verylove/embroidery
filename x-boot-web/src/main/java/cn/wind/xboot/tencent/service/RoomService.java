@@ -46,4 +46,12 @@ public interface RoomService {
     BaseRsp cancelShielding(String userID, String token, Long shieldingId, int type);
 
     GetUserDetailRsp getHostInfo(String userID, String token, String roomID, int type);
+
+    GetGiftListRsp getAllGifts(String userID, String token, int cnt, int index);
+
+    BaseRsp pkActionsBefore(String userID, String token, String inviteUserID, int category);
+
+    GetRewardRsp reward(String userID, String token, String roomID,Long worth, int pkIng, int category);
+
+    GetResultRsp pkActionsAfter(String inviteUserID, String enInviteUserID, int category);
 }

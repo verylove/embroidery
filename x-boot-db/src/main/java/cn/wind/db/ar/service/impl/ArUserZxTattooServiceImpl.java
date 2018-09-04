@@ -29,4 +29,9 @@ public class ArUserZxTattooServiceImpl extends ServiceImpl<ArUserZxTattooMapper,
     public ArUserZxTattoo findOneByConditions(Map<String, Object> map) {
         return this.baseMapper.findOneByConditions(map);
     }
+
+    @Override
+    public Page<ArUserZxTattoo> findAllZxByCondition(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllZxByCondition(page,map));
+    }
 }

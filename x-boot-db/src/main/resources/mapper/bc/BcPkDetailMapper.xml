@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.bc.dao.BcPkDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.bc.entity.BcPkDetail">
+    <result column="id" property="id" />
+    <result column="create_time" property="createTime" />
+    <result column="modify_time" property="modifyTime" />
+    <result column="create_by" property="createBy" />
+    <result column="modify_by" property="modifyBy" />
+        <result column="invite_user_id" property="inviteUserId" />
+        <result column="en_invite_user_id" property="enInviteUserId" />
+        <result column="winner" property="winner" />
+        <result column="invite_amount" property="inviteAmount" />
+        <result column="en_invite_amount" property="enInviteAmount" />
+        <result column="category" property="category" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        create_time,
+        modify_time,
+        create_by,
+        modify_by,
+        invite_user_id, en_invite_user_id, winner, invite_amount, en_invite_amount, category
+    </sql>
+
+</mapper>

@@ -1,5 +1,8 @@
 package cn.wind.xboot.tencent.controller;
 
+import cn.wind.db.ar.entity.ArUser;
+import cn.wind.db.ar.service.IArUserService;
+import cn.wind.xboot.service.app.CXArUserManage;
 import cn.wind.xboot.tencent.logic.RoomMgr;
 import cn.wind.xboot.tencent.pojo.Request.*;
 import cn.wind.xboot.tencent.pojo.Response.*;
@@ -11,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.math.BigDecimal;
 import java.util.List;
 import java.util.Map;
 
@@ -130,7 +134,33 @@ public class LiveRoom {
         return roomService.cancelShielding(userID,token,shieldingId,RoomMgr.LIVE_ROOM);
     }
 
+    @ApiOperation("获取主播信息")
+    @RequestMapping("getHostInfo")
     public GetUserDetailRsp getHostInfo(String userID, String token, String roomID){
         return roomService.getHostInfo(userID,token,roomID,RoomMgr.LIVE_ROOM);
+    }
+
+    @ApiOperation("获取礼物信息 分页")
+    @RequestMapping("getAllGifts")
+    public GetGiftListRsp getAllGifts(String userID, String token, int cnt, int index){
+        return roomService.getAllGifts(userID,token,cnt,index);
+    }
+
+    @ApiOperation("pk其他动作 开始")
+    @RequestMapping("pkActionsBefore")
+    public BaseRsp pkActionsBefore(String userID, String token, String inviteUserID, int category){
+        return roomService.pkActionsBefore(userID,token,inviteUserID,category);
+    }
+
+    @ApiOperation("打赏")
+    @RequestMapping("reward")
+    public GetRewardRsp reward(String userID, String token, String roomID, Long worth, int pkIng, int category){
+        return roomService.reward(userID,token,roomID,worth,pkIng,category);
+    }
+
+    @ApiOperation("pk其他动作 结束")
+    @RequestMapping("pkActionsAfter")
+    public GetResultRsp pkActionsAfter(String inviteUserID,String enInviteUserID, int category){
+        return roomService.pkActionsAfter(inviteUserID,enInviteUserID,category);
     }
 }

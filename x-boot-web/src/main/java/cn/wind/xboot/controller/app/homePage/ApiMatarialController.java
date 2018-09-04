@@ -39,11 +39,11 @@ public class ApiMatarialController extends AppBaseController{
     private ISrArticleService articleService;
 
     @ApiOperation(value = "轮播图显示")
-    @ApiImplicitParam(name = "type",value = "类型 1-首页 2-商城",required = true,dataType = "Integer",paramType = "query")
+    @ApiImplicitParam(name = "category",value = "类型 1-首页 2-商城",required = true,dataType = "Integer",paramType = "query")
     @GetMapping("/banners")
-    public ApiRes getBanners(Integer type){
+    public ApiRes getBanners(Integer category){
         try{
-            List<SrBannerImg> imgs = bannerImgService.findAllByType(type);
+            List<SrBannerImg> imgs = bannerImgService.findAllByCategory(category);
             return ApiRes.Custom().addData(imgs);
         }catch (Exception e){
             e.printStackTrace();

@@ -8,6 +8,8 @@ import cn.wind.db.sr.service.ISrAreaService;
 import cn.wind.db.sr.service.ISrLevelsService;
 import cn.wind.xboot.dto.app.ar.arUserDyWorkDto;
 import cn.wind.xboot.enums.contants;
+import cn.wind.xboot.tencent.thread.MyEvaluateThread;
+import cn.wind.xboot.tencent.thread.MyGreatThread;
 import com.google.common.base.Strings;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
@@ -251,6 +253,26 @@ public class CXArDyWorkManage {
             cxCommonManage.greatAction(userId,dyWorks.getUserId(),3);
         }
 
+        Integer category = 0;
+        if(dyWorks.getType()==2){//动态
+            category = 5;
+        }else {//作品
+            category = 6;
+        }
+        final Integer category2 = category;
+
+        ArUser author = userService.selectById(dyWorks.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+dyWorks.getContent()+"...";
+
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,dyWorks.getUserId(),dyWorks.getId(),category2,a,dyWorksId);
+            }
+        }.start();
+
     }
 
     /**
@@ -286,6 +308,26 @@ public class CXArDyWorkManage {
         //2.修改cx_ar_user_dy_works的message_num留言数
         dyWorks.setMessageNum(dyWorks.getMessageNum()+1);
         dyWorksService.updateById(dyWorks);
+
+        ArUser author = userService.selectById(dyWorks.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+dyWorks.getContent()+"...";
+
+        Integer category = 0;
+        if(dyWorks.getType()==2){//动态
+            category = 5;
+        }else {//作品
+            category = 6;
+        }
+        final Integer category2 = category;
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,dyWorks.getUserId(),content,evaluates.getId(),category2,a,dyWorks.getId());
+            }
+        }.start();
     }
 
     /**
@@ -361,6 +403,26 @@ public class CXArDyWorkManage {
             cxCommonManage.greatAction(userId,dyEvaluates.getUserId(),3);
         }
 
+        Integer category = 0;
+        if(dyWorks.getType()==2){//动态评论
+            category = 11;
+        }else {//作品评论
+            category = 12;
+        }
+        final Integer category2 = category;
+
+        ArUser author = userService.selectById(dyWorks.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+dyWorks.getContent()+"...";
+
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,dyWorks.getUserId(),dyWorks.getId(),category2,a,dyWorks.getId());
+            }
+        }.start();
+
     }
 
     /**
@@ -395,5 +457,29 @@ public class CXArDyWorkManage {
         //2.修改cx_ar_user_dy_evaluates的reply_num留言数
         dyEvaluates.setReplyNum(dyEvaluates.getReplyNum()+1);
         dyEvaluatesService.updateById(dyEvaluates);
+
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("dyWorksId",dyEvaluates.getDyWorksId());
+        ArUserDyWorks dyWorks = dyWorksService.findOneByConditions(map);
+
+        ArUser author = userService.selectById(dyWorks.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+dyWorks.getContent()+"...";
+
+        Integer category = 0;
+        if(dyWorks.getType()==2){//动态评论
+            category = 11;
+        }else {//作品评论
+            category = 12;
+        }
+        final Integer category2 = category;
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,dyEvaluates.getUserId(),content,evaluates.getId(),category2,a,dyWorks.getId());
+            }
+        }.start();
     }
 }

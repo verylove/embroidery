@@ -160,6 +160,7 @@ xboot:
     basename: mapping/GlobalMapping.xml
  # 需要授权url
   authenticatedUrl:
+    - /api/common/**
     - /user/**
     - /permission/**
     - /role/**
@@ -170,13 +171,14 @@ xboot:
     - /push/**
     - /oauth/logout
     - /notice/**
-    - /userAudit/**
+    - /webSys/**
   # 忽略鉴权url
   ignoredUrl:
     - /swagger-ui.html
     - /swagger-resources/**
     - /swagger/**
-    - /api/**
+    - /api/app/**
+    - /api/open/**
     - /weapp/**
     - /**/v2/api-docs
     - /webjars/**

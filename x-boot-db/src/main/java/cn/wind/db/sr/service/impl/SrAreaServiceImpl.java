@@ -29,4 +29,9 @@ public class SrAreaServiceImpl extends ServiceImpl<SrAreaMapper, SrArea> impleme
     public SrArea findByName(String s) {
         return this.baseMapper.findByName(s);
     }
+
+    @Override
+    public List<SrArea> findAllByIdsIn(List<Long> cityIds) {
+        return this.baseMapper.findAllByIdsIn(cityIds);
+    }
 }

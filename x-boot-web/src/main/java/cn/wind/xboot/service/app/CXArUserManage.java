@@ -8,6 +8,7 @@ import cn.wind.db.ml.service.IMlUserGoodsLogisticsService;
 import cn.wind.db.sr.entity.SrLevels;
 import cn.wind.db.sr.service.ISrLevelsService;
 import cn.wind.xboot.enums.contants;
+import cn.wind.xboot.tencent.thread.MyFollowThread;
 import com.google.common.collect.Maps;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -45,6 +46,8 @@ public class CXArUserManage {
     private IArUserMoneyRecordService moneyRecordService;
     @Autowired
     private IMlUserGoodsLogisticsService logisticsService;
+    @Autowired
+    private IArUserBlacklistService blacklistService;
 
     public ArUser addUserByIdentity(String phone, String password) {
 
@@ -148,6 +151,41 @@ public class CXArUserManage {
             return false;
         }
         return true;
+    }
+
+    /**
+     * 是否被拉黑
+     * @param userId
+     * @param toUserId
+     * @return true-被拉黑 false-未被拉黑
+     */
+    public boolean IsBlackInUserId(Long userId,Long toUserId){
+        ArUserBlacklist blacklist = blacklistService.findOneByUserIdAndBlackId(userId,toUserId);
+        if(blacklist==null){
+            return false;
+        }else if(blacklist.getStatus()==0){
+            return false;
+        }
+        return true;
+    }
+
+    /**
+     * 拉黑操作
+     * @param userId
+     * @param toUserId
+     */
+    @Transactional
+    public void blackToUser(Long userId,Long toUserId)throws Exception{
+        ArUserBlacklist blacklist = blacklistService.findOneByUserIdAndBlackId(toUserId,userId);
+        if(blacklist == null){
+            blacklist = new ArUserBlacklist();
+            blacklist.setUserId(userId);
+            blacklist.setBlackId(toUserId);
+            blacklistService.insert(blacklist);
+        }else if(blacklist.getStatus() == 0){
+            blacklist.setStatus(1);
+            blacklistService.updateById(blacklist);
+        }
     }
 
     /**
@@ -255,6 +293,15 @@ public class CXArUserManage {
                 }
             }
             userService.updateById(user2);
+
+            //3.推送
+            final MyFollowThread followThread = new MyFollowThread();
+            new Thread(){
+                @Override
+                public void run(){
+                    followThread.myFollowThread(userId,followId);
+                }
+            }.start();
 
         }
     }

@@ -1,13 +1,18 @@
 package cn.wind.xboot.tencent.logic;
 
+import cn.wind.common.utils.MathUtil;
 import cn.wind.xboot.tencent.common.Config;
+import cn.wind.xboot.tencent.pojo.MsgInfo;
 import cn.wind.xboot.tencent.pojo.Request.CreateGroupReq;
 import cn.wind.xboot.tencent.pojo.Request.DestroyGroupReq;
 import cn.wind.xboot.tencent.pojo.Request.NotifyPusherChangeReq;
+import cn.wind.xboot.tencent.pojo.Request.SendMsgReq;
 import cn.wind.xboot.tencent.pojo.Response.GetLoginInfoRsp;
 import cn.wind.xboot.tencent.pojo.Response.LoginRsp;
 import cn.wind.xboot.tencent.utils.Utils;
 import cn.wind.xboot.tencent.tls.tls_sigature.tls_sigature;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +22,7 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -121,13 +127,13 @@ public class IMMgr {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(HOST + "v4/group_open_http_svc/create_group" + getQueryString(groupID));
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(HOST + "v4/group_open_http_svc/create_group" + getQueryString());
 
         CreateGroupReq req = new CreateGroupReq();
         req.setGroupId(groupID);
         req.setName("group_name");
         req.setType("AVChatRoom");
-        req.setOwner_Account(groupID);
+        req.setOwner_Account(Config.IM.ADMINISTRATOR);
 
         HttpEntity<String> entity = new HttpEntity<String>(Utils.objectToString(req), headers);
 
@@ -146,11 +152,11 @@ public class IMMgr {
         }
     }
 
-    private String getQueryString(String groupID) {
+    private String getQueryString() {
         String query =
                 "?sdkappid=" + Config.IM.IM_SDKAPPID +
-                        "&identifier=" + groupID +
-                        "&usersig=" + getLoginInfo(groupID).getUserSig() +
+                        "&identifier=" + Config.IM.ADMINISTRATOR +
+                        "&usersig=" + getLoginInfo(Config.IM.ADMINISTRATOR).getUserSig() +
                         "&random=" + UUID.randomUUID().toString() +
                         "&contenttype=json";
         return query;
@@ -163,7 +169,7 @@ public class IMMgr {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(HOST + "v4/group_open_http_svc/destroy_group" + getQueryString(groupID));
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(HOST + "v4/group_open_http_svc/destroy_group" + getQueryString());
 
         DestroyGroupReq req = new DestroyGroupReq();
         req.setGroupId(groupID);
@@ -188,7 +194,7 @@ public class IMMgr {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
 
-        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(HOST + "v4/group_open_http_svc/send_group_system_notification" + getQueryString(groupID));
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(HOST + "v4/group_open_http_svc/send_group_system_notification" + getQueryString());
 
         NotifyPusherChangeReq req = new NotifyPusherChangeReq();
         req.setGroupId(groupID);
@@ -209,4 +215,51 @@ public class IMMgr {
             log.error("notifyPushersChange失败, groupID: " + groupID + ", errMsg: " + response.toString());
         }
     }
+
+
+    public void sendMsg(Long fromUserId, Long toUserId, List<MsgInfo> msgs){
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+        UriComponentsBuilder builder = UriComponentsBuilder.fromHttpUrl(HOST + "v4/openim/sendmsg" + getQueryString());
+
+        SendMsgReq req = new SendMsgReq();
+        req.setSyncOtherMachine(1);
+        req.setFrom_Account(fromUserId.toString());
+        req.setTo_Account(toUserId.toString());
+        req.setMsgRandom(MathUtil.getRandomNum(1,9999999));
+        JSONArray MsgBody = new JSONArray();
+        for(MsgInfo msgInfo:msgs){
+            JSONObject msg = new JSONObject();
+            if(msgInfo.getType()==1){//文字
+                msg.put("MsgType","TIMTextElem");
+                JSONObject content = new JSONObject();
+                content.put("Text",msgInfo.getContent());
+                msg.put("MsgContent",content);
+                MsgBody.add(msg);
+            }else {//表情
+                msg.put("MsgType","TIMFaceElem");
+                JSONObject content = new JSONObject();
+                content.put("Index",msgInfo.getIndex());
+                content.put("Data",msgInfo.getContent());
+                msg.put("MsgContent",content);
+                MsgBody.add(msg);
+            }
+        }
+        req.setMsgBody(MsgBody);
+
+        HttpEntity<String> entity = new HttpEntity<String>(Utils.objectToString(req), headers);
+
+        ResponseEntity<String> response = restTemplate.exchange(
+                builder.build().encode().toUri(),
+                HttpMethod.POST,
+                entity,
+                String.class);
+        log.info("sendMsg, from: " + fromUserId + ", to: " + toUserId + ", body: " + response.toString());
+        if (response.getStatusCode().value() != HttpStatus.OK.value()){
+            log.error("sendMsg失败, from: " + fromUserId + ", to: " + toUserId + ", errMsg: " + response.toString());
+        }
+    }
+
+
 }

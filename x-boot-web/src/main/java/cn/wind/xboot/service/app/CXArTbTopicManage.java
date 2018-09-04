@@ -4,6 +4,8 @@ import cn.wind.db.ar.entity.*;
 import cn.wind.db.ar.service.*;
 import cn.wind.xboot.dto.app.ar.arUserTbTopicDto;
 import cn.wind.xboot.enums.contants;
+import cn.wind.xboot.tencent.thread.MyEvaluateThread;
+import cn.wind.xboot.tencent.thread.MyGreatThread;
 import com.google.common.collect.Maps;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -148,6 +150,17 @@ public class CXArTbTopicManage {
         userService.updateById(user);
 
         cxCommonManage.greatAction(userId,tbTopic.getUserId(),1);
+
+        ArUser author = userService.selectById(tbTopic.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+tbTopic.getContent()+"...";
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,tbTopic.getUserId(),tbTopic.getId(),3,a,tbTopicId);
+            }
+        }.start();
     }
 
     /**
@@ -182,6 +195,18 @@ public class CXArTbTopicManage {
         //2.修改cx_ar_user_tb_topic的message_num留言数
         tbTopic.setMessageNum(tbTopic.getMessageNum()+1);
         tbTopicService.updateById(tbTopic);
+
+        ArUser author = userService.selectById(tbTopic.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+tbTopic.getContent()+"...";
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,tbTopic.getUserId(),content,evaluates.getId(),3,a,tbTopicId);
+            }
+        }.start();
     }
 
     /**
@@ -216,6 +241,22 @@ public class CXArTbTopicManage {
         //2.修改cx_ar_user_tb_evaluates的reply_num留言数
         tbEvaluates.setReplyNum(tbEvaluates.getReplyNum()+1);
         tbEvaluatesService.updateById(tbEvaluates);
+
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("tbTopicId",tbEvaluates.getTbTopicId());
+        ArUserTbTopic tbTopic = tbTopicService.findOneByConditons(map);
+
+        ArUser author = userService.selectById(tbTopic.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+tbTopic.getContent()+"...";
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,tbTopic.getUserId(),content,evaluates.getId(),9,a,tbTopic.getId());
+            }
+        }.start();
     }
 
     /**
@@ -277,5 +318,20 @@ public class CXArTbTopicManage {
         userService.updateById(user);
 
         cxCommonManage.greatAction(userId,tbEvaluates.getUserId(),1);
+
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("tbTopicId",tbEvaluates.getTbTopicId());
+        ArUserTbTopic tbTopic = tbTopicService.findOneByConditons(map);
+
+        ArUser author = userService.selectById(tbTopic.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+tbTopic.getContent()+"...";
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,tbTopic.getUserId(),tbTopic.getId(),9,a,tbTopic.getId());
+            }
+        }.start();
     }
 }

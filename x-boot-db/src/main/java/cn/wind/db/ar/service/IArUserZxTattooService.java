@@ -19,4 +19,6 @@ public interface IArUserZxTattooService extends IService<ArUserZxTattoo> {
     Page<ArUserZxTattoo> findAllByConditions(Page page, Map<String, Object> map);
 
     ArUserZxTattoo findOneByConditions(Map<String, Object> map);
+
+    Page<ArUserZxTattoo> findAllZxByCondition(Page page, Map<String, Object> map);
 }

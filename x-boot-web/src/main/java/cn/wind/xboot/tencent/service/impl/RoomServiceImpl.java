@@ -1,6 +1,7 @@
 package cn.wind.xboot.tencent.service.impl;
 
 import cn.wind.xboot.enums.contants;
+import cn.wind.xboot.service.app.CXArUserManage;
 import cn.wind.xboot.tencent.common.Config;
 import cn.wind.xboot.tencent.logic.IMMgr;
 import cn.wind.xboot.tencent.logic.LiveUtil;
@@ -13,9 +14,11 @@ import cn.wind.xboot.tencent.service.RoomService;
 import cn.wind.xboot.tencent.utils.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service
@@ -28,6 +31,9 @@ public class RoomServiceImpl implements RoomService {
 
     @Resource
     LiveUtil liveUtil;
+
+    @Autowired
+    private CXArUserManage userManage;
 
     private static Logger log= LoggerFactory.getLogger(RoomServiceImpl.class);
 
@@ -147,7 +153,11 @@ public class RoomServiceImpl implements RoomService {
         }
 
         // 再创建房间
+        long starTime=System.currentTimeMillis();
         roomMgr.creatRoom(roomID, req.getRoomInfo(), type, req.getRoomPic(), req.getCityId(), req.getCategory());
+        long endTime=System.currentTimeMillis();
+        long Time=endTime-starTime;
+        System.out.println(Time);
         rsp.setRoomID(roomID);
 
         return rsp;
@@ -517,13 +527,13 @@ public class RoomServiceImpl implements RoomService {
         if (userID == null || token == null) {
             rsp.setCode(2);
             rsp.setMessage("请求失败，缺少参数");
-            log.error("getRoomList失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
+            log.error("getRoomListByFollows失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
             return rsp;
         }
         if (imMgr.validation(userID, token) != 0) {
             rsp.setCode(7);
             rsp.setMessage("请求失败，鉴权失败");
-            log.error("getRoomList失败:鉴权失败：" + "userID：" + userID);
+            log.error("getRoomListByFollows失败:鉴权失败：" + "userID：" + userID);
             return rsp;
         }
 
@@ -537,14 +547,14 @@ public class RoomServiceImpl implements RoomService {
         if (userID == null || token == null || userIDs == null || userIDs.size()<1) {
             rsp.setCode(2);
             rsp.setMessage("请求失败，缺少参数");
-            log.error("delAudience失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
+            log.error("shielding失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
             return rsp;
         }
 
         if (imMgr.validation(userID, token) != 0) {
             rsp.setCode(7);
             rsp.setMessage("请求失败，鉴权失败");
-            log.error("delAudience失败:鉴权失败：" + "userID：" + userID);
+            log.error("shielding失败:鉴权失败：" + "userID：" + userID);
             return rsp;
 
         }
@@ -559,14 +569,14 @@ public class RoomServiceImpl implements RoomService {
         if (userID == null || token == null) {
             rsp.setCode(2);
             rsp.setMessage("请求失败，缺少参数");
-            log.error("delAudience失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
+            log.error("shieldUsers失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
             return rsp;
         }
 
         if (imMgr.validation(userID, token) != 0) {
             rsp.setCode(7);
             rsp.setMessage("请求失败，鉴权失败");
-            log.error("delAudience失败:鉴权失败：" + "userID：" + userID);
+            log.error("shieldUsers失败:鉴权失败：" + "userID：" + userID);
             return rsp;
 
         }
@@ -580,14 +590,14 @@ public class RoomServiceImpl implements RoomService {
         if (userID == null || token == null || shieldingId == null) {
             rsp.setCode(2);
             rsp.setMessage("请求失败，缺少参数");
-            log.error("delAudience失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
+            log.error("cancelShielding失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",type: " + type);
             return rsp;
         }
 
         if (imMgr.validation(userID, token) != 0) {
             rsp.setCode(7);
             rsp.setMessage("请求失败，鉴权失败");
-            log.error("delAudience失败:鉴权失败：" + "userID：" + userID);
+            log.error("cancelShielding失败:鉴权失败：" + "userID：" + userID);
             return rsp;
 
         }
@@ -602,18 +612,107 @@ public class RoomServiceImpl implements RoomService {
         if (userID == null || token == null || roomID == null) {
             rsp.setCode(2);
             rsp.setMessage("请求失败，缺少参数");
-            log.error("delAudience失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",roomID: " + roomID);
+            log.error("getHostInfo失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",roomID: " + roomID);
             return rsp;
         }
 
         if (imMgr.validation(userID, token) != 0) {
             rsp.setCode(7);
             rsp.setMessage("请求失败，鉴权失败");
-            log.error("delAudience失败:鉴权失败：" + "userID：" + userID);
+            log.error("getHostInfo失败:鉴权失败：" + "userID：" + userID);
             return rsp;
 
         }
 
         return roomMgr.getHostInfo(userID,roomID,type,rsp);
+    }
+
+    @Override
+    public GetGiftListRsp getAllGifts(String userID, String token, int cnt, int index) {
+        GetGiftListRsp rsp = new GetGiftListRsp();
+        if (userID == null || token == null) {
+            rsp.setCode(2);
+            rsp.setMessage("请求失败，缺少参数");
+            log.error("getAllGifts失败:缺少参数：" + "userID：" + userID + ",token: " + token);
+            return rsp;
+        }
+
+        if (imMgr.validation(userID, token) != 0) {
+            rsp.setCode(7);
+            rsp.setMessage("请求失败，鉴权失败");
+            log.error("getAllGifts失败:鉴权失败：" + "userID：" + userID);
+            return rsp;
+        }
+
+        rsp.setGifts(roomMgr.getAllGifts(cnt, index));
+        return rsp;
+    }
+
+    @Override
+    public BaseRsp pkActionsBefore(String userID, String token, String inviteUserID, int category) {
+        BaseRsp rsp = new BaseRsp();
+        if (userID == null || token == null || inviteUserID == null) {
+            rsp.setCode(2);
+            rsp.setMessage("请求失败，缺少参数");
+            log.error("pkActionsBefore失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",inviteUserID: " + inviteUserID);
+            return rsp;
+        }
+
+        if (imMgr.validation(userID, token) != 0) {
+            rsp.setCode(7);
+            rsp.setMessage("请求失败，鉴权失败");
+            log.error("pkActionsBefore失败:鉴权失败：" + "userID：" + userID);
+            return rsp;
+
+        }
+
+        roomMgr.pkActionsBefore(userID,inviteUserID,category);
+        return rsp;
+    }
+
+    @Override
+    public GetRewardRsp reward(String userID, String token, String roomID, Long worth, int pkIng, int category) {
+        GetRewardRsp rsp = new GetRewardRsp();
+        if (userID == null || token == null || roomID == null || worth == null) {
+            rsp.setCode(2);
+            rsp.setMessage("请求失败，缺少参数");
+            log.error("reward失败:缺少参数：" + "userID：" + userID + ",token: " + token + ",roomID: " + roomID);
+            return rsp;
+        }
+
+        if (imMgr.validation(userID, token) != 0) {
+            rsp.setCode(7);
+            rsp.setMessage("请求失败，鉴权失败");
+            log.error("reward失败:鉴权失败：" + "userID：" + userID);
+            return rsp;
+
+        }
+
+        if(!userManage.IsEnoughForBalance(Long.parseLong(userID),BigDecimal.valueOf(worth))){
+            rsp.setCode(11);
+            rsp.setMessage("金额不足！");
+            log.error("该用户金额不足：" + "userID：" + userID);
+            return rsp;
+        }
+
+        if(pkIng==1){
+            return roomMgr.rewardInPk(userID,roomID,category,worth);
+        }else {
+            return roomMgr.rewardNotInPk(userID,roomID,category,worth);
+        }
+    }
+
+    @Override
+    public GetResultRsp pkActionsAfter(String inviteUserID, String enInviteUserID, int category) {
+        GetResultRsp rsp = new GetResultRsp();
+        if (inviteUserID == null || enInviteUserID == null) {
+            rsp.setCode(2);
+            rsp.setMessage("请求失败，缺少参数");
+            log.error("pkActionsAfter失败:缺少参数：" + "inviteUserID：" + inviteUserID + ",enInviteUserID: " + enInviteUserID);
+            return rsp;
+        }
+
+        roomMgr.pkActionsAfter(inviteUserID, enInviteUserID,category);
+        return null;
     }
 }

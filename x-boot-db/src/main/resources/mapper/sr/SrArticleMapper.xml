@@ -24,7 +24,21 @@
         modify_time,
         create_by,
         modify_by,
-        name, describtion, remark, cover_img, url, type
+        `name`, describtion, remark, cover_img, url, `type`
     </sql>
+
+    <select id="findAllByConditions" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_sr_article
+        <where>
+            <if test="name != null">
+                `name` = #{name}
+            </if>
+            <if test="type != null">
+                and `type` = #{type}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
 
 </mapper>

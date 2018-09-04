@@ -4,6 +4,8 @@ import cn.wind.db.ar.entity.*;
 import cn.wind.db.ar.service.*;
 import cn.wind.xboot.dto.app.ar.arUserOtTattooDto;
 import cn.wind.xboot.enums.contants;
+import cn.wind.xboot.tencent.thread.MyEvaluateThread;
+import cn.wind.xboot.tencent.thread.MyGreatThread;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import org.springframework.beans.BeanUtils;
@@ -151,6 +153,18 @@ public class CXArOtTattooManage {
         userService.updateById(user);
 
         cxCommonManage.greatAction(userId,otTattoo.getUserId(),1);
+
+        ArUser author = userService.selectById(otTattoo.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+otTattoo.getContent()+"...";
+
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,otTattoo.getUserId(),otTattoo.getId(),4,a,otTattooId);
+            }
+        }.start();
     }
 
 
@@ -187,6 +201,18 @@ public class CXArOtTattooManage {
         //2.修改cx_ar_user_ot_tattoo的message_num留言数
         otTattoo.setMessageNum(otTattoo.getMessageNum()+1);
         otTattooService.updateById(otTattoo);
+
+        ArUser author = userService.selectById(otTattoo.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+otTattoo.getContent()+"...";
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,otTattoo.getUserId(),content,evaluates.getId(),4,a,otTattoo.getId());
+            }
+        }.start();
     }
 
     /**
@@ -248,6 +274,22 @@ public class CXArOtTattooManage {
         userService.updateById(user);
 
         cxCommonManage.greatAction(userId,otEvaluates.getUserId(),1);
+
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("otTattooId",otEvaluates.getOtTattooId());
+        ArUserOtTattoo otTattoo = otTattooService.findOneByConditions(map);
+
+        ArUser author = userService.selectById(otTattoo.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+otTattoo.getContent()+"...";
+
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,otTattoo.getUserId(),otTattoo.getId(),10,a,otTattoo.getId());
+            }
+        }.start();
     }
 
     /**
@@ -282,5 +324,21 @@ public class CXArOtTattooManage {
         //2.修改cx_ar_user_ot_evaluates的reply_num留言数
         otEvaluates.setReplyNum(otEvaluates.getReplyNum()+1);
         otEvaluatesService.updateById(otEvaluates);
+
+        Map<String,Object> map = Maps.newHashMap();
+        map.put("otTattooId",otEvaluates.getOtTattooId());
+        ArUserOtTattoo otTattoo = otTattooService.findOneByConditions(map);
+
+        ArUser author = userService.selectById(otTattoo.getUserId());
+        String a = "@"+author.getAccount()+":内容:"+otTattoo.getContent()+"...";
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,otTattoo.getUserId(),content,evaluates.getId(),10,a,otTattoo.getId());
+            }
+        }.start();
     }
 }

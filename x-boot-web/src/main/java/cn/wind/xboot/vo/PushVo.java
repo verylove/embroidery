@@ -18,10 +18,10 @@ import java.util.Map;
 @NoArgsConstructor
 @Builder
 public class PushVo {
-    private String APP_KEY ="10393f0b385e18562b1d30a7";
-    private String MASTER_SECRET = "f8a7755e938719f0f0c34143";
-    private String GROUP_PUSH_KEY = "10393f0b385e18562b1d30a7";
-    private String GROUP_MASTER_SECRET = "f8a7755e938719f0f0c34143";
+    private String APP_KEY ="f0941fed47caae32069040c3";
+    private String MASTER_SECRET = "8af4bacbeeb84dfdbf221b18";
+    private String GROUP_PUSH_KEY = "f0941fed47caae32069040c3";
+    private String GROUP_MASTER_SECRET = "8af4bacbeeb84dfdbf221b18";
 
     private String TITLE = "Test from API example";//通知标题	如果指定了，则通知里原来展示 App名称的地方，将展示成这个字段。
     private String ALERT = "Test from API Example - alert";//通知内容	这里指定了，则会覆盖上级统一指定的 alert 信息；内容可以为空字符串，则表示不展示到通知栏。

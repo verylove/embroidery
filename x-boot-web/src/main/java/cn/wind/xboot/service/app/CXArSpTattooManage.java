@@ -5,6 +5,8 @@ import cn.wind.db.ar.service.*;
 import cn.wind.db.sr.entity.SrArea;
 import cn.wind.db.sr.service.ISrAreaService;
 import cn.wind.xboot.dto.app.ar.arUserSpTattooDto;
+import cn.wind.xboot.tencent.thread.MyEvaluateThread;
+import cn.wind.xboot.tencent.thread.MyGreatThread;
 import com.google.common.base.Strings;
 import com.google.common.collect.Maps;
 import org.springframework.beans.BeanUtils;
@@ -156,6 +158,17 @@ public class CXArSpTattooManage {
 
         cxCommonManage.greatAction(userId,tattoo.getUserId(),1);
 
+        ArUser author = userService.selectById(tattoo.getUserId());
+        String a = "@"+author.getAccount()+":活动名称："+tattoo.getName()+";活动时间"+tattoo.getBeginTime()+"-"+tattoo.getEndTime()+"原价收费：...";
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,tattoo.getUserId(),tattoo.getId(),1,a,spTattooId);
+            }
+        }.start();
+
     }
 
     /**
@@ -185,6 +198,18 @@ public class CXArSpTattooManage {
         //2.修改cx_ar_user_sp_tattoo的message_num留言数
         tattoo.setMessageNum(tattoo.getMessageNum()+1);
         spTattooService.updateById(tattoo);
+
+        ArUser author = userService.selectById(tattoo.getUserId());
+        String a = "@"+author.getAccount()+":活动名称："+tattoo.getName()+";活动时间"+tattoo.getBeginTime()+"-"+tattoo.getEndTime()+"原价收费：...";
+
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,tattoo.getUserId(),content,tattoo.getId(),1,a,spTattooId);
+            }
+        }.start();
     }
 
     /**
@@ -246,6 +271,19 @@ public class CXArSpTattooManage {
 
         cxCommonManage.greatAction(userId,spEvaluates.getUserId(),1);
 
+        ArUserSpTattoo tattoo = spTattooService.findOneById(spEvaluates.getSpecialTattooId());
+
+        ArUser author = userService.selectById(tattoo.getUserId());
+        String a = "@"+author.getAccount()+":活动名称："+tattoo.getName()+";活动时间"+tattoo.getBeginTime()+"-"+tattoo.getEndTime()+"原价收费：...";
+        //6.推送
+        final MyGreatThread greatThread = new MyGreatThread();
+        new Thread(){
+            @Override
+            public void run(){
+                greatThread.myGreatThread(userId,tattoo.getUserId(),tattoo.getId(),7,a,tattoo.getId());
+            }
+        }.start();
+
     }
 
     /**
@@ -279,5 +317,18 @@ public class CXArSpTattooManage {
         //2.修改cx_ar_user_sp_evaluates的reply_num留言数
         spEvaluates.setReplyNum(spEvaluates.getReplyNum()+1);
         spEvaluatesService.updateById(spEvaluates);
+
+        ArUserSpTattoo tattoo = spTattooService.findOneById(spEvaluates.getSpecialTattooId());
+
+        ArUser author = userService.selectById(tattoo.getUserId());
+        String a = "@"+author.getAccount()+":活动名称："+tattoo.getName()+";活动时间"+tattoo.getBeginTime()+"-"+tattoo.getEndTime()+"原价收费：...";
+        //3.推送
+        final MyEvaluateThread evaluateThread = new MyEvaluateThread();
+        new Thread(){
+            @Override
+            public void run(){
+                evaluateThread.myEvaluateThread(userId,tattoo.getUserId(),content,tattoo.getId(),7,a,tattoo.getId());
+            }
+        }.start();
     }
 }

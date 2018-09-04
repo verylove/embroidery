@@ -22,7 +22,17 @@
         modify_time,
         create_by,
         modify_by,
-        img, category, type, img_key
+        img, category, `type`, img_key
     </sql>
+
+    <select id="findAllByConditions" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_sr_banner_img
+        <where>
+            <if test="category != null">
+                category = #{category}
+            </if>
+        </where>
+    </select>
 
 </mapper>

@@ -20,4 +20,6 @@ public interface ArUserZxTattooMapper extends BaseMapper<ArUserZxTattoo> {
     List<ArUserZxTattoo> findAllByConditions(Pagination page, Map<String, Object> map);
 
     ArUserZxTattoo findOneByConditions(Map<String, Object> map);
+
+    List<ArUserZxTattoo> findAllZxByCondition(Pagination page, Map<String, Object> map);
 }

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.wind.db.bc.dao.BcPkWeekRecordMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.wind.db.bc.entity.BcPkWeekRecord">
+    <result column="id" property="id" />
+        <result column="bc_user_id" property="bcUserId" />
+        <result column="pk_wins" property="pkWins" />
+        <result column="win_num" property="winNum" />
+        <result column="failure_num" property="failureNum" />
+        <result column="draw_num" property="drawNum" />
+        <result column="live_earnings" property="liveEarnings" />
+        <result column="week_no" property="weekNo" />
+        <result column="year_no" property="yearNo" />
+        <result column="category" property="category" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        bc_user_id, pk_wins, win_num, failure_num, draw_num, live_earnings, week_no, year_no, category
+    </sql>
+
+    <select id="findOneByConditions" parameterType="java.util.Map" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_bc_pk_week_record
+        <where>
+            <if test="bcUserId != null">
+                bc_user_id = #{bcUserId}
+            </if>
+            <if test="weekNo != null">
+                and week_no = #{weekNo}
+            </if>
+            <if test="yearNo != null">
+                and year_no = #{yearNo}
+            </if>
+            <if test="category != null">
+                and category = #{category}
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -36,7 +36,7 @@ import java.util.Map;
  */
 @Api(value = "后台用户管理",tags = "后台用户管理")
 @RestController
-@RequestMapping("/userAudit")
+@RequestMapping("/webSys/userAudit")
 public class WebUserAuditController extends BaseController {
 
     @Autowired

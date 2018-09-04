@@ -2,18 +2,23 @@ package cn.wind.xboot.tencent.logic;
 
 import cn.wind.db.ar.entity.ArUser;
 import cn.wind.db.ar.entity.ArUserFollows;
+import cn.wind.db.ar.entity.ArUserMoneyRecord;
 import cn.wind.db.ar.entity.ArUserShielding;
 import cn.wind.db.ar.service.IArUserFollowsService;
+import cn.wind.db.ar.service.IArUserMoneyRecordService;
 import cn.wind.db.ar.service.IArUserService;
 import cn.wind.db.ar.service.IArUserShieldingService;
-import cn.wind.db.bc.entity.BcPkTotal;
-import cn.wind.db.bc.service.IBcPkTotalService;
+import cn.wind.db.bc.entity.*;
+import cn.wind.db.bc.service.*;
 import cn.wind.xboot.tencent.common.Config;
 import cn.wind.xboot.tencent.pojo.Audience;
 import cn.wind.xboot.tencent.pojo.Pusher;
+import cn.wind.xboot.tencent.pojo.Response.GetResultRsp;
+import cn.wind.xboot.tencent.pojo.Response.GetRewardRsp;
 import cn.wind.xboot.tencent.pojo.Response.GetStreamStatusRsp;
 import cn.wind.xboot.tencent.pojo.Response.GetUserDetailRsp;
 import cn.wind.xboot.tencent.pojo.Room;
+import cn.wind.xboot.tencent.thread.rewardThread;
 import cn.wind.xboot.tencent.utils.Utils;
 import com.google.common.collect.Maps;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -25,13 +30,17 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import javax.annotation.Resource;
 import java.io.IOException;
+import java.math.BigDecimal;
+import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
@@ -66,6 +75,18 @@ public class RoomMgr implements InitializingBean {
     private IArUserFollowsService followsService;
     @Autowired
     private IBcPkTotalService bcPkTotalService;
+    @Autowired
+    private IBcRecordService bcRecordService;
+    @Autowired
+    private IBcGiftService giftService;
+    @Autowired
+    private IBcPkWeekRecordService pkWeekRecordService;
+    @Autowired
+    private IBcPkDetailService pkDetailService;
+    @Autowired
+    private IBcExceptionRecordService exceptionRecordService;
+    @Autowired
+    private IArUserMoneyRecordService moneyRecordService;
 
     @Override
     public void afterPropertiesSet() throws Exception {
@@ -145,6 +166,7 @@ public class RoomMgr implements InitializingBean {
     /**
      * 创建房间
      */
+    @Transactional
     public void creatRoom(String roomID, String roomInfo, int type, String roomPic, Long cityId, int category) {
         ConcurrentHashMap<String, Room> orgMap = getActuralMap(type);
         Room room = new Room();
@@ -159,10 +181,8 @@ public class RoomMgr implements InitializingBean {
 
         if(category==1){//大咖秀
             redisTemplate.opsForZSet().add("bc:show:roomList",roomID,0D);
-            redisTemplate.opsForHash().put("bc:show:proInfo",roomID,room);
         }else {//娱乐
             redisTemplate.opsForZSet().add("bc:entertainment:roomList",roomID,0D);
-            redisTemplate.opsForHash().put("bc:entertainment:proInfo",roomID,room);
         }
 
         //主播直播信息
@@ -176,6 +196,38 @@ public class RoomMgr implements InitializingBean {
         }else {
             pkTotal.setCityId(cityId);
             bcPkTotalService.updateById(pkTotal);
+        }
+
+        //主播直播记录申请
+        BcRecord record = new BcRecord();
+        record.setUserId(Long.parseLong(roomID));
+        record.setCategory(category);
+        record.setCityId(cityId);
+        record.setRoomId(Long.parseLong(roomID));
+        record.setRoomInfo(roomInfo);
+        record.setRoomPic(roomPic);
+        bcRecordService.insert(record);
+
+        //记录本周数据
+        Calendar calendar = Calendar.getInstance();
+        calendar.setFirstDayOfWeek(Calendar.MONDAY);//设置星期一为一周开始的第一天
+        calendar.setTimeInMillis(System.currentTimeMillis());//获得当前的时间戳
+        int weekNo = calendar.get(Calendar.WEEK_OF_YEAR);
+        int yearNo = calendar.get(Calendar.YEAR);
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("bcUserId",Long.parseLong(roomID));
+        map.put("weekNo",weekNo);
+        map.put("yearNo",yearNo);
+        map.put("category",category);
+        BcPkWeekRecord weekRecord = pkWeekRecordService.findOneByConditions(map);
+        if(weekRecord == null){
+            weekRecord = new BcPkWeekRecord();
+            weekRecord.setBcUserId(Long.parseLong(roomID));
+            weekRecord.setWeekNo(weekNo);
+            weekRecord.setYearNo(yearNo);
+            weekRecord.setCategory(category);
+            pkWeekRecordService.insert(weekRecord);
         }
     }
 
@@ -201,6 +253,7 @@ public class RoomMgr implements InitializingBean {
     /**
      * 删除房间
      */
+    @Transactional
     public void delRoom(String roomID, int type) {
         ConcurrentHashMap<String, Room> orgMap = getActuralMap(type);
         orgMap.remove(roomID);
@@ -210,8 +263,8 @@ public class RoomMgr implements InitializingBean {
         redisTemplate.opsForZSet().remove("bc:show:roomList",roomID);
         redisTemplate.opsForZSet().remove("bc:entertainment:roomList",roomID);
 
-        redisTemplate.opsForHash().delete("bc:show:proInfo",roomID);
-        redisTemplate.opsForHash().delete("bc:entertainment:proInfo",roomID);
+//        redisTemplate.opsForHash().delete("bc:show:proInfo",roomID);
+//        redisTemplate.opsForHash().delete("bc:entertainment:proInfo",roomID);
     }
 
     private ConcurrentHashMap<String, Room> getActuralMap(int type) {
@@ -235,6 +288,7 @@ public class RoomMgr implements InitializingBean {
     /**
      * 新增房间并进房
      */
+    @Transactional
     public void addRoom(String roomID, String roomInfo, String userID, String mixedPlayUrl, String userName, String userAvatar, String pushURL, String streamID, String acceleratePlayUrl, int type) {
         ConcurrentHashMap<String, Room> orgMap = getActuralMap(type);
         Room room = new Room();
@@ -302,6 +356,7 @@ public class RoomMgr implements InitializingBean {
     /**
      * 新增推流者 - 进房
      */
+    @Transactional
     public void addMember(String roomID, String userID, String mixedPlayUrl, String userName, String userAvatar, String pushURL, String streamID, String acceleratePlayUrl, int type) {
         ConcurrentHashMap<String, Room> orgMap = getActuralMap(type);
         Room room = orgMap.get(roomID);
@@ -338,6 +393,7 @@ public class RoomMgr implements InitializingBean {
     /**
      * 删除推流者
      */
+    @Transactional
     public void delPusher(String roomID, String userID, int type) {
         ConcurrentHashMap<String, Room> orgMap = getActuralMap(type);
         Room room = orgMap.get(roomID);
@@ -443,6 +499,7 @@ public class RoomMgr implements InitializingBean {
         return resultList;
     }
 
+    @Transactional
     public void shielding(List<Long> userIDs, String userID, int type) {
         for(Long shieldId : userIDs){
             ArUserShielding shielding = shieldingService.findOneByUserIdAndShieldId(Long.parseLong(userID),shieldId);
@@ -459,6 +516,7 @@ public class RoomMgr implements InitializingBean {
         }
     }
 
+    @Transactional
     public ArrayList<ArUser> shieldUsers(int cnt, int index, String userID, int type) {
         ArrayList<ArUser> resultList = new ArrayList<>();
 
@@ -485,6 +543,7 @@ public class RoomMgr implements InitializingBean {
         return resultList;
     }
 
+    @Transactional
     public void cancelShielding(Long shieldingId, String userID, int type) {
         ArUserShielding shielding = shieldingService.findOneByUserIdAndShieldId(Long.parseLong(userID),shieldingId);
         if(shielding!=null){
@@ -517,6 +576,220 @@ public class RoomMgr implements InitializingBean {
         Long rank = bcPkTotalService.findRankInCity(map);
 
         rsp.setCityRankNum(rank);
+        return rsp;
+    }
+
+    public ArrayList<BcGift> getAllGifts(int cnt, int index) {
+        ArrayList<BcGift> resultList = new ArrayList<>();
+
+        List<BcGift> gifts = giftService.findAllOn();
+        if(gifts==null || gifts.size()<1){
+            return resultList;
+        }
+
+        int cursor = 0;
+        int roomCnt = 0;
+        for(BcGift gift:gifts){
+            if (roomCnt >= cnt)
+                break;
+            if (cursor >= index) {
+                resultList.add(gift);
+                ++roomCnt;
+            } else {
+                ++cursor;
+                continue;
+            }
+        }
+
+        return resultList;
+    }
+
+    @Transactional
+    public void pkActionsBefore(String userID, String inviteUserID,int category) {
+        BcPkDetail pkDetail = new BcPkDetail();
+        pkDetail.setInviteUserId(Long.parseLong(inviteUserID));
+        pkDetail.setEnInviteUserId(Long.parseLong(userID));
+        pkDetail.setCategory(category);
+        pkDetailService.insert(pkDetail);
+
+        redisTemplate.opsForValue().set("pk:"+userID,inviteUserID,5, TimeUnit.MINUTES);
+        redisTemplate.opsForValue().set("pk:"+inviteUserID,userID,5, TimeUnit.MINUTES);
+
+        if(category==1){
+            redisTemplate.opsForZSet().add("bc:show:PK"+inviteUserID,inviteUserID,0D);
+            redisTemplate.opsForZSet().add("bc:show:PK"+userID,userID,0D);
+        }else {
+            redisTemplate.opsForZSet().add("bc:entertainment:PK"+inviteUserID,inviteUserID,0D);
+            redisTemplate.opsForZSet().add("bc:entertainment:PK"+userID,userID,0D);
+        }
+    }
+
+    public GetRewardRsp rewardInPk(String userID, String roomID, int category, Long worth) {
+        GetRewardRsp rsp = new GetRewardRsp();
+        ArUser user = userService.selectById(Long.parseLong(userID));
+        user.setBalance(user.getBalance().subtract(BigDecimal.valueOf(worth)));
+        userService.updateById(user);
+        rsp.setUser(user);
+
+        String index = "";
+        if(category==1){
+            index = "bc:show:PK";
+        }else {
+            index = "bc:entertainment:PK";
+        }
+        redisTemplate.opsForZSet().incrementScore(index+roomID,roomID,worth);
+        rsp.setRoomScore(redisTemplate.opsForZSet().score(index+roomID,roomID).longValue());
+        String other = (String)redisTemplate.opsForValue().get("pk:"+roomID);
+        rsp.setOtherRoomScore(redisTemplate.opsForZSet().score(index+other,other).longValue());
+
+        final rewardThread rewardThread = new rewardThread();
+        new Thread(){
+            @Override
+            public void run(){
+                rewardThread.rewardThread(userID,roomID,category,worth);
+            }
+        }.start();
+        return rsp;
+    }
+
+    @Transactional
+    public GetRewardRsp rewardNotInPk(String userID, String roomID, int category,Long worth) {
+        GetRewardRsp rsp = new GetRewardRsp();
+        ArUser bcUser = userService.selectById(Long.parseLong(roomID));//主播
+        bcUser.setLiveEarnings(bcUser.getLiveEarnings()+worth);
+        userService.updateById(bcUser);
+
+        BigDecimal cost = BigDecimal.valueOf(worth);
+        String orderNo = "H1"+new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date());
+        ArUserMoneyRecord moneyRecord = new ArUserMoneyRecord();
+        moneyRecord.setUserId(Long.parseLong(userID));
+        moneyRecord.setAmount(cost);
+        moneyRecord.setType(2);//消费
+        moneyRecord.setModule(15);
+        moneyRecord.setOrderNo(orderNo);
+        moneyRecord.setStatus(2);
+        moneyRecord.setWay(4);//刺币
+        moneyRecordService.insert(moneyRecord);
+
+        ArUser user = userService.selectById(Long.parseLong(userID));
+        user.setBalance(user.getBalance().subtract(cost));
+        userService.updateById(user);
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setFirstDayOfWeek(Calendar.MONDAY);//设置星期一为一周开始的第一天
+        calendar.setTimeInMillis(System.currentTimeMillis());//获得当前的时间戳
+        int weekNo = calendar.get(Calendar.WEEK_OF_YEAR);
+        int yearNo = calendar.get(Calendar.YEAR);
+
+        BcExceptionRecord exceptionRecord = new BcExceptionRecord();
+        exceptionRecord.setUserId(Long.parseLong(userID));
+        exceptionRecord.setBcUserId(Long.parseLong(roomID));
+        if(category==1){
+            exceptionRecord.setBcType(1);
+        }else {
+            exceptionRecord.setBcType(2);
+        }
+        exceptionRecord.setBcAmount(BigDecimal.valueOf(worth));
+        exceptionRecord.setWeekNo(weekNo);
+        exceptionRecord.setYearNo(yearNo);
+        exceptionRecordService.insert(exceptionRecord);
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("bcUserId",Long.parseLong(roomID));
+        map.put("weekNo",weekNo);
+        map.put("yearNo",yearNo);
+        map.put("category",category);
+        BcPkWeekRecord weekRecord = pkWeekRecordService.findOneByConditions(map);
+        weekRecord.setLiveEarnings(weekRecord.getLiveEarnings()+worth);
+        pkWeekRecordService.insert(weekRecord);
+
+        BcPkTotal total = bcPkTotalService.findOneByUserId(Long.parseLong(roomID));
+        total.setLiveEarnings(bcUser.getLiveEarnings());
+        bcPkTotalService.updateById(total);
+
+        rsp.setUser(user);
+        return rsp;
+    }
+
+    public GetResultRsp pkActionsAfter(String inviteUserID, String enInviteUserID, int category) {
+        GetResultRsp rsp = new GetResultRsp();
+        String index = "";
+        if(category==1){
+            index = "bc:show:PK";
+        }else {
+            index = "bc:entertainment:PK";
+        }
+
+        long one = redisTemplate.opsForZSet().score(index+inviteUserID,inviteUserID).longValue();
+        long two = redisTemplate.opsForZSet().score(index+enInviteUserID,enInviteUserID).longValue();
+
+        BcPkDetail detail = pkDetailService.findOneByIds(Long.parseLong(inviteUserID),Long.parseLong(enInviteUserID));
+        detail.setInviteAmount(BigDecimal.valueOf(one));
+        detail.setEnInviteAmount(BigDecimal.valueOf(two));
+
+        BcPkTotal totalone = bcPkTotalService.findOneByUserId(Long.parseLong(inviteUserID));
+        BcPkTotal totaltwo = bcPkTotalService.findOneByUserId(Long.parseLong(enInviteUserID));
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setFirstDayOfWeek(Calendar.MONDAY);//设置星期一为一周开始的第一天
+        calendar.setTimeInMillis(System.currentTimeMillis());//获得当前的时间戳
+        int weekNo = calendar.get(Calendar.WEEK_OF_YEAR);
+        int yearNo = calendar.get(Calendar.YEAR);
+
+        Map<String,Object> map = new HashMap<>();
+        map.put("bcUserId",Long.parseLong(inviteUserID));
+        map.put("weekNo",weekNo);
+        map.put("yearNo",yearNo);
+        map.put("category",category);
+        BcPkWeekRecord recordOne = pkWeekRecordService.findOneByConditions(map);
+        map = new HashMap<>();
+        map.put("bcUserId",Long.parseLong(enInviteUserID));
+        map.put("weekNo",weekNo);
+        map.put("yearNo",yearNo);
+        map.put("category",category);
+        BcPkWeekRecord recordTwo = pkWeekRecordService.findOneByConditions(map);
+
+        if(two<one){
+            rsp.setWinner(inviteUserID);
+            rsp.setLoser(enInviteUserID);
+            rsp.setWinnerWorth(one);
+            rsp.setLoserWorth(two);
+            detail.setWinner(Long.parseLong(inviteUserID));
+            totalone.setWinNum(totalone.getWinNum()+1);
+            totaltwo.setFailureNum(totaltwo.getFailureNum()+1);
+            recordOne.setWinNum(recordOne.getWinNum()+1);
+            recordTwo.setFailureNum(recordTwo.getFailureNum()+1);
+        }else if(two>one){
+            rsp.setWinner(enInviteUserID);
+            rsp.setLoser(inviteUserID);
+            rsp.setWinnerWorth(two);
+            rsp.setLoserWorth(one);
+            detail.setWinner(Long.parseLong(enInviteUserID));
+            totaltwo.setWinNum(totaltwo.getWinNum()+1);
+            totalone.setFailureNum(totalone.getFailureNum()+1);
+            recordOne.setFailureNum(recordOne.getFailureNum()+1);
+            recordTwo.setWinNum(recordTwo.getWinNum()+1);
+        }else {
+            rsp.setWinner(enInviteUserID);
+            rsp.setLoser(inviteUserID);
+            rsp.setWinnerWorth(two);
+            rsp.setLoserWorth(one);
+            rsp.setIsEqual(1);
+            detail.setWinner(-1L);
+            totaltwo.setDrawNum(totaltwo.getDrawNum()+1);
+            totalone.setDrawNum(totalone.getDrawNum()+1);
+            recordOne.setDrawNum(recordOne.getDrawNum()+1);
+            recordTwo.setDrawNum(recordTwo.getDrawNum()+1);
+        }
+        bcPkTotalService.updateById(totalone);
+        bcPkTotalService.updateById(totaltwo);
+        pkDetailService.updateById(detail);
+        pkWeekRecordService.updateById(recordOne);
+        pkWeekRecordService.updateById(recordTwo);
+
+        redisTemplate.opsForZSet().remove(index+inviteUserID,inviteUserID);
+        redisTemplate.opsForZSet().remove(index+enInviteUserID,enInviteUserID);
+
         return rsp;
     }
 
