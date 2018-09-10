@@ -55,25 +55,27 @@ public class WebSpTattooManage {
     @Transactional
     public ApiRes spTattooDelete(Long spTattooId) {
         ArUserSpTattoo spTattoo = spTattooService.findOneById(spTattooId);
-        if(spTattoo == null){
-            return ApiRes.Custom().failure("该特价纹身不存在");
+        if(spTattoo != null){
+            spTattoo.setStatus(0);
+            spTattooService.updateById(spTattoo);
         }
-        spTattooService.deleteById(spTattooId);
+
         return ApiRes.Custom().success();
     }
 
     @Transactional
     public ApiRes spTattooEvaluateDelete(Long spEvaluateId) {
         ArUserSpEvaluates spEvaluates = spEvaluatesService.selectById(spEvaluateId);
-        if(spEvaluates == null){
-            return ApiRes.Custom().failure("该特价纹身评论不存在");
-        }
-        spEvaluates.setStatus(0);
-        spEvaluatesService.updateById(spEvaluates);
+        if(spEvaluates != null){
+            if(spEvaluates.getStatus() == 1){
+                spEvaluates.setStatus(0);
+                spEvaluatesService.updateById(spEvaluates);
 
-        ArUserSpTattoo spTattoo = spTattooService.findOneById(spEvaluates.getSpecialTattooId());
-        spTattoo.setMessageNum(spTattoo.getMessageNum()-1);
-        spTattooService.updateById(spTattoo);
+                ArUserSpTattoo spTattoo = spTattooService.findOneById(spEvaluates.getSpecialTattooId());
+                spTattoo.setMessageNum(spTattoo.getMessageNum()-1);
+                spTattooService.updateById(spTattoo);
+            }
+        }
         return ApiRes.Custom().success();
     }
 }

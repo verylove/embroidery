@@ -1,7 +1,11 @@
 package cn.wind.db.ar.service;
 
 import cn.wind.db.ar.entity.ArUserSkLabel;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.service.IService;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -13,4 +17,9 @@ import com.baomidou.mybatisplus.service.IService;
  */
 public interface IArUserSkLabelService extends IService<ArUserSkLabel> {
 
+    List<ArUserSkLabel> findAllByIdsIn(List<Long> labelIds);
+
+    Page<ArUserSkLabel> findAllLabelByCondition(Page page, Map<String, Object> map);
+
+    List<ArUserSkLabel> findAllParentLabel();
 }

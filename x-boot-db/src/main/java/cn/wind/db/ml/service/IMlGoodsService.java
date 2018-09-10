@@ -21,4 +21,8 @@ public interface IMlGoodsService extends IService<MlGoods> {
     Page<MlGoods> findAllByConditions(Page page, Map<String, Object> map);
 
     BigDecimal findPostageByIds(List<Long> goodsId);
+
+    Page<MlGoods> findAllMlByCondition(Page page, Map<String, Object> map);
+
+    int countByCategory(Long childCategoryId);
 }

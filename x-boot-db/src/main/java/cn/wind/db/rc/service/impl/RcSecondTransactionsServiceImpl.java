@@ -34,4 +34,9 @@ public class RcSecondTransactionsServiceImpl extends ServiceImpl<RcSecondTransac
     public RcSecondTransactions findOneByConditions(Map<String, Object> map) {
         return this.baseMapper.findOneByConditions(map);
     }
+
+    @Override
+    public Page<RcSecondTransactions> findAllRcByCondition(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllRcByCondition(page,map));
+    }
 }

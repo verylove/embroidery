@@ -22,4 +22,6 @@ public interface RcSecondTransactionsMapper extends BaseMapper<RcSecondTransacti
     List<RcSecondTransactions> findByCoordinates(Pagination page, Map<String, Object> map);
 
     RcSecondTransactions findOneByConditions(Map<String, Object> map);
+
+    List<RcSecondTransactions> findAllRcByCondition(Pagination page, Map<String, Object> map);
 }

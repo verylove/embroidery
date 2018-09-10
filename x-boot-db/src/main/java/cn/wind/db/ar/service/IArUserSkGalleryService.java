@@ -19,4 +19,8 @@ public interface IArUserSkGalleryService extends IService<ArUserSkGallery> {
     Page<ArUserSkGallery> findAllByConditions(Page page, Map<Object, Object> map);
 
     ArUserSkGallery findOneByConditions(Map<String, Object> map);
+
+    Page<ArUserSkGallery> findAllSkByCondition(Page page, Map<String, Object> map);
+
+    Integer countByLabel(Long skLabelId);
 }

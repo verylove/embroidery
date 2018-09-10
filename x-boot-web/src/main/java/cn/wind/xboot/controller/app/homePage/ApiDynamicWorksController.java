@@ -159,7 +159,7 @@ public class ApiDynamicWorksController extends AppBaseController{
         try{
             Page<ArUserDyWorksVo> voPage = new Page<>();
             List<Long> followIds = userManage.getFollowIds(getUserId());
-            if(followIds==null){
+            if(followIds==null || followIds.size()<1){
                 return ApiRes.Custom().addData(voPage);
             }
             Map<String,Object> map = Maps.newHashMap();

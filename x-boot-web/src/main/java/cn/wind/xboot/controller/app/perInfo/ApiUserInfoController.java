@@ -187,6 +187,9 @@ public class ApiUserInfoController extends AppBaseController {
             ArUserDailySentimentVo dailySentimentVo = new ArUserDailySentimentVo();
             LocalDate date = LocalDate.now();
             ArUserDailyRecord dailyRecord = dailyRecordService.findOneByUserIdAndDate(getUserId(),date);
+            if(dailyRecord == null){
+                return ApiRes.Custom().addData(dailySentimentVo);
+            }
             BeanUtils.copyProperties(dailyRecord,dailySentimentVo);
             dailySentimentVo.setIcon(user.getIcon());
             dailySentimentVo.setSentimentNum(user.getSentimentNum());

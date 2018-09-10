@@ -29,4 +29,14 @@ public class ArUserSkGalleryServiceImpl extends ServiceImpl<ArUserSkGalleryMappe
     public ArUserSkGallery findOneByConditions(Map<String, Object> map) {
         return this.baseMapper.findOneByConditions(map);
     }
+
+    @Override
+    public Page<ArUserSkGallery> findAllSkByCondition(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllSkByCondition(page,map));
+    }
+
+    @Override
+    public Integer countByLabel(Long skLabelId) {
+        return this.baseMapper.countByLabel(skLabelId);
+    }
 }

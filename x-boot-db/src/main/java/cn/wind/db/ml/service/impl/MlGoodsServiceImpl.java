@@ -31,4 +31,14 @@ public class MlGoodsServiceImpl extends ServiceImpl<MlGoodsMapper, MlGoods> impl
     public BigDecimal findPostageByIds(List<Long> goodsId) {
         return this.baseMapper.findPostageByIds(goodsId);
     }
+
+    @Override
+    public Page<MlGoods> findAllMlByCondition(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllMlByCondition(page,map));
+    }
+
+    @Override
+    public int countByCategory(Long childCategoryId) {
+        return this.baseMapper.countByCategory(childCategoryId);
+    }
 }

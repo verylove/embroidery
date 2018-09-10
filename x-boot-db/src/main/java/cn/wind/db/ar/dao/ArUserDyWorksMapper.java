@@ -34,4 +34,6 @@ public interface ArUserDyWorksMapper extends BaseMapper<ArUserDyWorks> {
     List<ArUserDyWorks> findAllStoreWorksForPerson(Pagination page, Map<String, Object> map);
 
     List<ArUserDyWorks> findAllPerDynamic(Pagination page, Map<String, Object> map);
+
+    List<ArUserDyWorks> findAllDyByCondition(Pagination page, Map<String, Object> map);
 }

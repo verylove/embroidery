@@ -99,4 +99,12 @@
         limit 1
     </select>
 
+    <select id="findAllTbByCondition" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT u.*,<include refid="Base_UserInfo_Column_List"/>
+        FROM cx_ar_user_tb_topic u left join cx_ar_user aruser  on  u.user_id=aruser.id
+        <where>
+            u.status = 1
+        </where>
+        order by u.great_num desc,u.create_time desc
+    </select>
 </mapper>

@@ -21,7 +21,38 @@
         modify_time,
         create_by,
         modify_by,
-        name, pid, cover_img
+        `name`, pid, cover_img
     </sql>
 
+    <select id="findAllParentByCondition" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_goods_category
+        <where>
+            pid = 0
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+    <select id="findAllChildByCondition" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_goods_category
+        <where>
+            pid > 0
+        </where>
+        ORDER BY create_time DESC
+    </select>
+
+    <select id="findAllParent" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_goods_category
+        WHERE
+        pid = 0
+    </select>
+
+    <select id="findAllChildByParent" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_goods_category
+        WHERE
+        pid = #{pid}
+    </select>
 </mapper>

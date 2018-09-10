@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.ByteArrayInputStream;
 import java.io.File;
+import java.io.InputStream;
 import java.net.URL;
 import java.util.Date;
 
@@ -173,6 +174,16 @@ public class OssClientManage {
             return url.split("Expires")[0].substring(0,url.split("Expires")[0].length() -1 );
         }
         return url;
+    }
+
+    public String upload(InputStream is, String fileName) {
+        // 创建OSSClient实例
+        OSSClient ossClient = new OSSClient(config.getEndPoint(), config.getAccessKeyId(), config.getAccessKeySecret());
+        ossClient.putObject(config.getBucket(), fileName, is);
+        // 关闭client
+        ossClient.shutdown();
+        String src ="http://"+ config.getBucket() + "." + config.getEndPoint() + "/" + fileName;
+        return src;
     }
 
 }

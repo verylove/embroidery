@@ -2,6 +2,7 @@ package cn.wind.db.rc.dao;
 
 import cn.wind.db.rc.entity.RcTattooRecruitment;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.plugins.Page;
 import com.baomidou.mybatisplus.plugins.pagination.Pagination;
 
 import java.util.List;
@@ -22,4 +23,6 @@ public interface RcTattooRecruitmentMapper extends BaseMapper<RcTattooRecruitmen
     List<RcTattooRecruitment> findAllByConditons(Pagination page, Map<String, Object> map);
 
     RcTattooRecruitment findOneByConditions(Map<String, Object> map);
+
+    List<RcTattooRecruitment> findAllRcByCondition(Pagination page, Map<String, Object> map);
 }

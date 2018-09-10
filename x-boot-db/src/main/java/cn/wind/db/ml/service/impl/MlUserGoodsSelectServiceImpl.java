@@ -29,4 +29,14 @@ public class MlUserGoodsSelectServiceImpl extends ServiceImpl<MlUserGoodsSelectM
     public List<MlUserGoodsSelect> findAllByConditons(Map<String, Object> map) {
         return this.baseMapper.findAllByConditons(map);
     }
+
+    @Override
+    public List<MlUserGoodsSelect> findAllByModels(Map<String, Object> map) {
+        return this.baseMapper.findAllByModels(map);
+    }
+
+    @Override
+    public List<MlUserGoodsSelect> findAllBySpecs(Map<String, Object> map) {
+        return this.baseMapper.findAllBySpecs(map);
+    }
 }

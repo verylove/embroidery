@@ -34,4 +34,9 @@ public class RcTattooRecruitmentServiceImpl extends ServiceImpl<RcTattooRecruitm
     public RcTattooRecruitment findOneByConditions(Map<String, Object> map) {
         return this.baseMapper.findOneByConditions(map);
     }
+
+    @Override
+    public Page<RcTattooRecruitment> findAllRcByCondition(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllRcByCondition(page,map));
+    }
 }

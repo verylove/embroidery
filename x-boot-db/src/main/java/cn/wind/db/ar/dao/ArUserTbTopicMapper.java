@@ -20,4 +20,6 @@ public interface ArUserTbTopicMapper extends BaseMapper<ArUserTbTopic> {
     List<ArUserTbTopic> findAllByConditions(Pagination page, Map<String, Object> map);
 
     ArUserTbTopic findOneByConditons(Map<String, Object> map);
+
+    List<ArUserTbTopic> findAllTbByCondition(Pagination page, Map<String, Object> map);
 }

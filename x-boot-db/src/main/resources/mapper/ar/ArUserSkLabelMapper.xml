@@ -21,7 +21,19 @@
         modify_time,
         create_by,
         modify_by,
-        name, level, pid
+        `name`, `level`, pid
     </sql>
+
+    <select id="findAllLabelByCondition" parameterType="java.util.Map" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ar_user_sk_label
+        <where>
+            `level` = 2
+            <if test="pid != null">
+                and pid = #{pid}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
 
 </mapper>

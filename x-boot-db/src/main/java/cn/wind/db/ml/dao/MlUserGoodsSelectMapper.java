@@ -19,4 +19,8 @@ public interface MlUserGoodsSelectMapper extends BaseMapper<MlUserGoodsSelect> {
     MlUserGoodsSelect findOneByConditions(Map<String, Object> map);
 
     List<MlUserGoodsSelect> findAllByConditons(Map<String, Object> map);
+
+    List<MlUserGoodsSelect> findAllByModels(Map<String, Object> map);
+
+    List<MlUserGoodsSelect> findAllBySpecs(Map<String, Object> map);
 }

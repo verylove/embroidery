@@ -33,4 +33,6 @@ public interface IArUserDyWorksService extends IService<ArUserDyWorks> {
     Page<ArUserDyWorks> findAllStoreWorksForPerson(Page page, Map<String, Object> map);
 
     Page<ArUserDyWorks> findAllPerDynamic(Page page, Map<String, Object> map);
+
+    Page<ArUserDyWorks> findAllDyByCondition(Page page, Map<String, Object> map);
 }

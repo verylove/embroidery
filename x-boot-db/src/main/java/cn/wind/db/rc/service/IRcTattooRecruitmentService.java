@@ -21,4 +21,6 @@ public interface IRcTattooRecruitmentService extends IService<RcTattooRecruitmen
     Page<RcTattooRecruitment> findAllByConditons(Page page, Map<String, Object> map);
 
     RcTattooRecruitment findOneByConditions(Map<String, Object> map);
+
+    Page<RcTattooRecruitment> findAllRcByCondition(Page page, Map<String, Object> map);
 }

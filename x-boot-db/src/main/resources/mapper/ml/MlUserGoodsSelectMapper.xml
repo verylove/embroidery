@@ -66,4 +66,31 @@
         </where>
     </select>
 
+    <select id="findAllByModels" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_user_goods_select
+        <where>
+            <if test="goodId != null">
+                goods_id = #{goodId}
+            </if>
+            <if test="modelId != null">
+                models_id = #{modelId}
+            </if>
+        </where>
+        LOCK IN SHARE MODE
+    </select>
+
+    <select id="findAllBySpecs" resultMap="BaseResultMap" parameterType="java.util.Map">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_user_goods_select
+        <where>
+            <if test="goodId != null">
+                goods_id = #{goodId}
+            </if>
+            <if test="specificationsId != null">
+                specifications_id = #{specificationsId}
+            </if>
+        </where>
+        LOCK IN SHARE MODE
+    </select>
 </mapper>

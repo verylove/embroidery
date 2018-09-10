@@ -29,4 +29,9 @@ public class ArUserTbTopicServiceImpl extends ServiceImpl<ArUserTbTopicMapper, A
     public ArUserTbTopic findOneByConditons(Map<String, Object> map) {
         return this.baseMapper.findOneByConditons(map);
     }
+
+    @Override
+    public Page<ArUserTbTopic> findAllTbByCondition(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllTbByCondition(page,map));
+    }
 }

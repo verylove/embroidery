@@ -50,7 +50,7 @@ public class ApiBankController extends AppBaseController{
         try{
             List<String> sort = Lists.newArrayList();
             sort.add("type,desc");
-            sort.add("create_time,desc");
+            sort.add("createTime,desc");
             pageVo.setSort(sort);
             EntityWrapper<ArUserBank> ew=new EntityWrapper<ArUserBank>();
             ew.eq("user_id",getUserId()).and().eq("status",1);
@@ -112,7 +112,7 @@ public class ApiBankController extends AppBaseController{
     @DeleteMapping("/deleteBankCard")
     public ApiRes deleteBankCard(Long bankId){
         try{
-            bankManage.delete(bankId,getUserId());
+            bankManage.delete(getUserId(),bankId);
             return ApiRes.Custom().success();
         }catch (Exception e){
             e.printStackTrace();

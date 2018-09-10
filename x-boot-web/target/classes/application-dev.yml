@@ -83,7 +83,7 @@ spring:
           timeout: 2500
   upload:
     freeRoot: D://temp/free/upload/
-    authRoot: D://temp/upload/
+    authRoot: /Users/changzhaoliang/Desktop/imgs
   boot:
     admin:
       ui:
@@ -171,7 +171,7 @@ xboot:
     - /push/**
     - /oauth/logout
     - /notice/**
-    - /userAudit/**
+    - /webSys/**
   # 忽略鉴权url
   ignoredUrl:
     - /swagger-ui.html
@@ -198,10 +198,10 @@ xboot:
     # 总限制100个请求
     limit: 100
   alioss:
-    end-point: http://oss-cn-shanghai.aliyuncs.com
-    access-keyId: LTAIUg3wkXF7q4Bf
-    access-key-secret: 6jDimXrKDg73moXvDoFlZCbnv5jldt
-    bucket: chedai
+    end-point: http://oss-cn-hangzhou.aliyuncs.com
+    access-keyId: LTAIGWOnK11ymFUt
+    access-key-secret: 8bJCDKxPPpEpva9gjM5v4Oh0eFj8Th
+    bucket: wenwendaka
   sms:
     ali:
       accessKeyId: LTAIbQlC2y2XQCJK

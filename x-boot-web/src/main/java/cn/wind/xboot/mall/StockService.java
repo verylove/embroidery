@@ -189,4 +189,9 @@ public class StockService {
     }
 
 
+    public void deleteStock(String key){
+        redisTemplate.delete(key);
+    }
+
+
 }

@@ -19,4 +19,6 @@ public interface IArUserTbTopicService extends IService<ArUserTbTopic> {
     Page<ArUserTbTopic> findAllByConditions(Page page, Map<String, Object> map);
 
     ArUserTbTopic findOneByConditons(Map<String, Object> map);
+
+    Page<ArUserTbTopic> findAllTbByCondition(Page page, Map<String, Object> map);
 }

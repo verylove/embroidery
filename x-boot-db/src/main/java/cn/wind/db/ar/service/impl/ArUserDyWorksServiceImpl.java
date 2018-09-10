@@ -64,4 +64,9 @@ public class ArUserDyWorksServiceImpl extends ServiceImpl<ArUserDyWorksMapper, A
     public Page<ArUserDyWorks> findAllPerDynamic(Page page, Map<String, Object> map) {
         return page.setRecords(this.baseMapper.findAllPerDynamic(page,map));
     }
+
+    @Override
+    public Page<ArUserDyWorks> findAllDyByCondition(Page page, Map<String, Object> map) {
+        return page.setRecords(this.baseMapper.findAllDyByCondition(page,map));
+    }
 }

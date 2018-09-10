@@ -65,4 +65,15 @@
           </if>
       </where>
     </select>
+
+    <select id="findAllMlByCondition" resultMap="BaseResultMap">
+        SELECT <include refid="Base_Column_List"/>
+        FROM cx_ml_goods
+        <where>
+            <if test="status != null">
+                and status = #{status}
+            </if>
+        </where>
+        order by create_time desc
+    </select>
 </mapper>

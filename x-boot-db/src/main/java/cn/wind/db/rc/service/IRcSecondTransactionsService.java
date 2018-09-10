@@ -21,4 +21,6 @@ public interface IRcSecondTransactionsService extends IService<RcSecondTransacti
     Page<RcSecondTransactions> findByCoordinates(Page page, Map<String, Object> map);
 
     RcSecondTransactions findOneByConditions(Map<String, Object> map);
+
+    Page<RcSecondTransactions> findAllRcByCondition(Page page, Map<String, Object> map);
 }
