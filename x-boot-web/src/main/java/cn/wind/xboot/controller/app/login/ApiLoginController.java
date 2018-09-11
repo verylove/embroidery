@@ -7,7 +7,6 @@ import cn.wind.db.ar.entity.ArUser;
 import cn.wind.db.ar.service.IArUserService;
 import cn.wind.xboot.controller.app.AppBaseController;
 import cn.wind.xboot.service.app.CXArUserManage;
-import cn.wind.xboot.service.tencentCloud.WebRTCSigApi;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
@@ -37,8 +36,6 @@ public class ApiLoginController extends AppBaseController{
     private IArUserService userService;
     @Autowired
     private CXArUserManage userManage;
-    @Autowired
-    private WebRTCSigApi webRTCSigApi;
 
     @ApiOperation(value="用户注册",produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     @ApiImplicitParams({
@@ -82,12 +79,9 @@ public class ApiLoginController extends AppBaseController{
             String token = AesUtility.TokenAesEncrypt(Long.toString(user.getId()));
             redisTemplate.opsForValue().set("embroidery:"+user.getId(), token,7, TimeUnit.DAYS);
 
-            // TLS
-            String userSig = webRTCSigApi.getUserSig(user.getId());
 
             map.put("token",token);
             map.put("user",user);
-            map.put("userSig",userSig);
             return ApiRes.Custom().addData(map);
         }catch (Exception e){
             e.printStackTrace();
@@ -119,12 +113,9 @@ public class ApiLoginController extends AppBaseController{
             //将token，user对象保存在缓存中
             redisTemplate.opsForValue().set("embroidery:"+user.getId(), token,7, TimeUnit.DAYS);
 
-            // TLS
-            String userSig = webRTCSigApi.getUserSig(user.getId());
 
             map.put("user",user);
             map.put("token",token);
-            map.put("userSig",userSig);
             return ApiRes.Custom().addData(map);
         } catch (Exception e) {
             e.printStackTrace();
@@ -171,12 +162,9 @@ public class ApiLoginController extends AppBaseController{
             //将token，user对象保存在缓存中
             redisTemplate.opsForValue().set("embroidery:"+user.getId(), token,7, TimeUnit.DAYS);
 
-            // TLS
-            String userSig = webRTCSigApi.getUserSig(user.getId());
 
             map.put("user",user);
             map.put("token",token);
-            map.put("userSig",userSig);
             return ApiRes.Custom().addData(map);
         }catch (Exception e){
             e.printStackTrace();
@@ -242,12 +230,9 @@ public class ApiLoginController extends AppBaseController{
             //将token，user对象保存在缓存中
             redisTemplate.opsForValue().set("embroidery:"+user.getId(), token,7, TimeUnit.DAYS);
 
-            // TLS
-            String userSig = webRTCSigApi.getUserSig(user.getId());
 
             map.put("user",user);
             map.put("token",token);
-            map.put("userSig",userSig);
             return ApiRes.Custom().addData(map);
         }catch (Exception e){
             e.printStackTrace();
@@ -263,12 +248,9 @@ public class ApiLoginController extends AppBaseController{
             ArUser user=userService.selectById(getUserId());
             String token= (String) redisTemplate.opsForValue().get("embroidery:"+user.getId());
 
-            // TLS
-            String userSig = webRTCSigApi.getUserSig(user.getId());
 
             map.put("user",user);
             map.put("token",token);
-            map.put("userSig",userSig);
             return ApiRes.Custom().addData(map);
         } catch (Exception e) {
             e.printStackTrace();

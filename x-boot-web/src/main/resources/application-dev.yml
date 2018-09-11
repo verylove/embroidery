@@ -171,7 +171,6 @@ xboot:
     - /push/**
     - /oauth/logout
     - /notice/**
-    - /webSys/**
   # 忽略鉴权url
   ignoredUrl:
     - /swagger-ui.html
@@ -190,6 +189,7 @@ xboot:
     - /oauth/login
     - /admin/**
     - /actuator/**
+    - /webSys/**
   # 全局限流
   rateLimit:
     enable: true

@@ -1,212 +1,32 @@
-2018-09-10 14:22:07.022  WARN 87101 --- [localhost-startStop-1] c.w.a.s.h.MyFilterSecurityInterceptor    : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
-2018-09-10 14:22:08.018  WARN 87101 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
-2018-09-10 14:22:18.979  WARN 87101 --- [main] cn.wind.xboot.config.CacheConfiguration  : init redis缓存管理对象
-2018-09-10 14:22:28.249  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.267  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
-2018-09-10 14:22:28.655  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.656  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.658  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.660  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.662  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.664  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.666  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.668  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 14:22:28.932  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.934  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.936  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.939  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.942  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.944  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.946  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:28.949  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 14:22:29.325  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 14:22:29.326  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 14:22:29.326  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 14:22:29.326  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 14:22:29.335  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 14:22:29.335  WARN 87101 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 14:22:29.649  WARN 87101 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!
-2018-09-10 14:58:45.649 ERROR 87101 --- [http-nio-8899-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Could not resolve view with name 'oauth/logout' in servlet with name 'dispatcherServlet'] with root cause
-
-javax.servlet.ServletException: Could not resolve view with name 'oauth/logout' in servlet with name 'dispatcherServlet'
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1305) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.invoke(MyFilterSecurityInterceptor.java:49) ~[classes/:na]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.doFilter(MyFilterSecurityInterceptor.java:42) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.10.jar:1.1.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.invoke(MyFilterSecurityInterceptor.java:49) ~[classes/:na]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.doFilter(MyFilterSecurityInterceptor.java:42) ~[classes/:na]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 15:00:06.662 ERROR 87101 --- [http-nio-8899-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Could not resolve view with name 'oauth/logout' in servlet with name 'dispatcherServlet'] with root cause
-
-javax.servlet.ServletException: Could not resolve view with name 'oauth/logout' in servlet with name 'dispatcherServlet'
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1305) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1069) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1008) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.invoke(MyFilterSecurityInterceptor.java:49) ~[classes/:na]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.doFilter(MyFilterSecurityInterceptor.java:42) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.10.jar:1.1.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.invoke(MyFilterSecurityInterceptor.java:49) ~[classes/:na]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.doFilter(MyFilterSecurityInterceptor.java:42) ~[classes/:na]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter.doFilter(OAuth2AuthenticationProcessingFilter.java:176) ~[spring-security-oauth2-2.2.1.RELEASE.jar:na]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:05:27.750 ERROR 87101 --- [Thread-95] c.x.j.c.thread.ExecutorRegistryThread    : sleep interrupted
+2018-09-11 09:31:03.114  WARN 91351 --- [localhost-startStop-1] c.w.a.s.h.MyFilterSecurityInterceptor    : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+2018-09-11 09:31:04.067  WARN 91351 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2018-09-11 09:31:14.771  WARN 91351 --- [main] cn.wind.xboot.config.CacheConfiguration  : init redis缓存管理对象
+2018-09-11 09:31:23.819  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:23.835  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
+2018-09-11 09:31:24.278  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.279  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.281  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.282  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.284  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.286  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.287  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.289  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 09:31:24.462  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.464  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.466  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.469  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.471  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.473  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.476  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.478  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 09:31:24.796  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 09:31:24.797  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 09:31:24.797  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 09:31:24.797  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 09:31:24.806  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 09:31:24.806  WARN 91351 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 09:31:25.097  WARN 91351 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!
+2018-09-11 11:42:31.265 ERROR 91351 --- [Thread-91] c.x.j.c.thread.ExecutorRegistryThread    : sleep interrupted
 
 java.lang.InterruptedException: sleep interrupted
 	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
@@ -215,7 +35,7 @@ java.lang.InterruptedException: sleep interrupted
 	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75) ~[xxl-job-core-1.9.1.jar:na]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
 
-2018-09-10 17:05:27.767 ERROR 87101 --- [Thread-96] c.x.j.core.thread.TriggerCallbackThread  : null
+2018-09-11 11:42:31.282 ERROR 91351 --- [Thread-92] c.x.j.core.thread.TriggerCallbackThread  : null
 
 java.lang.InterruptedException: null
 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
@@ -224,7 +44,7 @@ java.lang.InterruptedException: null
 	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55) ~[xxl-job-core-1.9.1.jar:na]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
 
-2018-09-10 17:05:27.774 ERROR 87101 --- [Thread-87] c.x.j.c.r.n.jetty.server.JettyServer     : null
+2018-09-11 11:42:31.287 ERROR 91351 --- [Thread-87] c.x.j.c.r.n.jetty.server.JettyServer     : null
 
 java.lang.InterruptedException: null
 	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
@@ -235,7 +55,7 @@ java.lang.InterruptedException: null
 	at com.xxl.job.core.rpc.netcom.jetty.server.JettyServer$1.run(JettyServer.java:55) ~[xxl-job-core-1.9.1.jar:na]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
 
-2018-09-10 17:05:27.787 ERROR 87101 --- [Thread-59] c.x.j.a.c.t.JobRegistryMonitorHelper     : job registry instance error:{}
+2018-09-11 11:42:31.301 ERROR 91351 --- [Thread-59] c.x.j.a.c.t.JobRegistryMonitorHelper     : job registry instance error:{}
 
 java.lang.InterruptedException: sleep interrupted
 	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
@@ -244,7 +64,7 @@ java.lang.InterruptedException: sleep interrupted
 	at com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:81) ~[classes/:na]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
 
-2018-09-10 17:05:27.787 ERROR 87101 --- [Thread-60] c.x.j.a.c.thread.JobFailMonitorHelper    : job monitor error:{}
+2018-09-11 11:42:31.302 ERROR 91351 --- [Thread-60] c.x.j.a.c.thread.JobFailMonitorHelper    : job monitor error:{}
 
 java.lang.InterruptedException: sleep interrupted
 	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
@@ -253,307 +73,31 @@ java.lang.InterruptedException: sleep interrupted
 	at com.xxl.job.admin.core.thread.JobFailMonitorHelper$1.run(JobFailMonitorHelper.java:77) ~[classes/:na]
 	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
 
-2018-09-10 17:06:06.803  WARN 88511 --- [localhost-startStop-1] c.w.a.s.h.MyFilterSecurityInterceptor    : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
-2018-09-10 17:06:07.675  WARN 88511 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
-2018-09-10 17:06:18.459  WARN 88511 --- [main] cn.wind.xboot.config.CacheConfiguration  : init redis缓存管理对象
-2018-09-10 17:06:27.093  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.109  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
-2018-09-10 17:06:27.472  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.474  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.476  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.477  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.479  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.481  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.484  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.486  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:06:27.677  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.680  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.683  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.686  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.689  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.691  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.729  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:27.733  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:06:28.071  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:06:28.072  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:06:28.072  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:06:28.072  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:06:28.081  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:06:28.081  WARN 88511 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:06:28.366  WARN 88511 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!
-2018-09-10 17:08:12.780 ERROR 88511 --- [http-nio-8899-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.web.multipart.MultipartException: Current request is not a multipart request] with root cause
-
-org.springframework.web.multipart.MultipartException: Current request is not a multipart request
-	at org.springframework.web.method.annotation.RequestParamMethodArgumentResolver.handleMissingValue(RequestParamMethodArgumentResolver.java:196) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.method.annotation.AbstractNamedValueMethodArgumentResolver.resolveArgument(AbstractNamedValueMethodArgumentResolver.java:112) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:124) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:131) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:783) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:974) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:877) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:851) ~[spring-webmvc-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.invoke(MyFilterSecurityInterceptor.java:49) ~[classes/:na]
-	at cn.wind.auth.security.handler.MyFilterSecurityInterceptor.doFilter(MyFilterSecurityInterceptor.java:42) ~[classes/:na]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:158) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.filterAndRecordMetrics(WebMvcMetricsFilter.java:126) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:111) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:123) ~[druid-1.1.10.jar:1.1.10]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.boot.actuate.web.trace.servlet.HttpTraceFilter.doFilterInternal(HttpTraceFilter.java:90) ~[spring-boot-actuator-2.0.3.RELEASE.jar:2.0.3.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:170) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.0.5.RELEASE.jar:5.0.5.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:357) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:270) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.0.7.RELEASE.jar:5.0.7.RELEASE]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:496) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1468) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_144]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_144]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.31.jar:8.5.31]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:12:54.728 ERROR 88511 --- [Thread-88] com.xxl.job.core.util.HttpClientUtil     : Read timed out
-
-java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_144]
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.5.jar:4.5.5]
-	at com.xxl.job.core.util.HttpClientUtil.postRequest(HttpClientUtil.java:60) ~[xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.jetty.client.JettyClient.send(JettyClient.java:29) [xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:57) [xxl-job-core-1.9.1.jar:na]
-	at com.sun.proxy.$Proxy333.registry(Unknown Source) [na:na]
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:57) [xxl-job-core-1.9.1.jar:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:12:54.738 ERROR 88511 --- [Thread-88] c.x.j.c.r.n.jetty.client.JettyClient     : Read timed out
-
-java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_144]
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.5.jar:4.5.5]
-	at com.xxl.job.core.util.HttpClientUtil.postRequest(HttpClientUtil.java:60) ~[xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.jetty.client.JettyClient.send(JettyClient.java:29) ~[xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:57) [xxl-job-core-1.9.1.jar:na]
-	at com.sun.proxy.$Proxy333.registry(Unknown Source) [na:na]
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:57) [xxl-job-core-1.9.1.jar:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:18:52.121 ERROR 88511 --- [Thread-88] com.xxl.job.core.util.HttpClientUtil     : Read timed out
-
-java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_144]
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.5.jar:4.5.5]
-	at com.xxl.job.core.util.HttpClientUtil.postRequest(HttpClientUtil.java:60) ~[xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.jetty.client.JettyClient.send(JettyClient.java:29) [xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:57) [xxl-job-core-1.9.1.jar:na]
-	at com.sun.proxy.$Proxy333.registry(Unknown Source) [na:na]
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:57) [xxl-job-core-1.9.1.jar:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:18:52.122 ERROR 88511 --- [Thread-88] c.x.j.c.r.n.jetty.client.JettyClient     : Read timed out
-
-java.net.SocketTimeoutException: Read timed out
-	at java.net.SocketInputStream.socketRead0(Native Method) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:171) ~[na:1.8.0_144]
-	at java.net.SocketInputStream.read(SocketInputStream.java:141) ~[na:1.8.0_144]
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125) ~[httpcore-4.4.9.jar:4.4.9]
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83) ~[httpclient-4.5.5.jar:4.5.5]
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108) ~[httpclient-4.5.5.jar:4.5.5]
-	at com.xxl.job.core.util.HttpClientUtil.postRequest(HttpClientUtil.java:60) ~[xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.jetty.client.JettyClient.send(JettyClient.java:29) ~[xxl-job-core-1.9.1.jar:na]
-	at com.xxl.job.core.rpc.netcom.NetComClientProxy$1.invoke(NetComClientProxy.java:57) [xxl-job-core-1.9.1.jar:na]
-	at com.sun.proxy.$Proxy333.registry(Unknown Source) [na:na]
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:57) [xxl-job-core-1.9.1.jar:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:20:18.119 ERROR 88511 --- [Thread-88] c.x.j.c.thread.ExecutorRegistryThread    : sleep interrupted
-
-java.lang.InterruptedException: sleep interrupted
-	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
-	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
-	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
-	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:75) ~[xxl-job-core-1.9.1.jar:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:20:18.139 ERROR 88511 --- [Thread-89] c.x.j.core.thread.TriggerCallbackThread  : null
-
-java.lang.InterruptedException: null
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014) ~[na:1.8.0_144]
-	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2048) ~[na:1.8.0_144]
-	at java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442) ~[na:1.8.0_144]
-	at com.xxl.job.core.thread.TriggerCallbackThread$1.run(TriggerCallbackThread.java:55) ~[xxl-job-core-1.9.1.jar:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:20:18.159 ERROR 88511 --- [Thread-57] c.x.j.a.c.t.JobRegistryMonitorHelper     : job registry instance error:{}
-
-java.lang.InterruptedException: sleep interrupted
-	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
-	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
-	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
-	at com.xxl.job.admin.core.thread.JobRegistryMonitorHelper$1.run(JobRegistryMonitorHelper.java:81) ~[classes/:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:20:18.159 ERROR 88511 --- [Thread-58] c.x.j.a.c.thread.JobFailMonitorHelper    : job monitor error:{}
-
-java.lang.InterruptedException: sleep interrupted
-	at java.lang.Thread.sleep(Native Method) [na:1.8.0_144]
-	at java.lang.Thread.sleep(Thread.java:340) [na:1.8.0_144]
-	at java.util.concurrent.TimeUnit.sleep(TimeUnit.java:386) ~[na:1.8.0_144]
-	at com.xxl.job.admin.core.thread.JobFailMonitorHelper$1.run(JobFailMonitorHelper.java:77) ~[classes/:na]
-	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_144]
-
-2018-09-10 17:20:54.952  WARN 88660 --- [localhost-startStop-1] c.w.a.s.h.MyFilterSecurityInterceptor    : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
-2018-09-10 17:20:55.841  WARN 88660 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
-2018-09-10 17:21:06.371  WARN 88660 --- [main] cn.wind.xboot.config.CacheConfiguration  : init redis缓存管理对象
-2018-09-10 17:21:14.988  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.004  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
-2018-09-10 17:21:15.390  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.392  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.393  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.395  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.397  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.399  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.402  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.404  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
-2018-09-10 17:21:15.674  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.677  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.679  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.682  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.684  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.687  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.689  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.692  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
-2018-09-10 17:21:15.998  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:21:15.999  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:21:15.999  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:21:15.999  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:21:16.008  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:21:16.008  WARN 88660 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
-2018-09-10 17:21:16.279  WARN 88660 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!
+2018-09-11 11:43:10.732  WARN 92273 --- [localhost-startStop-1] c.w.a.s.h.MyFilterSecurityInterceptor    : Could not validate configuration attributes as the SecurityMetadataSource did not return any attributes from getAllConfigAttributes()
+2018-09-11 11:43:11.677  WARN 92273 --- [main] org.dozer.config.GlobalSettings          : Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2018-09-11 11:43:22.349  WARN 92273 --- [main] cn.wind.xboot.config.CacheConfiguration  : init redis缓存管理对象
+2018-09-11 11:43:30.894  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:30.909  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.dto.app.ml.mlGoodsSelectDto>
+2018-09-11 11:43:31.250  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.252  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.254  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.255  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.257  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.258  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.260  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.262  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<cn.wind.xboot.tencent.pojo.MsgInfo>
+2018-09-11 11:43:31.433  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.436  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.439  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.441  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.444  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.446  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.448  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.451  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.Long>
+2018-09-11 11:43:31.813  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 11:43:31.813  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 11:43:31.813  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 11:43:31.814  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 11:43:31.821  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 11:43:31.821  WARN 92273 --- [main] s.d.s.w.r.p.ParameterDataTypeReader      : Trying to infer dataType java.util.List<java.lang.String>
+2018-09-11 11:43:32.085  WARN 92273 --- [main] cn.wind.xboot.XbootApplication           : XbootApplication启动成功!

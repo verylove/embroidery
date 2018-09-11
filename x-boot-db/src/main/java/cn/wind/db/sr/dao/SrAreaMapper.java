@@ -25,6 +25,5 @@ public interface SrAreaMapper extends BaseMapper<SrArea> {
     @Select("select "+RESULT_COLUMN+" from cx_sr_area where name like #{name} and status = 1 and level = 2")
     SrArea findByName(@Param("name")String name);
 
-    @Select("select "+RESULT_COLUMN+" from cx_sr_area where id in #{ids}")
-    List<SrArea> findAllByIdsIn(@Param("ids") List<Long> cityIds);
+    List<SrArea> findAllByIdsIn(List<Long> cityIds);
 }

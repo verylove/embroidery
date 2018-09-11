@@ -178,7 +178,7 @@ public class ApiDynamicWorksController extends AppBaseController{
     }
 
     @ApiOperation(value = "圈子 动态 分页")
-    @ApiImplicitParam(name = "type",value = "1-热门 2-最新",required = true,dataType = "Integer",paramType = "query")
+    @ApiImplicitParam(name = "type",value = "1-最新 2-热门",required = true,dataType = "Integer",paramType = "query")
     @GetMapping("/pageForCircleWorks")
     public ApiRes pageForCircleWorks(Integer type,@ModelAttribute PageVo pageVo){
         try{
